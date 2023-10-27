@@ -1,0 +1,48 @@
+@import "@styles/variables.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: $accents-color-500;
+  background-color: $primary-color-500;
+  padding: 0 1.25rem;
+  font-family: var(--font-poppins), sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+h1 {
+  @include d2;
+}
+
+h2 {
+  @include d3;
+}
+
+h3 {
+  @include h1;
+}
