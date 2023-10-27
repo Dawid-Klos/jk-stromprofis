@@ -20,6 +20,7 @@
     ],
     "paths": {
       "@styles/*": ["styles/*"],
+      "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
       "@utils/*": ["utils/*"],
       "@hooks/*": ["hooks/*"],
