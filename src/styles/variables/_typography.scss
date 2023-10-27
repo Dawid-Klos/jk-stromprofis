@@ -1,0 +1,86 @@
+@mixin d1 {
+  font-size: 57px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+}
+
+@mixin d2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+@mixin d3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+@mixin h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+@mixin h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+@mixin h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+@mixin body_lg {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+}
+
+@mixin body_md {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+@mixin body_sm {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+@mixin body_uppercase {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+}
+
+@mixin label_lg {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+}
+
+@mixin label_md {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+}
+
+@mixin label_sm {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
