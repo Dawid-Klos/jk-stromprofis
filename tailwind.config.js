@@ -157,5 +157,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [nextui()],
+  plugins: [nextui],
 };
