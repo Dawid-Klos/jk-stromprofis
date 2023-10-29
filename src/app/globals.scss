@@ -1,4 +1,4 @@
-@import "@styles/variables.scss";
+@import "@styles/variables";
 
 @tailwind base;
 @tailwind components;
@@ -17,9 +17,9 @@ body {
 }
 
 body {
-  @apply text-accent-500 bg-primary-500;
+  @apply text-accent-500 bg-primary-500 font-poppins;
+
   padding: 0 1.25rem;
-  font-family: var(--font-poppins), sans-serif;
   font-size: 1rem;
 }
 

@@ -37,6 +37,10 @@ module.exports = {
         900: "#504643",
       },
     },
+    fontFamily: {
+      poppins: ["var(--font-poppins), sans-serif"],
+      montserrat: ["var(--font-montserrat), sans-serif"],
+    },
     extend: {},
   },
   plugins: [],
