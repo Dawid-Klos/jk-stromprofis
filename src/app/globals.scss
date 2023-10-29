@@ -1,4 +1,6 @@
-@import "@styles/variables.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
@@ -13,10 +15,9 @@ body {
 }
 
 body {
-  color: $accents-color-500;
-  background-color: $primary-color-500;
+  @apply text-accent-500 bg-primary-500 font-poppins;
+
   padding: 0 1.25rem;
-  font-family: var(--font-poppins), sans-serif;
   font-size: 1rem;
 }
 
@@ -36,17 +37,13 @@ textarea {
 }
 
 h1 {
-  @include d2;
-
-  span {
-    @include title_gradient;
-  }
+  @apply text-d2;
 }
 
 h2 {
-  @include d3;
+  @apply text-d3;
 }
 
 h3 {
-  @include h1;
+  @apply text-h1;
 }
