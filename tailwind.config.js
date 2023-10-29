@@ -142,6 +142,13 @@ module.exports = {
         },
       ],
     },
+    screens: {
+      mobile_md: "375px",
+      tablet: "768px",
+      desktop_md: "1024px",
+      desktop_lg: "1440px",
+      desktop_xl: "1920px",
+    },
     extend: {},
   },
   plugins: [],
