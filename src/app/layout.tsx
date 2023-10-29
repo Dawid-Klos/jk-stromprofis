@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 
 import "./globals.scss";
+import { Providers } from "./providers";
 
 import Header from "@components/Header";
 
@@ -27,7 +28,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de">
       <body className={`${montserrat.variable} ${poppins.variable}`}>
         <Header />
-        <main>{children}</main>
+        <main>
+          <Providers>
+            {children}
+          </Providers>
+        </main>
         <footer></footer>
       </body>
     </html>
