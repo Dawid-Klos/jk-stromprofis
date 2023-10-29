@@ -17,8 +17,7 @@ body {
 }
 
 body {
-  color: $accents-color-500;
-  background-color: $primary-color-500;
+  @apply text-accent-500 bg-primary-500;
   padding: 0 1.25rem;
   font-family: var(--font-poppins), sans-serif;
   font-size: 1rem;
