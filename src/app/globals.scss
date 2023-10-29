@@ -37,6 +37,10 @@ textarea {
 
 h1 {
   @include d2;
+
+  span {
+    @include title_gradient;
+  }
 }
 
 h2 {

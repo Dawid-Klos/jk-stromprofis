@@ -1,1 +1,182 @@
 @import "@styles/variables";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 130vh;
+  position: relative;
+
+  @include screen_md {
+    min-height: 100vh;
+  }
+  .background {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: calc(100% + 2.5rem);
+    height: 85%;
+    position: absolute;
+    top: 2.5rem;
+    left: -1.25rem;
+    z-index: -1;
+    background-image: linear-gradient(
+        rgba(25, 25, 25, 1) 0%,
+        rgba(25, 25, 25, 0.35) 30%,
+        transparent,
+        rgba(25, 25, 25, 0.35) 70%,
+        rgba(25, 25, 25, 1) 100%
+      ),
+      url("../../../assets/images/world-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 85% top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include screen_mobile_md {
+      height: 80%;
+      background-position: 0% bottom;
+    }
+
+    @include screen_tablet {
+      background-image: linear-gradient(
+          rgba(25, 25, 25, 1) 0%,
+          rgba(25, 25, 25, 0.35) 30%,
+          transparent,
+          rgba(25, 25, 25, 0.35) 70%,
+          rgba(25, 25, 25, 1) 100%
+        ),
+        url("../../../assets/images/world-tablet.png");
+      background-position: 70% 80%;
+      top: 5rem;
+    }
+
+    @include screen_md {
+      background-image: linear-gradient(
+          rgba(25, 25, 25, 1) 0%,
+          rgba(25, 25, 25, 0.35) 30%,
+          transparent,
+          rgba(25, 25, 25, 0.35) 70%,
+          rgba(25, 25, 25, 1) 100%
+        ),
+        url("../../../assets/images/world-desktop-md.png");
+      background-position: 25% 30%;
+      top: 0rem;
+    }
+
+    @include screen_lg {
+      background-image: linear-gradient(
+          rgba(25, 25, 25, 1) 0%,
+          rgba(25, 25, 25, 0.35) 30%,
+          transparent,
+          rgba(25, 25, 25, 0.35) 70%,
+          rgba(25, 25, 25, 1) 100%
+        ),
+        url("../../../assets/images/world-desktop-xl.png");
+    }
+
+    .backgroundTitle {
+      display: none;
+      @include screen_tablet {
+        display: inline-block;
+        font-family: var(--font-montserrat), sans-serif;
+        font-size: 520px;
+        font-weight: 800;
+        letter-spacing: -3rem;
+        background: linear-gradient(158deg, rgba(190, 166, 160, 0.01) 7.23%, rgba(190, 166, 160, 0.15) 95.65%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 4rem;
+
+    .title {
+      @include d3;
+      color: $accents-color-200;
+
+      @include screen_mobile_md {
+        @include d2;
+      }
+    }
+
+    .subtitle {
+      @include body_sm;
+      color: $accents-color-300;
+
+      @include screen_mobile_md {
+        @include body_md;
+      }
+    }
+
+    .link {
+      @include button_sm;
+      margin-top: 1rem;
+      display: flex;
+      padding: 1rem 2rem;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      background: linear-gradient(268deg, #e94f37 2.96%, #802b1e 99.97%);
+      color: $accents-color-300;
+      box-shadow: 0px 7.08502px 18.21862px 0px rgba(233, 79, 55, 0.08);
+      transition: all 0.3s;
+
+      @include screen_mobile_md {
+        @include button_md;
+      }
+
+      @include screen_tablet {
+        @include button_lg;
+      }
+
+      &:hover {
+        color: $accents-color-300;
+        border-radius: 6px;
+        background: linear-gradient(268deg, #802b1e 2.96%, #e94f37 99.97%);
+        box-shadow: 0px 14px 48px 0px rgba(233, 79, 55, 0.15), 0px 0px 22px 0px rgba(233, 79, 55, 0.25);
+      }
+    }
+  }
+
+  .aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    .icon {
+      width: 2.25rem;
+      height: auto;
+    }
+
+    .asideTitle {
+      @include label_md;
+      color: $accents-color-200;
+
+      @include screen_mobile_md {
+        font-size: 1.25rem;
+      }
+    }
+
+    .asideSubtitle {
+      @include body_sm;
+      color: $accents-color-300;
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+
+      @include screen_mobile_md {
+        @include body_md;
+      }
+    }
+  }
+}
