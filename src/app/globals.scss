@@ -39,13 +39,13 @@ textarea {
 }
 
 h1 {
-  @include d2;
+  @apply text-d2;
 }
 
 h2 {
-  @include d3;
+  @apply text-d3;
 }
 
 h3 {
-  @include h1;
+  @apply text-h1;
 }

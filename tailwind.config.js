@@ -41,6 +41,107 @@ module.exports = {
       poppins: ["var(--font-poppins), sans-serif"],
       montserrat: ["var(--font-montserrat), sans-serif"],
     },
+    fontSize: {
+      d1: [
+        "57px",
+        {
+          lineHeight: "64px",
+          letterSpacing: "-0.25px",
+          fontWeight: "800",
+        },
+      ],
+      d2: [
+        "45px",
+        {
+          lineHeight: "52px",
+          fontWeight: "700",
+        },
+      ],
+      d3: [
+        "36px",
+        {
+          lineHeight: "44px",
+          fontWeight: "700",
+        },
+      ],
+      h1: [
+        "32px",
+        {
+          lineHeight: "40px",
+          fontWeight: "600",
+        },
+      ],
+      h2: [
+        "28px",
+        {
+          lineHeight: "36px",
+          fontWeight: "500",
+        },
+      ],
+      h3: [
+        "24px",
+        {
+          lineHeight: "32px",
+          fontWeight: "500",
+        },
+      ],
+      body_lg: [
+        "20px",
+        {
+          lineHeight: "34px",
+          fontWeight: "400",
+          letterSpacing: "0.75px",
+        },
+      ],
+      body_uppercase: [
+        "16px",
+        {
+          lineHeight: "20px",
+          fontWeight: "400",
+          letterSpacing: "0.25px",
+        },
+      ],
+      body_md: [
+        "16px",
+        {
+          lineHeight: "24px",
+          fontWeight: "400",
+          letterSpacing: "0.5px",
+        },
+      ],
+      body_sm: [
+        "14px",
+        {
+          lineHeight: "20px",
+          fontWeight: "400",
+          letterSpacing: "0.25px",
+        },
+      ],
+      label_lg: [
+        "20px",
+        {
+          lineHeight: "32px",
+          fontWeight: "600",
+          letterSpacing: "0.5px",
+        },
+      ],
+      label_md: [
+        "16px",
+        {
+          lineHeight: "24px",
+          fontWeight: "400",
+          letterSpacing: "0.25px",
+        },
+      ],
+      label_sm: [
+        "14px",
+        {
+          lineHeight: "20px",
+          fontWeight: "500",
+          letterSpacing: "0.1px",
+        },
+      ],
+    },
     extend: {},
   },
   plugins: [],
