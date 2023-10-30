@@ -1,9 +1,9 @@
-import { Button } from "@nextui-org/react";
+import Hero from "@components/homepage/hero";
 
 export default function Home() {
   return (
-    <Button>
-      Test
-    </Button>
+    <>
+      <Hero />
+    </>
   );
 }
