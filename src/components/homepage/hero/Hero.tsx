@@ -1,5 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
+import NextLink from "next/link";
+import { Button } from "@nextui-org/react";
+
 import styles from "./Hero.module.scss";
 import timeIcon from "@assets/icons/time.svg";
 
@@ -14,20 +16,18 @@ export const Hero: React.FC = () => {
           Jesteśmy zaufanym partnerem w zakresie wszystkich potrzeb elektrycznych - za każdym razem dostarczając
           doskonałość.
         </p>
-        <Link className={styles.link} href="/kontakt">
+        <Button className={styles.link} href="/kontakt" as={NextLink}>
           Skontaktuj się
-        </Link>
+        </Button>
       </div>
       <div className={styles.aside}>
         <Image className={styles.icon} src={timeIcon} alt="" priority />
-        <p className={styles.asideTitle}>Krótki okres oczekiwania</p>
-        <p className={styles.asideSubtitle}>
-          Nasza wysoka dostępność gwrantuje, że nie będziesz musiał czekać na kluczowe usługi elektryczne.
+        <p className={styles.info}>
+          Jesteśmy niezwykle dumni z naszej wyjątkowej dostępności, gwarantując, że nie będziesz musiał czekać na
+          kluczowe usługi elektryczne.
         </p>
       </div>
-      <div className={styles.background}>
-        <p className={styles.backgroundTitle}>JK</p>
-      </div>
+      <div className={styles.background}></div>
     </section>
   );
 };

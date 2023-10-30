@@ -1,93 +1,114 @@
-@import "@styles/variables";
-
 .section {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  min-height: 130vh;
   position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 20rem;
+  height: 100%;
 
-  @include screen_md {
-    min-height: 100vh;
+  @screen mobile_md {
+    gap: 28rem;
   }
+
+  @screen tablet {
+    padding-top: 6rem;
+    gap: 24rem;
+  }
+
+  @screen desktop_md {
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+
+  @screen desktop_lg {
+    padding-top: 6rem;
+  }
+
   .background {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    width: calc(100% + 2.5rem);
-    height: 85%;
+    width: 100vw;
+    height: 100%;
     position: absolute;
-    top: 2.5rem;
-    left: -1.25rem;
-    z-index: -1;
+    top: 3rem;
+    z-index: 0;
+
     background-image: linear-gradient(
         rgba(25, 25, 25, 1) 0%,
-        rgba(25, 25, 25, 0.35) 30%,
-        transparent,
-        rgba(25, 25, 25, 0.35) 70%,
+        rgba(25, 25, 25, 0.9) 20%,
+        rgba(25, 25, 25, 0.3) 30%,
+        transparent 50%,
+        rgba(25, 25, 25, 0.3) 70%,
+        rgba(25, 25, 25, 0.9) 80%,
         rgba(25, 25, 25, 1) 100%
       ),
-      url("../../../assets/images/world-mobile.png");
+      url("../../../assets/images/home-hero-mobile.png");
+    background-position: 50% top;
     background-repeat: no-repeat;
-    background-position: 85% top;
     background-size: cover;
-    background-repeat: no-repeat;
+    aspect-ratio: 16 / 10;
 
-    @include screen_mobile_md {
-      height: 80%;
-      background-position: 0% bottom;
-    }
-
-    @include screen_tablet {
+    @screen tablet {
       background-image: linear-gradient(
           rgba(25, 25, 25, 1) 0%,
-          rgba(25, 25, 25, 0.35) 30%,
-          transparent,
-          rgba(25, 25, 25, 0.35) 70%,
+          rgba(25, 25, 25, 0.9) 20%,
+          rgba(25, 25, 25, 0.2) 30%,
+          transparent 50%,
+          rgba(25, 25, 25, 0.2) 70%,
+          rgba(25, 25, 25, 0.9) 80%,
           rgba(25, 25, 25, 1) 100%
         ),
-        url("../../../assets/images/world-tablet.png");
-      background-position: 70% 80%;
-      top: 5rem;
+        url("../../../assets/images/home-hero-tablet.png");
+      background-position: 20% 60%;
     }
 
-    @include screen_md {
+    @screen desktop_md {
       background-image: linear-gradient(
           rgba(25, 25, 25, 1) 0%,
-          rgba(25, 25, 25, 0.35) 30%,
-          transparent,
-          rgba(25, 25, 25, 0.35) 70%,
+          rgba(25, 25, 25, 0.9) 20%,
+          rgba(25, 25, 25, 0.2) 30%,
+          transparent 50%,
+          rgba(25, 25, 25, 0.2) 70%,
+          rgba(25, 25, 25, 0.9) 80%,
           rgba(25, 25, 25, 1) 100%
         ),
-        url("../../../assets/images/world-desktop-md.png");
-      background-position: 25% 30%;
-      top: 0rem;
+        url("../../../assets/images/home-hero-desktop-md.png");
+      margin-left: -3rem;
     }
 
-    @include screen_lg {
+    @screen desktop_lg {
       background-image: linear-gradient(
           rgba(25, 25, 25, 1) 0%,
-          rgba(25, 25, 25, 0.35) 30%,
-          transparent,
-          rgba(25, 25, 25, 0.35) 70%,
+          rgba(25, 25, 25, 0.9) 20%,
+          rgba(25, 25, 25, 0.2) 30%,
+          transparent 50%,
+          rgba(25, 25, 25, 0.2) 70%,
+          rgba(25, 25, 25, 0.9) 80%,
           rgba(25, 25, 25, 1) 100%
         ),
-        url("../../../assets/images/world-desktop-xl.png");
+        url("../../../assets/images/home-hero-desktop-lg.png");
+      background-position: 50% 40%;
+      margin-left: -6rem;
+      height: 90%;
     }
 
-    .backgroundTitle {
-      display: none;
-      @include screen_tablet {
-        display: inline-block;
-        font-family: var(--font-montserrat), sans-serif;
-        font-size: 520px;
-        font-weight: 800;
-        letter-spacing: -3rem;
-        background: linear-gradient(158deg, rgba(190, 166, 160, 0.01) 7.23%, rgba(190, 166, 160, 0.15) 95.65%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    @screen desktop_xl {
+      background-image: linear-gradient(
+          rgba(25, 25, 25, 1) 0%,
+          rgba(25, 25, 25, 0.9) 20%,
+          rgba(25, 25, 25, 0.2) 30%,
+          transparent 50%,
+          rgba(25, 25, 25, 0.2) 70%,
+          rgba(25, 25, 25, 0.9) 80%,
+          rgba(25, 25, 25, 1) 100%
+        ),
+        url("../../../assets/images/home-hero-desktop-xl.png");
+      background-position: 100% 0%;
+      margin-left: -8rem;
     }
   }
 
@@ -96,51 +117,29 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    padding-top: 4rem;
+    z-index: 1;
 
-    .title {
-      @include d3;
-      color: $accents-color-200;
-
-      @include screen_mobile_md {
-        @include d2;
-      }
+    @screen desktop_md {
+      width: 65%;
     }
 
-    .subtitle {
-      @include body_sm;
-      color: $accents-color-300;
-
-      @include screen_mobile_md {
-        @include body_md;
-      }
+    @screen desktop_lg {
+      width: 50%;
     }
 
     .link {
-      @include button_sm;
+      @apply text-button-sm text-accent-500 h-auto;
       margin-top: 1rem;
-      display: flex;
-      padding: 1rem 2rem;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      border-radius: 8px;
+      padding: 0.75rem 2rem;
       background: linear-gradient(268deg, #e94f37 2.96%, #802b1e 99.97%);
-      color: $accents-color-300;
       box-shadow: 0px 7.08502px 18.21862px 0px rgba(233, 79, 55, 0.08);
-      transition: all 0.3s;
 
-      @include screen_mobile_md {
-        @include button_md;
-      }
-
-      @include screen_tablet {
-        @include button_lg;
+      @screen mobile_md {
+        @apply text-button-md;
       }
 
       &:hover {
-        color: $accents-color-300;
-        border-radius: 6px;
+        @apply text-accent-300;
         background: linear-gradient(268deg, #802b1e 2.96%, #e94f37 99.97%);
         box-shadow: 0px 14px 48px 0px rgba(233, 79, 55, 0.15), 0px 0px 22px 0px rgba(233, 79, 55, 0.25);
       }
@@ -151,31 +150,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    z-index: 1;
+
+    @screen desktop_md {
+      width: 75%;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
 
     .icon {
       width: 2.25rem;
       height: auto;
-    }
 
-    .asideTitle {
-      @include label_md;
-      color: $accents-color-200;
-
-      @include screen_mobile_md {
-        font-size: 1.25rem;
+      @screen tablet {
+        width: 3rem;
       }
     }
 
-    .asideSubtitle {
-      @include body_sm;
-      color: $accents-color-300;
+    .info {
       text-align: center;
-      margin-top: 0.5rem;
-      margin-bottom: 2rem;
 
-      @include screen_mobile_md {
-        @include body_md;
+      @screen desktop_md {
+        text-align: left;
       }
     }
   }
