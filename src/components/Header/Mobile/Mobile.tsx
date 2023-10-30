@@ -70,6 +70,7 @@ export const Mobile = ({ menuItems }: Props) => {
             </NavbarContent>
 
             <NavbarMenu className={styles.menu}>
+
                 {menuItems.map(({ title, href, list }) => {
                     return (
                         <>
