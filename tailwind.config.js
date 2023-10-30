@@ -16,6 +16,7 @@ module.exports = {
       d1: [
         "57px",
         {
+          fontFamily: "var(--font-montserrat)",
           lineHeight: "64px",
           letterSpacing: "-0.25px",
           fontWeight: "800",
@@ -24,6 +25,7 @@ module.exports = {
       d2: [
         "45px",
         {
+          fontFamily: "var(--font-montserrat)",
           lineHeight: "52px",
           fontWeight: "700",
         },
@@ -31,6 +33,7 @@ module.exports = {
       d3: [
         "36px",
         {
+          fontFamily: "var(--font-montserrat)",
           lineHeight: "44px",
           fontWeight: "700",
         },
@@ -38,6 +41,7 @@ module.exports = {
       h1: [
         "32px",
         {
+          fontFamily: "var(--font-montserrat)",
           lineHeight: "40px",
           fontWeight: "600",
         },
@@ -45,6 +49,7 @@ module.exports = {
       h2: [
         "28px",
         {
+          fontFamily: "var(--font-montserrat)",
           lineHeight: "36px",
           fontWeight: "500",
         },
@@ -52,11 +57,12 @@ module.exports = {
       h3: [
         "24px",
         {
+          fontFamily: "var(--font-montserrat)",
           lineHeight: "32px",
           fontWeight: "500",
         },
       ],
-      body_lg: [
+      "body-lg": [
         "20px",
         {
           lineHeight: "34px",
@@ -64,7 +70,7 @@ module.exports = {
           letterSpacing: "0.75px",
         },
       ],
-      body_uppercase: [
+      "body-uppercase": [
         "16px",
         {
           lineHeight: "20px",
@@ -72,7 +78,7 @@ module.exports = {
           letterSpacing: "0.25px",
         },
       ],
-      body_md: [
+      "body-md": [
         "16px",
         {
           lineHeight: "24px",
@@ -80,7 +86,7 @@ module.exports = {
           letterSpacing: "0.5px",
         },
       ],
-      body_sm: [
+      "body-sm": [
         "14px",
         {
           lineHeight: "20px",
@@ -88,23 +94,47 @@ module.exports = {
           letterSpacing: "0.25px",
         },
       ],
-      label_lg: [
+      "button-lg": [
         "20px",
         {
-          lineHeight: "32px",
+          lineHeight: "28px",
           fontWeight: "600",
-          letterSpacing: "0.5px",
+          letterSpacing: "-0.25px",
         },
       ],
-      label_md: [
+      "button-md": [
         "16px",
         {
           lineHeight: "24px",
-          fontWeight: "400",
+          fontWeight: "600",
+          letterSpacing: "-0.2px",
+        },
+      ],
+      "button-sm": [
+        "14px",
+        {
+          lineHeight: "20px",
+          fontWeight: "600",
+          letterSpacing: "-0.15px",
+        },
+      ],
+      "label-lg": [
+        "20px",
+        {
+          lineHeight: "32px",
+          fontWeight: "500",
+          letterSpacing: "0.5px",
+        },
+      ],
+      "label-md": [
+        "16px",
+        {
+          lineHeight: "24px",
+          fontWeight: "500",
           letterSpacing: "0.25px",
         },
       ],
-      label_sm: [
+      "label-sm": [
         "14px",
         {
           lineHeight: "20px",
@@ -118,7 +148,7 @@ module.exports = {
       tablet: "768px",
       desktop_md: "1024px",
       desktop_lg: "1440px",
-      desktop_xl: "1920px",
+      desktop_xl: "2560px",
     },
     extend: {},
   },
@@ -128,6 +158,7 @@ module.exports = {
       themes: {
         light: {
           colors: {
+            focus: "#e94f37",
             primary: {
               100: "#b8b8b8",
               200: "#959595",

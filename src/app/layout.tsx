@@ -29,9 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={`${montserrat.variable} ${poppins.variable}`}>
         <Header />
         <main>
-          <Providers>
-            {children}
-          </Providers>
+          <Providers>{children}</Providers>
         </main>
         <footer></footer>
       </body>
