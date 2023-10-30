@@ -62,7 +62,7 @@ module.exports = {
           fontWeight: "500",
         },
       ],
-      body_lg: [
+      "body-lg": [
         "20px",
         {
           lineHeight: "34px",
@@ -70,7 +70,7 @@ module.exports = {
           letterSpacing: "0.75px",
         },
       ],
-      body_uppercase: [
+      "body-uppercase": [
         "16px",
         {
           lineHeight: "20px",
@@ -78,7 +78,7 @@ module.exports = {
           letterSpacing: "0.25px",
         },
       ],
-      body_md: [
+      "body-md": [
         "16px",
         {
           lineHeight: "24px",
@@ -86,7 +86,7 @@ module.exports = {
           letterSpacing: "0.5px",
         },
       ],
-      body_sm: [
+      "body-sm": [
         "14px",
         {
           lineHeight: "20px",
@@ -94,7 +94,7 @@ module.exports = {
           letterSpacing: "0.25px",
         },
       ],
-      button_lg: [
+      "button-lg": [
         "20px",
         {
           lineHeight: "28px",
@@ -102,7 +102,7 @@ module.exports = {
           letterSpacing: "-0.25px",
         },
       ],
-      button_md: [
+      "button-md": [
         "16px",
         {
           lineHeight: "24px",
@@ -110,7 +110,7 @@ module.exports = {
           letterSpacing: "-0.2px",
         },
       ],
-      button_sm: [
+      "button-sm": [
         "14px",
         {
           lineHeight: "20px",
@@ -118,23 +118,23 @@ module.exports = {
           letterSpacing: "-0.15px",
         },
       ],
-      label_lg: [
+      "label-lg": [
         "20px",
         {
           lineHeight: "32px",
-          fontWeight: "600",
+          fontWeight: "500",
           letterSpacing: "0.5px",
         },
       ],
-      label_md: [
+      "label-md": [
         "16px",
         {
           lineHeight: "24px",
-          fontWeight: "400",
+          fontWeight: "500",
           letterSpacing: "0.25px",
         },
       ],
-      label_sm: [
+      "label-sm": [
         "14px",
         {
           lineHeight: "20px",
@@ -148,7 +148,7 @@ module.exports = {
       tablet: "768px",
       desktop_md: "1024px",
       desktop_lg: "1440px",
-      desktop_xl: "1920px",
+      desktop_xl: "2560px",
     },
     extend: {},
   },
@@ -158,6 +158,7 @@ module.exports = {
       themes: {
         light: {
           colors: {
+            focus: "#e94f37",
             primary: {
               100: "#b8b8b8",
               200: "#959595",
