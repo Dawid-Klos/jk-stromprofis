@@ -28,6 +28,16 @@
   }
 
   .background {
+    $linear-gradient: linear-gradient(
+      rgba(25, 25, 25, 1) 0%,
+      rgba(25, 25, 25, 0.9) 20%,
+      rgba(25, 25, 25, 0.2) 30%,
+      transparent 50%,
+      rgba(25, 25, 25, 0.2) 70%,
+      rgba(25, 25, 25, 0.9) 80%,
+      rgba(25, 25, 25, 1) 100%
+    );
+
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -37,76 +47,31 @@
     top: 3rem;
     z-index: 0;
 
-    background-image: linear-gradient(
-        rgba(25, 25, 25, 1) 0%,
-        rgba(25, 25, 25, 0.9) 20%,
-        rgba(25, 25, 25, 0.3) 30%,
-        transparent 50%,
-        rgba(25, 25, 25, 0.3) 70%,
-        rgba(25, 25, 25, 0.9) 80%,
-        rgba(25, 25, 25, 1) 100%
-      ),
-      url("../../../assets/images/home-hero-mobile.png");
+    background-image: $linear-gradient, url("../../../assets/images/home-hero-mobile.png");
     background-position: 50% top;
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 16 / 10;
 
     @screen tablet {
-      background-image: linear-gradient(
-          rgba(25, 25, 25, 1) 0%,
-          rgba(25, 25, 25, 0.9) 20%,
-          rgba(25, 25, 25, 0.2) 30%,
-          transparent 50%,
-          rgba(25, 25, 25, 0.2) 70%,
-          rgba(25, 25, 25, 0.9) 80%,
-          rgba(25, 25, 25, 1) 100%
-        ),
-        url("../../../assets/images/home-hero-tablet.png");
+      background-image: $linear-gradient, url("../../../assets/images/home-hero-tablet.png");
       background-position: 20% 60%;
     }
 
     @screen desktop_md {
-      background-image: linear-gradient(
-          rgba(25, 25, 25, 1) 0%,
-          rgba(25, 25, 25, 0.9) 20%,
-          rgba(25, 25, 25, 0.2) 30%,
-          transparent 50%,
-          rgba(25, 25, 25, 0.2) 70%,
-          rgba(25, 25, 25, 0.9) 80%,
-          rgba(25, 25, 25, 1) 100%
-        ),
-        url("../../../assets/images/home-hero-desktop-md.png");
+      background-image: $linear-gradient, url("../../../assets/images/home-hero-desktop-md.png");
       margin-left: -3rem;
     }
 
     @screen desktop_lg {
-      background-image: linear-gradient(
-          rgba(25, 25, 25, 1) 0%,
-          rgba(25, 25, 25, 0.9) 20%,
-          rgba(25, 25, 25, 0.2) 30%,
-          transparent 50%,
-          rgba(25, 25, 25, 0.2) 70%,
-          rgba(25, 25, 25, 0.9) 80%,
-          rgba(25, 25, 25, 1) 100%
-        ),
-        url("../../../assets/images/home-hero-desktop-lg.png");
+      background-image: $linear-gradient, url("../../../assets/images/home-hero-desktop-lg.png");
       background-position: 50% 40%;
       margin-left: -6rem;
       height: 90%;
     }
 
     @screen desktop_xl {
-      background-image: linear-gradient(
-          rgba(25, 25, 25, 1) 0%,
-          rgba(25, 25, 25, 0.9) 20%,
-          rgba(25, 25, 25, 0.2) 30%,
-          transparent 50%,
-          rgba(25, 25, 25, 0.2) 70%,
-          rgba(25, 25, 25, 0.9) 80%,
-          rgba(25, 25, 25, 1) 100%
-        ),
-        url("../../../assets/images/home-hero-desktop-xl.png");
+      background-image: $linear-gradient, url("../../../assets/images/home-hero-desktop-xl.png");
       background-position: 100% 0%;
       margin-left: -8rem;
     }
