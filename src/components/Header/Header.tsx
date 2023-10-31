@@ -1,5 +1,6 @@
 "use client";
 
+import useBreakpoint from "@hooks/useBreakpoint";
 import Mobile from "./Mobile";
 
 export type menuItems = {
@@ -12,6 +13,8 @@ export type menuItems = {
 }[];
 
 export const Header = () => {
+    const breakpoint = useBreakpoint();
+
     const menuItems: menuItems = [
         {
             title: "Home",
@@ -63,7 +66,7 @@ export const Header = () => {
 
     return (
         <>
-            <Mobile menuItems={menuItems} />
+            {breakpoint === "mobile" && <Mobile menuItems={menuItems} />}
         </>
     )
 }
