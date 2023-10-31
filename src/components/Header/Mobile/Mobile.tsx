@@ -39,6 +39,7 @@ export const Mobile = ({ menuItems }: Props) => {
                     item: styles.item,
                 }
             }
+            height="75px"
             isBordered
             isMenuOpen={isOpen}
             onMenuOpenChange={setIsOpen}
