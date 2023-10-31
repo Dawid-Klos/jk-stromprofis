@@ -23,15 +23,14 @@ body {
     @apply text-body-md;
   }
 
+
   @screen desktop_lg {
     @apply text-body-lg;
-
   }
 }
 
 main {
   display: flex;
-  flex-direction: column;
   flex: 1;
   padding: 0 1.25rem;
 
@@ -49,6 +48,12 @@ main {
 
   @screen desktop_xl {
     padding: 0 8rem;
+  }
+
+  &>div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
   }
 }
 
