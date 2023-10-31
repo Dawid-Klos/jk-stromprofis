@@ -1,7 +1,10 @@
 "use client";
 
-import useBreakpoint from "@hooks/useBreakpoint";
+
 import Mobile from "./Mobile";
+
+import useBreakpoint from "@hooks/useBreakpoint";
+import { Breakpoint } from "config/enums";
 
 export type menuItems = {
     title: string;
@@ -66,7 +69,7 @@ export const Header = () => {
 
     return (
         <>
-            {breakpoint === "mobile" && <Mobile menuItems={menuItems} />}
+            {breakpoint === Breakpoint.Mobile && <Mobile menuItems={menuItems} />}
         </>
     )
 }
