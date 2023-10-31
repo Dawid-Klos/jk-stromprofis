@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -25,13 +25,6 @@ type Props = {
 
 export const Mobile = ({ menuItems }: Props) => {
     const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        const body = document.querySelector("body");
-        if (!body) return;
-
-        isOpen ? (body.style.overflow = "hidden") : (body.style.overflow = "auto");
-    }, [isOpen]);
 
     const toogle = () => {
         setIsOpen(!isOpen);
@@ -73,37 +66,34 @@ export const Mobile = ({ menuItems }: Props) => {
 
                 {menuItems.map(({ title, href, list }) => {
                     return (
-                        <>
-                            {list ? (
-                                <NavbarMenuItem>
-                                    <Accordion key={title} className={styles.accordion} itemClasses={{
-                                        title: styles.link,
-                                        trigger: styles.trigger,
-                                        content: styles.content,
-                                    }}>
-                                        <AccordionItem aria-label={title} title={title}>
-                                            {list.map(({ title, href }) => {
-                                                return (
-                                                    <Link href={href} onClick={toogle} key={title}>
-                                                        {title}
-                                                    </Link>
-                                                );
-                                            }
-                                            )}
-                                        </AccordionItem>
-                                    </Accordion>
-                                </NavbarMenuItem>
-                            ) : (
-                                <NavbarMenuItem key={title}>
-                                    <Link className={styles.link} href={href} onClick={toogle}>
-                                        {title}
-                                    </Link >
-                                </NavbarMenuItem>
-                            )}
-                        </>
+                        list ? (
+                            <NavbarMenuItem key={title}>
+                                <Accordion key={title} className={styles.accordion} itemClasses={{
+                                    title: styles.link,
+                                    trigger: styles.trigger,
+                                    content: styles.content,
+                                }}>
+                                    <AccordionItem aria-label={title} title={title}>
+                                        {list.map(({ title, href }) => {
+                                            return (
+                                                <Link href={href} onClick={toogle} key={title}>
+                                                    {title}
+                                                </Link>
+                                            );
+                                        }
+                                        )}
+                                    </AccordionItem>
+                                </Accordion>
+                            </NavbarMenuItem>
+                        ) : (
+                            <NavbarMenuItem key={title}>
+                                <Link className={styles.link} href={href} onClick={toogle}>
+                                    {title}
+                                </Link >
+                            </NavbarMenuItem>
+                        )
                     )
-                }
-                )}
+                })}
             </NavbarMenu >
         </Navbar >
     )
