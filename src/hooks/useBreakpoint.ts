@@ -1,24 +1,28 @@
 "use client";
 
+import { Breakpoint, BreakpointWidth } from "config/enums";
 import { useState, useEffect } from "react";
 
 const useBreakpoint = () => {
-  const [breakpoint, setBreakpoint] = useState("mobile");
+  const [breakpoint, setBreakpoint] = useState<string | null>(null);
+
+  const breakpoints: {
+    [enumMember: string]: BreakpointWidth;
+  } = {
+    [Breakpoint.Mobile]: BreakpointWidth.Mobile,
+    [Breakpoint.Tablet]: BreakpointWidth.Tablet,
+    [Breakpoint.DesktopMd]: BreakpointWidth.DesktopMd,
+    [Breakpoint.DesktopLg]: BreakpointWidth.DesktopLg,
+  };
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width < 768) {
-        setBreakpoint("mobile");
-      } else if (width < 1024) {
-        setBreakpoint("tablet");
-      } else if (width < 1440) {
-        setBreakpoint("desktop_md");
-      } else if (width < 2560) {
-        setBreakpoint("desktop_lg");
-      } else {
-        setBreakpoint("desktop_xl");
-      }
+      const breakpoint = Object.keys(breakpoints).find(
+        (key) => width < breakpoints[key]
+      ) as Breakpoint;
+
+      setBreakpoint(breakpoint);
     };
 
     window.addEventListener("resize", handleResize);
