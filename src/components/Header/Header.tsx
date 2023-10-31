@@ -44,6 +44,10 @@ export const Header = () => {
                 {
                     title: "Systemy nagłaśniające",
                     href: "/services/systemy-naglasniajace",
+                },
+                {
+                    title: "Punkty ładowania / Doprowadzenie prądu",
+                    href: "/services/punkty-ladowania-doprowadzenie-pradu",
                 }
             ],
         },
