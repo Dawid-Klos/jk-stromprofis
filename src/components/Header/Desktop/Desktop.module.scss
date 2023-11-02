@@ -1,0 +1,48 @@
+.nav {
+    background: none;
+}
+
+.wrapper {
+    max-width: 100%;
+
+    @screen tablet {
+        padding: 0 2.5rem;
+    }
+
+    @screen desktop_md {
+        padding: 0 3rem;
+    }
+
+    @screen desktop_lg {
+        padding: 0 6rem;
+    }
+
+    @screen desktop_xl {
+        padding: 0 8rem;
+    }
+}
+
+.brand {
+    justify-content: flex-end;
+    gap: 2rem;
+
+    @screen desktop_xl {
+        gap: 3.5rem;
+
+    }
+}
+
+.item {
+    display: flex;
+}
+
+.link {
+    @apply text-body-md text-accent-300;
+
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        @apply text-accent-600;
+    }
+}
