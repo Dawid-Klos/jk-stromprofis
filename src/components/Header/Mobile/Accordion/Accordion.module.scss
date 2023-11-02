@@ -1,0 +1,30 @@
+.accordion {
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1.25rem;
+    padding-top: 1rem;
+}
+
+.trigger {
+    padding: 0;
+    gap: 2rem;
+
+    &>div {
+        flex: 0;
+    }
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.link {
+    @apply text-h2 text-accent-500;
+    font-family: var(--font-montserrat);
+}

@@ -9,13 +9,12 @@ import {
     NavbarMenuToggle,
     NavbarMenu,
     NavbarMenuItem,
-    NavbarBrand,
-    Accordion,
-    AccordionItem
+    NavbarBrand
 } from "@nextui-org/react";
 import type { menuItems } from "@components/Header/Header";
 
 import logo from "@assets/images/logo.svg";
+import Accordion from "./Accordion";
 import styles from "./Mobile.module.scss";
 
 type Props = {
@@ -40,7 +39,6 @@ export const Mobile = ({ menuItems }: Props) => {
                 }
             }
             height="75px"
-            isBordered
             isMenuOpen={isOpen}
             onMenuOpenChange={setIsOpen}
 
@@ -69,22 +67,11 @@ export const Mobile = ({ menuItems }: Props) => {
                     return (
                         list ? (
                             <NavbarMenuItem key={title}>
-                                <Accordion key={title} className={styles.accordion} itemClasses={{
-                                    title: styles.link,
-                                    trigger: styles.trigger,
-                                    content: styles.content,
-                                }}>
-                                    <AccordionItem aria-label={title} title={title}>
-                                        {list.map(({ title, href }) => {
-                                            return (
-                                                <Link href={href} onClick={toogle} key={title}>
-                                                    {title}
-                                                </Link>
-                                            );
-                                        }
-                                        )}
-                                    </AccordionItem>
-                                </Accordion>
+                                <Accordion
+                                    title={title}
+                                    list={list}
+                                    setIsOpen={setIsOpen}
+                                />
                             </NavbarMenuItem>
                         ) : (
                             <NavbarMenuItem key={title}>

@@ -1,10 +1,11 @@
 "use client";
 
-
 import Mobile from "./Mobile";
+import Desktop from "./Desktop";
 
 import useBreakpoint from "@hooks/useBreakpoint";
 import { Breakpoint } from "config/enums";
+
 
 export type menuItems = {
     title: string;
@@ -69,7 +70,7 @@ export const Header = () => {
 
     return (
         <>
-            {breakpoint === Breakpoint.Mobile && <Mobile menuItems={menuItems} />}
+            {breakpoint === Breakpoint.Mobile ? <Mobile menuItems={menuItems} /> : <Desktop menuItems={menuItems} />}
         </>
     )
 }
