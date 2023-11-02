@@ -1,0 +1,28 @@
+.button {
+    @apply text-body-md text-accent-300;
+
+    padding: 1rem;
+    min-height: 56px;
+    background: none;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        @apply text-accent-600;
+    }
+}
+
+.dropdown {
+    @apply bg-primary-500 border border-primary-100/20;
+
+    padding: 1rem 0.5rem;
+}
+
+.link {
+    @apply text-body-md text-accent-300;
+}
+
+.item {
+    &[data-hover="true"] {
+        @apply bg-primary-100/20;
+    }
+}
