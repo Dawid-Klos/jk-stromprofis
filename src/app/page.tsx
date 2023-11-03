@@ -1,4 +1,5 @@
 import Hero from "@components/homepage/Hero";
+import Testimonials from "@components/homepage/Testimonials";
 import Trust from "@components/homepage/Trust";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <Trust />
+      <Testimonials />
     </>
   );
 }
