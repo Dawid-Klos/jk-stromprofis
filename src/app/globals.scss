@@ -23,16 +23,14 @@ body {
     @apply text-body-md;
   }
 
-
   @screen desktop_lg {
     @apply text-body-lg;
   }
-
-
 }
 
 main {
   display: flex;
+  flex-direction: column;
   flex: 1;
   padding: 0 1.25rem;
 
@@ -45,14 +43,14 @@ main {
   }
 
   @screen desktop_lg {
-    padding: 0 6rem;
-  }
-
-  @screen desktop_xl {
     padding: 0 8rem;
   }
 
-  &>div {
+  @screen desktop_xl {
+    padding: 0 12rem;
+  }
+
+  & > div {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -66,7 +64,7 @@ a {
     @apply text-button-md;
   }
 
-  @screen desktop_lg {
+  @screen desktop_xl {
     @apply text-button-lg;
   }
 }
@@ -94,7 +92,7 @@ textarea {
 }
 
 h1 {
-  @apply text-d3 text-accent-300;
+  @apply text-d3 text-accent-300 font-montserrat;
 
   @screen mobile_md {
     @apply text-d2;
@@ -113,7 +111,7 @@ h1 {
 }
 
 h2 {
-  @apply text-h1 text-accent-500;
+  @apply text-h1 text-accent-500 font-montserrat;
 
   @screen mobile_md {
     @apply text-d3;
@@ -125,7 +123,7 @@ h2 {
 }
 
 h3 {
-  @apply text-h2;
+  @apply text-h2 font-montserrat;
 
   @screen mobile_md {
     @apply text-h1;
