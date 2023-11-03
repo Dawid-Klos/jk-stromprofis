@@ -1,0 +1,17 @@
+@import "@styles/mixins";
+
+.link {
+    @include transition;
+
+    & * {
+        @include transition;
+    }
+
+    &:hover {
+        @apply text-secondary-500;
+
+        * {
+            @apply text-secondary-500;
+        }
+    }
+}

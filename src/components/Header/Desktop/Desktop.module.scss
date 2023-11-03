@@ -1,0 +1,43 @@
+.nav {
+    @apply bg-primary-500/60;
+}
+
+.wrapper {
+    max-width: 100%;
+
+    @screen tablet {
+        padding: 0 2.5rem;
+    }
+
+    @screen desktop_md {
+        padding: 0 3rem;
+    }
+
+    @screen desktop_lg {
+        padding: 0 6rem;
+    }
+
+    @screen desktop_xl {
+        padding: 0 8rem;
+    }
+}
+
+.brand {
+    justify-content: flex-end;
+    gap: 2rem;
+
+    @screen desktop_xl {
+        gap: 3.5rem;
+
+    }
+}
+
+.item {
+    display: flex;
+}
+
+.link {
+    @apply text-body-md text-accent-300;
+
+    padding: 1rem;
+}

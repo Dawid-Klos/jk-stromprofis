@@ -1,0 +1,41 @@
+@import "@styles/mixins";
+
+.button {
+    @include transition;
+    @apply text-body-md text-accent-300;
+
+    padding: 1rem;
+    min-height: 56px;
+    background: none;
+
+    &:hover {
+        @apply text-secondary-500;
+    }
+}
+
+.dropdown {
+    @apply bg-primary-500 border border-primary-100/20;
+
+    padding: 1rem 0.5rem;
+}
+
+.link {
+    @apply text-body-md text-accent-300;
+}
+
+.item {
+    @include transition;
+    gap: 0.75rem;
+
+    & * {
+        @include transition;
+    }
+
+    &[data-hover="true"] {
+        @apply bg-primary-100/20;
+
+        .link {
+            @apply text-secondary-500;
+        }
+    }
+}

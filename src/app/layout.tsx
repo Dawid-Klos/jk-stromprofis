@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
+
 import "./globals.scss";
 import { Providers } from "./providers";
+
+import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 const montserrat = Montserrat({
   weight: ["500", "600", "700", "800", "900"],
@@ -24,11 +28,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de">
       <body className={`${montserrat.variable} ${poppins.variable}`}>
-        <header></header>
+        <Header />
         <main>
           <Providers>{children}</Providers>
         </main>
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   );
