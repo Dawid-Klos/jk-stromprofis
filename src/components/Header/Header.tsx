@@ -10,10 +10,14 @@ import { menuItems } from "@config/menuItems";
 
 export const Header = () => {
     const breakpoint = useBreakpoint();
+    const isMobile = breakpoint === Breakpoint.Mobile;
+    const isDesktop = breakpoint === Breakpoint.Desktop || breakpoint === Breakpoint.Tablet;
+
 
     return (
         <>
-            {breakpoint === Breakpoint.Mobile ? <Mobile menuItems={menuItems} /> : <Desktop menuItems={menuItems} />}
+            {isMobile && <Mobile menuItems={menuItems} />}
+            {isDesktop && <Desktop menuItems={menuItems} />}
         </>
     )
 }
