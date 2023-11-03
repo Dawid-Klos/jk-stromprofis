@@ -16,16 +16,14 @@ module.exports = {
       d1: [
         "57px",
         {
-          fontFamily: "var(--font-montserrat)",
           lineHeight: "64px",
           letterSpacing: "-0.25px",
-          fontWeight: "800",
+          fontWeight: "900",
         },
       ],
       d2: [
         "45px",
         {
-          fontFamily: "var(--font-montserrat)",
           lineHeight: "52px",
           fontWeight: "700",
         },
@@ -33,7 +31,6 @@ module.exports = {
       d3: [
         "36px",
         {
-          fontFamily: "var(--font-montserrat)",
           lineHeight: "44px",
           fontWeight: "700",
         },
@@ -41,7 +38,6 @@ module.exports = {
       h1: [
         "32px",
         {
-          fontFamily: "var(--font-montserrat)",
           lineHeight: "40px",
           fontWeight: "600",
         },
@@ -49,7 +45,6 @@ module.exports = {
       h2: [
         "28px",
         {
-          fontFamily: "var(--font-montserrat)",
           lineHeight: "36px",
           fontWeight: "500",
         },
@@ -57,15 +52,14 @@ module.exports = {
       h3: [
         "24px",
         {
-          fontFamily: "var(--font-montserrat)",
           lineHeight: "32px",
           fontWeight: "500",
         },
       ],
       "body-lg": [
-        "20px",
+        "16px",
         {
-          lineHeight: "34px",
+          lineHeight: "28px",
           fontWeight: "400",
           letterSpacing: "0.75px",
         },
@@ -73,8 +67,8 @@ module.exports = {
       "body-uppercase": [
         "16px",
         {
-          lineHeight: "20px",
-          fontWeight: "400",
+          lineHeight: "normal",
+          fontWeight: "600",
           letterSpacing: "0.25px",
         },
       ],
@@ -89,7 +83,7 @@ module.exports = {
       "body-sm": [
         "14px",
         {
-          lineHeight: "20px",
+          lineHeight: "24px",
           fontWeight: "400",
           letterSpacing: "0.25px",
         },
@@ -122,7 +116,7 @@ module.exports = {
         "20px",
         {
           lineHeight: "32px",
-          fontWeight: "500",
+          fontWeight: "600",
           letterSpacing: "0.5px",
         },
       ],
@@ -148,7 +142,7 @@ module.exports = {
       tablet: "768px",
       desktop_md: "1024px",
       desktop_lg: "1440px",
-      desktop_xl: "2560px",
+      desktop_xl: "1920px",
     },
     extend: {},
   },
