@@ -1,43 +1,45 @@
+@import "@styles/mixins";
+
 .nav {
-    @apply bg-primary-500/60;
+  @apply bg-primary-500/70;
+}
+
+.logo {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+
+  @screen desktop_lg {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 
 .wrapper {
-    max-width: 100%;
-
-    @screen tablet {
-        padding: 0 2.5rem;
-    }
-
-    @screen desktop_md {
-        padding: 0 3rem;
-    }
-
-    @screen desktop_lg {
-        padding: 0 6rem;
-    }
-
-    @screen desktop_xl {
-        padding: 0 8rem;
-    }
+  @include bodyMargin;
+  padding: 0;
+  max-width: 100%;
 }
 
 .brand {
-    justify-content: flex-end;
-    gap: 2rem;
-
-    @screen desktop_xl {
-        gap: 3.5rem;
-
-    }
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 .item {
-    display: flex;
+  display: flex;
 }
 
 .link {
-    @apply text-body-md text-accent-300;
+  @apply text-body-sm text-accent-300;
 
-    padding: 1rem;
+  padding: 1rem;
+
+  @screen desktop_lg {
+    @apply text-body-md;
+  }
+
+  @screen desktop_xl {
+    @apply text-body-lg;
+  }
 }
