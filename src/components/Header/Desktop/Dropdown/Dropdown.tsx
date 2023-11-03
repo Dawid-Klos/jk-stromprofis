@@ -11,14 +11,12 @@ import {
 
 import styles from './Dropdown.module.scss';
 import chevron from '@assets/icons/chevron.svg';
+import { servicesTypes } from '@config/services';
 
 
 type Props = {
     title: string;
-    list: {
-        title: string;
-        href: string;
-    }[];
+    list: servicesTypes;
 };
 
 

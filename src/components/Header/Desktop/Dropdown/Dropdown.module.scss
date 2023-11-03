@@ -4,10 +4,10 @@
     padding: 1rem;
     min-height: 56px;
     background: none;
-    transition: all .2s ease-in-out;
+    transition: all .3s ease-in-out;
 
     &:hover {
-        @apply text-accent-600;
+        @apply text-secondary-500;
     }
 }
 
@@ -26,5 +26,9 @@
 
     &[data-hover="true"] {
         @apply bg-primary-100/20;
+
+        .link {
+            @apply text-secondary-500;
+        }
     }
 }

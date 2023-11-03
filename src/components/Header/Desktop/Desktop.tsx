@@ -1,10 +1,10 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
-import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./Desktop.module.scss";
 
 import Dropdown from "./Dropdown";
+import Link from "@components/common/Link";
 
 import logo from "@assets/images/logo.svg";
 

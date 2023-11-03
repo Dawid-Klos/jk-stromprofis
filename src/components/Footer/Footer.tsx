@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import styles from "./Footer.module.scss";
+
+import Link from "@components/common/Link";
 
 import logo from "@assets/images/logo.svg";
 import phoneIcon from "@assets/icons/phone.svg";
