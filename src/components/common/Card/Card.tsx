@@ -1,5 +1,6 @@
 import { Card as UICard, CardHeader, CardBody, Divider, CardFooter } from "@nextui-org/react";
 import Image from "next/image";
+import NextDivider from "@components/common/Divider";
 
 import styles from "./Card.module.scss";
 
@@ -22,12 +23,12 @@ export const Card: React.FC<CardProps> = ({ title, subtitle, content, icon, dark
       </CardHeader>
 
       <CardBody className={styles.body}>
-        <Divider className={styles.divider} orientation="vertical" />
+        <NextDivider classNames={styles.divider} type="vertical" />
         <Image className={styles.icon} src={icon} width={110} height={140} alt="" />
       </CardBody>
 
       <CardFooter className={styles.footer}>
-        <Divider className={styles.divider} />
+        <NextDivider classNames={styles.divider} type="horizontal" />
         <p className={styles.content}>{content}</p>
       </CardFooter>
     </UICard>
