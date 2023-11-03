@@ -1,4 +1,7 @@
+@import "@styles/mixins";
+
 .footer {
+    @include bodyMargin;
     @apply border-t border-solid border-accent-500;
 
     display: flex;

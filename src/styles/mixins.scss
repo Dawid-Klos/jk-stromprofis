@@ -1,0 +1,19 @@
+@mixin bodyMargin {
+    margin: 0 1.25rem;
+
+    @screen tablet {
+        margin: 0 2.5rem;
+    }
+
+    @screen desktop_md {
+        margin: 0 3rem;
+    }
+
+    @screen desktop_lg {
+        margin: 0 6rem;
+    }
+
+    @screen desktop_xl {
+        margin: 0 8rem;
+    }
+}

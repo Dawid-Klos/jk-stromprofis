@@ -1,3 +1,5 @@
+@import "@styles/mixins";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,6 +17,7 @@ body {
 
 body {
   @apply text-accent-400 text-body-sm bg-primary-500 font-poppins;
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -30,25 +33,10 @@ body {
 }
 
 main {
+  @include bodyMargin;
+
   display: flex;
   flex: 1;
-  padding: 0 1.25rem;
-
-  @screen tablet {
-    padding: 0 2.5rem;
-  }
-
-  @screen desktop_md {
-    padding: 0 3rem;
-  }
-
-  @screen desktop_lg {
-    padding: 0 6rem;
-  }
-
-  @screen desktop_xl {
-    padding: 0 8rem;
-  }
 
   &>div {
     display: flex;
