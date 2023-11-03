@@ -8,11 +8,11 @@ interface CardProps {
   title: string;
   subtitle?: string;
   content: string;
-  icon: string;
+  icon?: string;
   darkCard: boolean;
 }
 
-export const Card: React.FC<CardProps> = ({ title, subtitle, content, icon, darkCard }) => {
+export const Card: React.FC<CardProps> = ({ title, subtitle, content, icon = "", darkCard }) => {
   const cardStyles = darkCard ? `${styles.card} ${styles.darkCard}` : styles.card;
 
   return (
