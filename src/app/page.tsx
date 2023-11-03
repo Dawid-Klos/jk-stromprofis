@@ -1,5 +1,5 @@
-import Hero from "@components/homepage/Hero";
-import Trust from "@components/homepage/Trust";
+import Hero from "@components/Homepage/Hero";
+import Trust from "@components/Homepage/Trust";
 
 export default function Home() {
   return (
