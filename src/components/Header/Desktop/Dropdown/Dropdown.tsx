@@ -41,9 +41,12 @@ export const Dropdown = ({ title, list }: Props) => {
             </NavbarItem>
 
             <DropdownMenu aria-label="">
-                {list.map(({ title, href }) => {
+                {list.map(({ title, href, icon }) => {
                     return (
-                        <DropdownItem key={title} className={styles.item}>
+                        <DropdownItem key={title} className={styles.item} startContent={
+                            <Image className={styles.icon} src={icon} alt="chevron" width={24} height={24} />
+
+                        }>
                             <Link className={styles.link} href={href}>
                                 {title}
                             </Link>
