@@ -62,6 +62,14 @@
                     @apply text-body-lg;
                 }
 
+                &>p {
+                    @apply text-body-sm;
+
+                    @screen desktop_xl {
+                        @apply text-body-lg;
+                    }
+                }
+
                 .icon {
                     width: 1rem;
                     height: 1rem;
