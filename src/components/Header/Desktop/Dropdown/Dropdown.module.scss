@@ -24,15 +24,15 @@
 }
 
 .item {
+    @include transition;
     gap: 0.75rem;
 
-    &[data-hover="true"] {
+    & * {
         @include transition;
-        @apply bg-primary-100/20;
+    }
 
-        & * {
-            @include transition;
-        }
+    &[data-hover="true"] {
+        @apply bg-primary-100/20;
 
         .link {
             @apply text-secondary-500;
