@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Avatar, Card, CardBody, CardFooter } from '@nextui-org/react';
+import { Variants, motion } from 'framer-motion';
 
 import styles from './Slider.module.scss';
 
@@ -26,19 +27,42 @@ export const Slider = ({ testimonials }: Props) => {
         setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
     }
 
+    const variants: Variants = {
+        show: {
+            opacity: 1,
+            position: "relative",
+            visibility: "visible",
+            transition: { stiffness: 300, damping: 24 }
+        },
+        hide: {
+            opacity: 0,
+            position: "absolute",
+            visibility: "hidden",
+            transition: { duration: 0.3 }
+        }
+    };
+
     return (
         <Card className={styles.card}>
             <CardBody className={styles.body}>
-                <article className={styles.slide}>
-                    <p className={styles.text}>{testimonials[currentSlide].text}</p>
-                    <div className={styles.info}>
-                        <Avatar src={`https://i.pravatar.cc/150?img=${currentSlide + 1}`} size='lg' />
-                        <div className={styles.box}>
-                            <p className={styles.name}>{testimonials[currentSlide].name}</p>
-                            <p className={styles.position}>{testimonials[currentSlide].position}</p>
+                {testimonials.map(({ id, name, position, text }) => (
+                    <motion.article
+                        className={styles.slide}
+                        key={id}
+                        initial="hide"
+                        animate={currentSlide === id ? "show" : "hide"}
+                        variants={variants}
+                    >
+                        <p className={styles.text}>{text}</p>
+                        <div className={styles.info}>
+                            <Avatar src={`https://i.pravatar.cc/150?img=${id}`} size='lg' />
+                            <div className={styles.box}>
+                                <p className={styles.name}>{name}</p>
+                                <p className={styles.position}>{position}</p>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </motion.article>
+                ))}
             </CardBody>
 
             <Divider type="horizontal" />
