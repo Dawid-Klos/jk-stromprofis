@@ -5,6 +5,7 @@ import "./globals.scss";
 import { Providers } from "./providers";
 
 import Header from "@components/Header";
+import Footer from "@components/Footer";
 
 const montserrat = Montserrat({
   weight: ["500", "600", "700", "800"],
@@ -31,7 +32,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>
           <Providers>{children}</Providers>
         </main>
-        <footer></footer>
+        <Footer />
       </body>
     </html>
   );
