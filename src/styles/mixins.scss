@@ -17,3 +17,7 @@
         margin: 0 8rem;
     }
 }
+
+@mixin transition {
+    transition: all .3s;
+}

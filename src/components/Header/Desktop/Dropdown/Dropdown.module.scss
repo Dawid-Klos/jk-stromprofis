@@ -1,10 +1,12 @@
+@import "@styles/mixins";
+
 .button {
+    @include transition;
     @apply text-body-md text-accent-300;
 
     padding: 1rem;
     min-height: 56px;
     background: none;
-    transition: all .3s ease-in-out;
 
     &:hover {
         @apply text-secondary-500;
@@ -25,7 +27,12 @@
     gap: 0.75rem;
 
     &[data-hover="true"] {
+        @include transition;
         @apply bg-primary-100/20;
+
+        & * {
+            @include transition;
+        }
 
         .link {
             @apply text-secondary-500;

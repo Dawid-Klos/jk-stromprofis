@@ -1,8 +1,10 @@
+@import "@styles/mixins";
+
 .link {
-    transition: all .3s ease-in-out;
+    @include transition;
 
     & * {
-        transition: all .3s ease-in-out;
+        @include transition;
     }
 
     &:hover {
