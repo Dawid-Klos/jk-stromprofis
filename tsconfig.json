@@ -21,9 +21,11 @@
     "paths": {
       "@assets/*": ["assets/*"],
       "@components/*": ["components/*"],
+      "@config/*": ["config/*"],
       "@utils/*": ["utils/*"],
       "@hooks/*": ["hooks/*"],
-      "@types/*": ["types/*"]
+      "@types/*": ["types/*"],
+      "@styles/*": ["styles/*"]
     },
     "baseUrl": "src"
   },

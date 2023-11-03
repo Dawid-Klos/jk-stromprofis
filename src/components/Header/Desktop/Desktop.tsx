@@ -6,12 +6,12 @@ import styles from "./Desktop.module.scss";
 
 import Dropdown from "./Dropdown";
 
-import { menuItems } from "../Header";
-
 import logo from "@assets/images/logo.svg";
 
+import type { menuItemsTypes } from "@config/config";
+
 type Props = {
-    menuItems: menuItems;
+    menuItems: menuItemsTypes;
 };
 
 export const Desktop = ({ menuItems }: Props) => {
@@ -43,7 +43,7 @@ export const Desktop = ({ menuItems }: Props) => {
                                     list={list}
                                 />
                                 :
-                                <NavbarItem className={styles.item}>
+                                <NavbarItem className={styles.item} key={title}>
                                     <Link className={`${styles.link} ${title === "Contact" && styles.button}`} href={href} key={title}>
                                         {title}
                                     </Link>

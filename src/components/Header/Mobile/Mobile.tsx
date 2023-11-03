@@ -11,14 +11,14 @@ import {
     NavbarMenuItem,
     NavbarBrand
 } from "@nextui-org/react";
-import type { menuItems } from "@components/Header/Header";
 
 import logo from "@assets/images/logo.svg";
 import Accordion from "./Accordion";
 import styles from "./Mobile.module.scss";
+import { menuItemsTypes } from "@config/config";
 
 type Props = {
-    menuItems: menuItems;
+    menuItems: menuItemsTypes;
 };
 
 
