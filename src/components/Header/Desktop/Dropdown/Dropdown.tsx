@@ -44,7 +44,7 @@ export const Dropdown = ({ title, list }: Props) => {
                 {list.map(({ title, href, icon }) => {
                     return (
                         <DropdownItem key={title} className={styles.item} startContent={
-                            <Image className={styles.icon} src={icon} alt="chevron" width={24} height={24} />
+                            <Image className={styles.icon} src={icon} alt="chevron" width={20} height={20} />
 
                         }>
                             <Link className={styles.link} href={href}>
