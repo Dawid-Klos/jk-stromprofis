@@ -1,4 +1,4 @@
-import { Divider } from "@nextui-org/react";
+import NextDivider from "@components/common/Divider";
 import Card from "components/common/Card";
 
 import styles from "./Trust.module.scss";
@@ -14,7 +14,7 @@ export const Trust: React.FC = () => {
       <hgroup className={styles.header}>
         <p className={styles.subtitle}>Wyjątkowość</p>
         <h2 className={styles.title}>Dlaczego warto nam zaufać.</h2>
-        <Divider className={styles.divider} />
+        <NextDivider type="horizontal" />
       </hgroup>
 
       <div className={styles.topContainer}>
@@ -34,9 +34,9 @@ export const Trust: React.FC = () => {
 
       <section className={styles.bottomContainer}>
         <div className={styles.titleContainer}>
-          <Divider className={styles.dividerLeft} />
+          <NextDivider classNames={styles.dividerLeft} type="horizontal" />
           <h3 className={styles.title}>Bądź jeszcze bardziej spokojny.</h3>
-          <Divider className={styles.dividerRight} />
+          <NextDivider classNames={styles.dividerRight} type="horizontal" />
         </div>
 
         <div className={styles.cardsContainer}>
@@ -59,9 +59,9 @@ export const Trust: React.FC = () => {
 
       <section className={styles.bottomContainer}>
         <div className={styles.titleContainer}>
-          <Divider className={styles.dividerLeft} />
+          <NextDivider classNames={styles.dividerLeft} type="horizontal" />
           <h3 className={styles.title}>Twoje wsparcie w projektach.</h3>
-          <Divider className={styles.dividerRight} />
+          <NextDivider classNames={styles.dividerRight} type="horizontal" />
         </div>
         <div className={styles.cardsContainer}>
           <Card

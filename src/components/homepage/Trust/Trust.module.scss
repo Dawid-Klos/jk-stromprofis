@@ -18,11 +18,6 @@
       font-size: 0.8rem;
       font-weight: 600;
     }
-
-    .divider {
-      @apply bg-accent-500/30;
-      height: 0.05rem;
-    }
   }
 
   .topContainer {
@@ -92,8 +87,6 @@
       }
 
       .dividerRight {
-        @apply bg-accent-500/30;
-        height: 0.05rem;
         flex-shrink: 2;
       }
 
@@ -102,8 +95,6 @@
 
         @screen tablet {
           display: block;
-          @apply bg-accent-500/30;
-          height: 0.05rem;
           flex-shrink: 2;
         }
       }
