@@ -1,7 +1,7 @@
 import { Divider } from "@nextui-org/react";
-import Card from "components/common/Card/Card";
-import styles from "./Trust.module.scss";
+import Card from "components/common/Card";
 
+import styles from "./Trust.module.scss";
 import timeIcon from "@assets/icons/time-card.svg";
 import serviceIcon from "@assets/icons/service-card.svg";
 import euroIcon from "@assets/icons/euro-card.svg";

@@ -11,7 +11,7 @@ interface CardProps {
   darkCard: boolean;
 }
 
-const Card: React.FC<CardProps> = ({ title, subtitle, content, icon, darkCard }) => {
+export const Card: React.FC<CardProps> = ({ title, subtitle, content, icon, darkCard }) => {
   const cardStyles = darkCard ? `${styles.card} ${styles.darkCard}` : styles.card;
 
   return (
