@@ -8,7 +8,8 @@ import phoneIcon from "@assets/icons/phone.svg";
 import emailIcon from "@assets/icons/email.svg";
 import copyrightIcon from "@assets/icons/copyright.svg";
 
-import { menuItems, services } from "@config/config";
+import { menuItems } from "@config/menuItems";
+import { services } from "@config/services";
 
 export const Footer = () => {
 

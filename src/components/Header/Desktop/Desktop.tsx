@@ -8,7 +8,7 @@ import Dropdown from "./Dropdown";
 
 import logo from "@assets/images/logo.svg";
 
-import type { menuItemsTypes } from "@config/config";
+import type { menuItemsTypes } from "@config/menuItems";
 
 type Props = {
     menuItems: menuItemsTypes;

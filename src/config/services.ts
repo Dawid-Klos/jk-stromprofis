@@ -1,5 +1,3 @@
-import { convertTitleToHref } from "@utils/functions";
-
 import accumulatorIcon from "@assets/icons/services/accumulator.svg";
 import smartHomeIcon from "@assets/icons/services/smart-home.svg";
 import gloveIcon from "@assets/icons/services/glove.svg";
@@ -9,16 +7,12 @@ import wiresIcon from "@assets/icons/services/wires.svg";
 import wiringIcon from "@assets/icons/services/wiring.svg";
 import speakerIcon from "@assets/icons/services/speaker.svg";
 
-type servicesTypes = {
+import { convertTitleToHref } from "@utils/functions";
+
+export type servicesTypes = {
   title: string;
   href: string;
   icon: string;
-}[];
-
-export type menuItemsTypes = {
-  title: string;
-  href: string;
-  list?: servicesTypes;
 }[];
 
 const basicServices: servicesTypes = [
@@ -70,41 +64,4 @@ export const services = basicServices.map(({ title, icon }) => {
     href: convertTitleToHref(title),
     icon,
   };
-});
-
-const basicMenuItems: menuItemsTypes = [
-  {
-    title: "Home",
-    href: "",
-  },
-  {
-    title: "Services",
-    href: "",
-    list: services,
-  },
-  {
-    title: "About",
-    href: "",
-  },
-  {
-    title: "Contact",
-    href: "",
-  },
-];
-
-export const menuItems = basicMenuItems.map((item) => {
-  if (item.title === "Home")
-    return {
-      title: item.title,
-      href: "/",
-    };
-
-  item.href = convertTitleToHref(item.title);
-  if (item.list) {
-    item.list.forEach((subItem) => {
-      subItem.href = convertTitleToHref(subItem.title);
-    });
-  }
-
-  return item;
 });
