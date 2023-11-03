@@ -1,0 +1,15 @@
+.link {
+    transition: all .3s ease-in-out;
+
+    & * {
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        @apply text-secondary-500;
+
+        * {
+            @apply text-secondary-500;
+        }
+    }
+}
