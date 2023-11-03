@@ -1,30 +1,40 @@
 .accordion {
-    padding: 0;
+  padding: 0;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-left: 1.25rem;
-    padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 1.25rem;
+  padding-top: 2rem;
 }
 
 .trigger {
-    padding: 0;
-    gap: 2rem;
+  padding: 0;
+  gap: 1rem;
 
-    &>div {
-        flex: 0;
-    }
+  & > div {
+    flex: 0;
+  }
 
-    svg {
-        width: 24px;
-        height: 24px;
-    }
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.title {
+  @apply text-h3 text-accent-500 font-montserrat;
+
+  @screen mobile_md {
+    @apply text-h2;
+  }
 }
 
 .link {
-    @apply text-h2 text-accent-500;
-    font-family: var(--font-montserrat);
+  @apply text-body-sm text-accent-300;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
