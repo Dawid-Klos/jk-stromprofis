@@ -46,14 +46,14 @@ main {
 }
 
 a {
-  @apply text-button-sm text-accent-500 h-auto;
+  @apply text-label-sm text-accent-500 h-auto;
 
   @screen mobile_md {
-    @apply text-button-md;
+    @apply text-label-md;
   }
 
   @screen desktop_xl {
-    @apply text-button-lg;
+    @apply text-label-lg;
   }
 }
 
