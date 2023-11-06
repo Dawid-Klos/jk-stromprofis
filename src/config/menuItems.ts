@@ -1,14 +1,15 @@
-import { services, servicesTypes } from "@config/services";
+import { services } from "@config/services";
+import type { Service } from "@config/services";
 
 import { convertTitleToHref } from "@utils/functions";
 
-export type menuItemsTypes = {
+export interface MenuItem {
   title: string;
   href: string;
-  list?: servicesTypes;
-}[];
+  list?: Service[];
+}
 
-const basicMenuItems: menuItemsTypes = [
+const basicMenuItems: MenuItem[] = [
   {
     title: "Home",
     href: "",

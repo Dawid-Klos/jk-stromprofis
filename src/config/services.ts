@@ -9,13 +9,13 @@ import speakerIcon from "@assets/icons/services/speaker.svg";
 
 import { convertTitleToHref } from "@utils/functions";
 
-export type servicesTypes = {
+export interface Service {
   title: string;
   href: string;
   icon: string;
-}[];
+}
 
-const basicServices: servicesTypes = [
+const basicServices: Service[] = [
   {
     title: "Instalacje elektryczne",
     href: "",

@@ -1,11 +1,11 @@
-export type TestimonialsTypes = {
+export interface Testimonial {
   id: number;
   name: string;
   position: string;
   text: string;
-}[];
+}
 
-export const testimonials: TestimonialsTypes = [
+export const testimonials: Testimonial[] = [
   {
     id: 0,
     name: "Jan",
