@@ -1,4 +1,9 @@
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+} from "@nextui-org/react";
 import Image from "next/image";
 
 import styles from "./Desktop.module.scss";
@@ -8,10 +13,10 @@ import Link from "@components/common/Link";
 
 import logo from "@assets/images/logo.svg";
 
-import type { menuItemsTypes } from "@config/menuItems";
+import type { MenuItem } from "@config/menuItems";
 
 type Props = {
-  menuItems: menuItemsTypes;
+  menuItems: MenuItem[];
 };
 
 export const Desktop = ({ menuItems }: Props) => {
@@ -34,7 +39,13 @@ export const Desktop = ({ menuItems }: Props) => {
               <Dropdown key={title} title={title} list={list} />
             ) : (
               <NavbarItem className={styles.item} key={title}>
-                <Link className={`${styles.link} ${title === "Contact" && styles.button}`} href={href} key={title}>
+                <Link
+                  className={`${styles.link} ${
+                    title === "Contact" && styles.button
+                  }`}
+                  href={href}
+                  key={title}
+                >
                   {title}
                 </Link>
               </NavbarItem>

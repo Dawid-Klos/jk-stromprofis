@@ -6,12 +6,12 @@ import { Card, CardBody } from "@nextui-org/react";
 import styles from "./Slider.module.scss";
 
 import Divider from "@components/common/Divider";
-import { TestimonialsTypes } from "@config/testimonials";
+import type { Testimonial } from "@config/testimonials";
 import Nav from "./Nav";
 import Item from "./Item";
 
 type Props = {
-  testimonials: TestimonialsTypes;
+  testimonials: Testimonial[];
 };
 
 export const Slider = ({ testimonials }: Props) => {
