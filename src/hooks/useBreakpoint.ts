@@ -11,18 +11,26 @@ const useBreakpoint = () => {
   } = {
     [Breakpoint.Mobile]: BreakpointWidth.Mobile,
     [Breakpoint.Tablet]: BreakpointWidth.Tablet,
-    [Breakpoint.DesktopMd]: BreakpointWidth.DesktopMd,
-    [Breakpoint.DesktopLg]: BreakpointWidth.DesktopLg,
+    [Breakpoint.Desktop]: BreakpointWidth.Desktop,
   };
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      const breakpoint = Object.keys(breakpoints).find(
-        (key) => width < breakpoints[key]
-      ) as Breakpoint;
 
-      setBreakpoint(breakpoint);
+      switch (true) {
+        case width < breakpoints[Breakpoint.Mobile]:
+          return setBreakpoint(Breakpoint.Mobile);
+
+        case width < breakpoints[Breakpoint.Tablet]:
+          return setBreakpoint(Breakpoint.Tablet);
+
+        case width >= breakpoints[Breakpoint.Desktop]:
+          return setBreakpoint(Breakpoint.Desktop);
+
+        default:
+          return setBreakpoint(Breakpoint.Desktop);
+      }
     };
 
     window.addEventListener("resize", handleResize);
