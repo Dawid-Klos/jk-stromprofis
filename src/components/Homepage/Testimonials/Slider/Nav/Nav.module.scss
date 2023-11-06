@@ -1,56 +1,55 @@
 @import "@styles/mixins";
 
 .footer {
-    padding: 1rem 0;
+  padding: 1rem 0;
 
-    .nav {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        flex: 1;
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex: 1;
 
-        .button {
-            svg {
-                path {
-                    @include transition;
-                }
-
-            }
-
-            &:hover {
-                svg {
-                    path {
-                        @apply fill-secondary-500;
-                    }
-                }
-            }
+    .button {
+      svg {
+        path {
+          @include transition;
         }
-    }
+      }
 
-    .indicators {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        flex: 1;
-
-        .indicator {
-            @apply bg-accent-500;
-
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            opacity: 0.5;
-            transition: opacity 0.2s ease-in-out;
-
-            &:hover {
-                opacity: 1;
-            }
-
-            &.active {
-                width: 10px;
-                height: 10px;
-                opacity: 1;
-            }
+      &:hover {
+        svg {
+          path {
+            @apply fill-secondary-500;
+          }
         }
+      }
     }
+  }
+
+  .indicators {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+
+    .indicator {
+      @apply bg-accent-500;
+
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      opacity: 0.5;
+      transition: opacity 0.2s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.active {
+        width: 10px;
+        height: 10px;
+        opacity: 1;
+      }
+    }
+  }
 }
