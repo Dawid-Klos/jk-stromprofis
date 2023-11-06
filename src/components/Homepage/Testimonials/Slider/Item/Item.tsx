@@ -21,13 +21,13 @@ export const Item = ({ testimonial, currentSlide }: Props) => {
             opacity: 1,
             position: "relative",
             visibility: "visible",
-            transition: { stiffness: 300, damping: 24 }
+            transition: { ease: "linear", stiffness: 300, damping: 30, duration: 0.3, delay: 0.2 }
         },
         hide: {
             opacity: 0,
             position: "absolute",
             visibility: "hidden",
-            transition: { duration: 0.3 }
+            transition: { duration: 0.3, delay: 0.2 }
         }
     };
 
