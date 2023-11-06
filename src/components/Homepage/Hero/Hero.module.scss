@@ -1,3 +1,5 @@
+@import "@styles/mixins";
+
 .section {
   display: flex;
   flex-direction: column;
@@ -45,32 +47,37 @@
     top: 3rem;
     z-index: 0;
 
-    background-image: $linear-gradient, url("../../../assets/images/home-hero-mobile.png");
+    background-image: $linear-gradient,
+      url("../../../assets/images/home-hero-mobile.png");
     background-position: 50% top;
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 16 / 10;
 
     @screen tablet {
-      background-image: $linear-gradient, url("../../../assets/images/home-hero-tablet.png");
+      background-image: $linear-gradient,
+        url("../../../assets/images/home-hero-tablet.png");
       background-position: 20% 60%;
     }
 
     @screen desktop_md {
-      background-image: $linear-gradient, url("../../../assets/images/home-hero-desktop-md.png");
-      margin-left: -3rem;
+      background-image: $linear-gradient,
+        url("../../../assets/images/home-hero-desktop-md.png");
+      margin-left: -$body-margin-desktop-md;
     }
 
     @screen desktop_lg {
-      background-image: $linear-gradient, url("../../../assets/images/home-hero-desktop-lg.png");
+      background-image: $linear-gradient,
+        url("../../../assets/images/home-hero-desktop-lg.png");
       background-position: 50% 40%;
-      margin-left: -8rem;
+      margin-left: -$body-margin-desktop-lg;
     }
 
     @screen desktop_xl {
-      background-image: $linear-gradient, url("../../../assets/images/home-hero-desktop-xl.png");
+      background-image: $linear-gradient,
+        url("../../../assets/images/home-hero-desktop-xl.png");
       background-position: 100% 0%;
-      margin-left: -12rem;
+      margin-left: -$body-margin-desktop-xl;
     }
   }
 
@@ -103,7 +110,8 @@
       &:hover {
         @apply text-accent-300;
         background: linear-gradient(268deg, #802b1e 2.96%, #e94f37 99.97%);
-        box-shadow: 0px 14px 48px 0px rgba(233, 79, 55, 0.15), 0px 0px 22px 0px rgba(233, 79, 55, 0.25);
+        box-shadow: 0px 14px 48px 0px rgba(233, 79, 55, 0.15),
+          0px 0px 22px 0px rgba(233, 79, 55, 0.25);
       }
     }
   }
