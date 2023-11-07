@@ -30,15 +30,7 @@ export const Dropdown = ({ title, list }: Props) => {
           <Button
             disableRipple
             className={styles.button}
-            endContent={
-              <Image
-                className={styles.chevron}
-                src={chevron}
-                alt="chevron"
-                width={16}
-                height={16}
-              />
-            }
+            endContent={<Image className={styles.chevron} src={chevron} alt="chevron" width={16} height={16} />}
           >
             {title}
           </Button>
@@ -47,20 +39,10 @@ export const Dropdown = ({ title, list }: Props) => {
 
       <DropdownMenu aria-label="">
         {list.map(({ title, href, icon }) => {
+          const Icon = icon;
+
           return (
-            <DropdownItem
-              key={title}
-              className={styles.item}
-              startContent={
-                <Image
-                  className={styles.icon}
-                  src={icon}
-                  alt="chevron"
-                  width={32}
-                  height={32}
-                />
-              }
-            >
+            <DropdownItem key={title} className={styles.item} startContent={<Icon />}>
               <Link className={styles.link} href={href}>
                 {title}
               </Link>
