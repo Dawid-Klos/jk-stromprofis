@@ -97,22 +97,7 @@
     }
 
     .link {
-      @apply text-button-sm text-accent-500 h-auto;
       margin-top: 1rem;
-      padding: 0.75rem 2rem;
-      background: linear-gradient(268deg, #e94f37 2.96%, #802b1e 99.97%);
-      box-shadow: 0px 7.08502px 18.21862px 0px rgba(233, 79, 55, 0.08);
-
-      @screen mobile_md {
-        @apply text-button-md;
-      }
-
-      &:hover {
-        @apply text-accent-300;
-        background: linear-gradient(268deg, #802b1e 2.96%, #e94f37 99.97%);
-        box-shadow: 0px 14px 48px 0px rgba(233, 79, 55, 0.15),
-          0px 0px 22px 0px rgba(233, 79, 55, 0.25);
-      }
     }
   }
 

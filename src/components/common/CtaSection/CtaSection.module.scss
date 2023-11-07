@@ -29,29 +29,4 @@
       right: 0;
     }
   }
-
-  .link {
-    @include transition;
-    @apply bg-primary-500 text-label-md text-accent-300 border border-solid;
-    display: flex;
-    height: auto;
-    padding: 1rem 2rem;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, #191919, #515151);
-
-    & > svg {
-      @apply text-accent-500;
-      @include transition;
-    }
-
-    &:hover {
-      @apply text-secondary-500;
-      border-image-source: linear-gradient(to left, #191919, #515151);
-    }
-
-    &:hover > svg {
-      @apply text-secondary-500;
-      margin-left: 1rem;
-    }
-  }
 }
