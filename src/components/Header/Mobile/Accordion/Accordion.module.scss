@@ -17,11 +17,6 @@
   & > div {
     flex: 0;
   }
-
-  svg {
-    width: 24px;
-    height: 24px;
-  }
 }
 
 .title {
@@ -37,4 +32,9 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 }

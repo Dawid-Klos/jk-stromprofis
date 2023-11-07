@@ -34,7 +34,6 @@ export const Accordion = ({ title, list, setIsOpen }: Props) => {
           return (
             <>
               <Link className={styles.link} href={href} onClick={() => setIsOpen(false)} key={title}>
-                {/* <Image className={styles.icon} src={icon} alt="Service" width={24} height={24} /> */}
                 <Icon />
                 {title}
               </Link>
