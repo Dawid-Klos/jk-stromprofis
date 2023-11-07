@@ -1,60 +1,60 @@
-import accumulatorIcon from "@assets/icons/services/accumulator.svg";
-import smartHomeIcon from "@assets/icons/services/smart-home.svg";
-import gloveIcon from "@assets/icons/services/glove.svg";
-import lightBulbIcon from "@assets/icons/services/light-bulb.svg";
-import safetyIcon from "@assets/icons/services/safety.svg";
-import wiresIcon from "@assets/icons/services/wires.svg";
-import wiringIcon from "@assets/icons/services/wiring.svg";
-import speakerIcon from "@assets/icons/services/speaker.svg";
+import Accumulator from "@assets/icons/services/Accumulator";
+import SmartHome from "@assets/icons/services/SmartHome";
+import Glove from "@assets/icons/services/Glove";
+import LightBulb from "@assets/icons/services/LightBulb";
+import Safety from "@assets/icons/services/Safety";
+import Wires from "@assets/icons/services/Wires";
+import Wiring from "@assets/icons/services/Wiring";
+import Speaker from "@assets/icons/services/Speaker";
 
 import { convertTitleToHref } from "@utils/functions";
 
 export interface Service {
   title: string;
   href: string;
-  icon: string;
+  icon: React.FC;
 }
 
 const basicServices: Service[] = [
   {
     title: "Instalacje elektryczne",
     href: "",
-    icon: wiresIcon,
+    icon: Wires,
   },
   {
     title: "Specjalistyczna budowa tras kablowych",
     href: "",
-    icon: wiringIcon,
+    icon: Wiring,
   },
   {
     title: "Specjalistyczne wsparcie",
     href: "",
-    icon: gloveIcon,
+    icon: Glove,
   },
   {
     title: "System bezpieczeństwa",
     href: "",
-    icon: safetyIcon,
+    icon: Safety,
   },
   {
     title: "Inteligentny dom",
     href: "",
-    icon: smartHomeIcon,
+    icon: SmartHome,
   },
   {
     title: "Systemy nagłaśniające",
     href: "",
-    icon: speakerIcon,
+    icon: Speaker,
   },
   {
     title: "Planowanie, montaż i wymiana oświetlenia",
     href: "",
-    icon: lightBulbIcon,
+    icon: LightBulb,
   },
   {
     title: "Punkty ładowania / Doprowadzenie prądu",
     href: "",
-    icon: accumulatorIcon,
+    icon: Accumulator,
   },
 ];
 
