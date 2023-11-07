@@ -1,5 +1,3 @@
-// import Link from "next/link";
-
 import Image from "next/image";
 import { Accordion as NextAccordion, AccordionItem } from "@nextui-org/react";
 
