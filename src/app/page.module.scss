@@ -1,0 +1,31 @@
+@import "@styles/mixins";
+
+.background {
+  position: relative;
+  display: flex;
+  min-height: 300px;
+  margin: 8rem (-$body-margin-mobile);
+
+  @screen tablet {
+    margin: 8rem (-$body-margin-tablet);
+  }
+
+  @screen desktop_md {
+    min-height: 400px;
+    margin: 8rem (-$body-margin-desktop-md);
+  }
+
+  @screen desktop_lg {
+    min-height: 500px;
+    margin: 8rem (-$body-margin-desktop-lg);
+  }
+
+  @screen desktop_xl {
+    min-height: 600px;
+    margin: 8rem (-$body-margin-desktop-xl);
+  }
+
+  .image {
+    object-fit: cover;
+  }
+}
