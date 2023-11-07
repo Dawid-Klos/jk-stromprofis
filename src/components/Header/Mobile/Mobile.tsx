@@ -3,14 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Navbar,
-  NavbarContent,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-  NavbarBrand,
-} from "@nextui-org/react";
+import { Navbar, NavbarContent, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarBrand } from "@nextui-org/react";
 
 import styles from "./Mobile.module.scss";
 
@@ -48,10 +41,7 @@ export const Mobile = ({ menuItems }: Props) => {
           </Link>
         </NavbarBrand>
 
-        <NavbarMenuToggle
-          aria-label={isOpen ? "Close menu" : "Open menu"}
-          className={styles.toggle}
-        />
+        <NavbarMenuToggle aria-label={isOpen ? "Close menu" : "Open menu"} className={styles.toggle} />
       </NavbarContent>
 
       <NavbarMenu className={styles.menu}>

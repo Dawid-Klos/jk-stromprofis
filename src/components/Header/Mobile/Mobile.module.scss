@@ -18,12 +18,12 @@
 .menu {
   &[data-open="true"] {
     @apply bg-primary-500;
-    height: auto !important;
+
+    height: 100% !important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 2rem;
-    padding: 2rem;
+    padding: 8rem 1.25rem;
   }
 
   .ul {
