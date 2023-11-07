@@ -11,11 +11,11 @@ import {
 
 import styles from "./Dropdown.module.scss";
 import chevron from "@assets/icons/chevron.svg";
-import { servicesTypes } from "@config/services";
+import type { Service } from "@config/services";
 
 type Props = {
   title: string;
-  list: servicesTypes;
+  list: Service[];
 };
 
 export const Dropdown = ({ title, list }: Props) => {
@@ -30,7 +30,15 @@ export const Dropdown = ({ title, list }: Props) => {
           <Button
             disableRipple
             className={styles.button}
-            endContent={<Image className={styles.chevron} src={chevron} alt="chevron" width={16} height={16} />}
+            endContent={
+              <Image
+                className={styles.chevron}
+                src={chevron}
+                alt="chevron"
+                width={16}
+                height={16}
+              />
+            }
           >
             {title}
           </Button>
@@ -43,7 +51,15 @@ export const Dropdown = ({ title, list }: Props) => {
             <DropdownItem
               key={title}
               className={styles.item}
-              startContent={<Image className={styles.icon} src={icon} alt="chevron" width={32} height={32} />}
+              startContent={
+                <Image
+                  className={styles.icon}
+                  src={icon}
+                  alt="chevron"
+                  width={32}
+                  height={32}
+                />
+              }
             >
               <Link className={styles.link} href={href}>
                 {title}

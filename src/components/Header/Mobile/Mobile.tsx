@@ -10,10 +10,10 @@ import styles from "./Mobile.module.scss";
 import logo from "@assets/images/logo.svg";
 import Accordion from "./Accordion";
 
-import type { menuItemsTypes } from "@config/menuItems";
+import type { MenuItem } from "@config/menuItems";
 
 type Props = {
-  menuItems: menuItemsTypes;
+  menuItems: MenuItem[];
 };
 
 export const Mobile = ({ menuItems }: Props) => {

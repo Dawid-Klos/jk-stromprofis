@@ -8,18 +8,6 @@
     gap: 6rem;
   }
 
-  .header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-
-    .subtitle {
-      @apply text-secondary-500 uppercase font-montserrat;
-      font-size: 0.8rem;
-      font-weight: 600;
-    }
-  }
-
   .topContainer {
     display: grid;
     align-content: center;

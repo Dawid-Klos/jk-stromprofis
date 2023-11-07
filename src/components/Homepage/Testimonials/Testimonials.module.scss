@@ -1,0 +1,14 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 4rem 0 7.5rem 0;
+
+  @screen desktop_md {
+    padding-bottom: 9rem;
+  }
+
+  @screen desktop_xl {
+    padding-bottom: 20rem;
+  }
+}

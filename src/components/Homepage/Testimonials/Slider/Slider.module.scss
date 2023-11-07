@@ -1,0 +1,29 @@
+@import "@styles/mixins";
+
+.cardWrapper {
+  border-radius: 16px;
+  background: rgb(203, 184, 179);
+  background: linear-gradient(
+    180deg,
+    hsla(13, 19%, 75%, 1) 0%,
+    hsla(13, 19%, 75%, 0.16) 80%,
+    hsla(0, 0%, 9%, 1) 100%
+  );
+
+  .card {
+    background: linear-gradient(320.79deg, #191919 25.93%, #333333 155.63%),
+      linear-gradient(
+        154.2deg,
+        rgba(203, 184, 179, 0.4) 16.29%,
+        rgba(203, 184, 179, 0.064) 69.45%,
+        rgba(23, 23, 23, 0.4) 69.45%
+      );
+
+    margin: 1px 1px 0 1px;
+    padding: 0.5rem 1.25rem;
+
+    .body {
+      padding: 1rem 0 2rem 0;
+    }
+  }
+}

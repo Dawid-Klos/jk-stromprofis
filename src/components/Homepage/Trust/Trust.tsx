@@ -2,6 +2,8 @@ import NextDivider from "@components/common/Divider";
 import Card from "components/common/Card";
 
 import styles from "./Trust.module.scss";
+
+import Hgroup from "@components/common/Hgroup";
 import timeIcon from "@assets/icons/time-card.svg";
 import serviceIcon from "@assets/icons/service-card.svg";
 import euroIcon from "@assets/icons/euro-card.svg";
@@ -11,11 +13,7 @@ import contractIcon from "@assets/icons/contract-card.svg";
 export const Trust: React.FC = () => {
   return (
     <section className={styles.section}>
-      <hgroup className={styles.header}>
-        <p className={styles.subtitle}>Wyjątkowość</p>
-        <h2 className={styles.title}>Dlaczego warto nam zaufać.</h2>
-        <NextDivider type="horizontal" />
-      </hgroup>
+      <Hgroup subtitle="Wyjątkowość" title="Dlaczego warto nam zaufać." />
 
       <div className={styles.topContainer}>
         <Card
