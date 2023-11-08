@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   Dropdown as NextDropdown,
   DropdownTrigger,
@@ -14,12 +13,11 @@ import Chevron from "@assets/icons/Chevron";
 import type { Service } from "@config/services";
 
 type Props = {
-  key: number;
   title: string;
   list: Service[];
 };
 
-export const Dropdown = ({ key, title, list }: Props) => {
+export const Dropdown = ({ title, list }: Props) => {
   return (
     <NextDropdown
       classNames={{
@@ -35,11 +33,11 @@ export const Dropdown = ({ key, title, list }: Props) => {
       </NavbarItem>
 
       <DropdownMenu aria-label="">
-        {list.map(({ title, href, icon }) => {
+        {list.map(({ id, title, href, icon }) => {
           const Icon = icon;
 
           return (
-            <DropdownItem key={key} className={styles.item} startContent={<Icon />}>
+            <DropdownItem key={id} className={styles.item} startContent={<Icon />}>
               <Link className={styles.link} href={href}>
                 {title}
               </Link>
