@@ -11,46 +11,53 @@ import styles from "./Accordion.module.scss";
 type Props = {
   services: Service[];
   className: string;
+  selectedKeys: any;
+  setSelectedKeys: (value: any) => void;
 };
 
-export const Accordion = ({ services, className }: Props) => {
+export const Accordion = ({
+  services,
+  className,
+  selectedKeys,
+  setSelectedKeys,
+}: Props) => {
   return (
-    <>
-      <NextAccordion
-        variant="splitted"
-        className={className}
-        itemClasses={{
-          base: styles.base,
-          title: styles.title,
-          trigger: styles.trigger,
-          content: styles.content,
-          indicator: styles.indicator,
-        }}
-      >
-        {services.map(({ id, title, href, shortDescription, icon }) => {
-          const Icon = icon;
+    <NextAccordion
+      variant="splitted"
+      className={className}
+      selectedKeys={selectedKeys}
+      onSelectionChange={setSelectedKeys}
+      itemClasses={{
+        base: styles.base,
+        title: styles.title,
+        trigger: styles.trigger,
+        content: styles.content,
+        indicator: styles.indicator,
+      }}
+    >
+      {services.map(({ id, title, href, shortDescription, icon }) => {
+        const Icon = icon;
 
-          return (
-            <AccordionItem
-              key={id}
-              aria-label={title}
-              title={title}
-              indicator={<Chevron className={styles.chevron} />}
-              startContent={<Icon />}
-              data-open={false}
-            >
-              <>
-                <Divider type="horizontal" />
-                {shortDescription}
-                <Link href={href} className={styles.link}>
-                  Zobacz usługę
-                  <ArrowRight />
-                </Link>
-              </>
-            </AccordionItem>
-          );
-        })}
-      </NextAccordion>
-    </>
+        return (
+          <AccordionItem
+            key={id}
+            aria-label={title}
+            title={title}
+            indicator={<Chevron className={styles.chevron} />}
+            startContent={<Icon />}
+            data-open={false}
+          >
+            <>
+              <Divider type="horizontal" />
+              {shortDescription}
+              <Link href={href} className={styles.link}>
+                Zobacz usługę
+                <ArrowRight />
+              </Link>
+            </>
+          </AccordionItem>
+        );
+      })}
+    </NextAccordion>
   );
 };
