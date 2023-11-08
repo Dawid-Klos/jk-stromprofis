@@ -10,7 +10,7 @@ import {
 } from "@nextui-org/react";
 
 import styles from "./Dropdown.module.scss";
-import chevron from "@assets/icons/chevron.svg";
+import Chevron from "@assets/icons/Chevron";
 import type { Service } from "@config/services";
 
 type Props = {
@@ -28,11 +28,7 @@ export const Dropdown = ({ key, title, list }: Props) => {
     >
       <NavbarItem>
         <DropdownTrigger>
-          <Button
-            disableRipple
-            className={styles.button}
-            endContent={<Image className={styles.chevron} src={chevron} alt="chevron" width={16} height={16} />}
-          >
+          <Button disableRipple className={styles.button} endContent={<Chevron />}>
             {title}
           </Button>
         </DropdownTrigger>
