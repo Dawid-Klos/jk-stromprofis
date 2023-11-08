@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Accordion as NextAccordion, AccordionItem } from "@nextui-org/react";
 
 import Divider from "@components/common/Divider";

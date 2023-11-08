@@ -14,11 +14,12 @@ import chevron from "@assets/icons/chevron.svg";
 import type { Service } from "@config/services";
 
 type Props = {
+  key: number;
   title: string;
   list: Service[];
 };
 
-export const Dropdown = ({ title, list }: Props) => {
+export const Dropdown = ({ key, title, list }: Props) => {
   return (
     <NextDropdown
       classNames={{
@@ -42,7 +43,7 @@ export const Dropdown = ({ title, list }: Props) => {
           const Icon = icon;
 
           return (
-            <DropdownItem key={title} className={styles.item} startContent={<Icon />}>
+            <DropdownItem key={key} className={styles.item} startContent={<Icon />}>
               <Link className={styles.link} href={href}>
                 {title}
               </Link>
