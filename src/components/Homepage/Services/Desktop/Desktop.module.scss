@@ -1,0 +1,21 @@
+.section {
+  position: relative;
+  min-height: 40vh;
+  position: relative;
+
+  .grid {
+    display: grid;
+    gap: 0.5rem;
+    padding: 6rem 0;
+    z-index: 1;
+
+    @screen desktop_lg {
+      grid-template-columns: 1fr 1fr;
+      align-items: flex-start;
+      grid-auto-rows: min-content;
+    }
+
+    .column {
+    }
+  }
+}

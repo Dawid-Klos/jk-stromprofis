@@ -1,11 +1,20 @@
-import Hgroup from "@components/common/Hgroup";
+"use client";
 
-import styles from "./Services.module.scss";
+import Mobile from "./Mobile";
+import Desktop from "./Desktop";
+
+import useBreakpoint from "@hooks/useBreakpoint";
+import { Breakpoint } from "@config/enums";
 
 export const Services = () => {
+  const breakpoint = useBreakpoint();
+  const isMobile = breakpoint === Breakpoint.Mobile;
+  const isDesktop = breakpoint === Breakpoint.Desktop || breakpoint === Breakpoint.Tablet;
+
   return (
-    <section className={styles.section}>
-      <Hgroup title="Co mamy do zaoferowania." subtitle="Usługi" />
-    </section>
+    <>
+      {isMobile && <Mobile />}
+      {isDesktop && <Desktop />}
+    </>
   );
 };

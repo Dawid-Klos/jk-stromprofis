@@ -42,7 +42,7 @@ export const Accordion = ({ services, className }: Props) => {
               <>
                 <Divider type="horizontal" />
                 {shortDescription}
-                <Link href={`/services/${href}`} className={styles.link}>
+                <Link href={href} className={styles.link}>
                   Zobacz usługę
                   <ArrowRight />
                 </Link>
