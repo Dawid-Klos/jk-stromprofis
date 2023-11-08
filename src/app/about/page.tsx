@@ -1,10 +1,15 @@
 import CtaSection from "@components/common/CtaSection";
 
 import questionImage from "@assets/images/question-image.png";
+import BackgroundImage from "@components/common/BackgroundImage";
+
+import backgroundImage from "@assets/images/about-us-img.png";
 
 export default function Home() {
   return (
     <>
+      <BackgroundImage src={backgroundImage} alt="" />
+
       <CtaSection
         subtitle="Komunikacja"
         title="Wciąż masz pytania?"
