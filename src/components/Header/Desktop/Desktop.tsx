@@ -29,7 +29,7 @@ export const Desktop = ({ menuItems }: Props) => {
         <NavbarBrand className={styles.brand}>
           {menuItems.map(({ id, title, href, list }) => {
             return list ? (
-              <Dropdown title={title} list={list} />
+              <Dropdown key={id} title={title} list={list} />
             ) : (
               <NavbarItem key={id} className={styles.item}>
                 <Link className={`${styles.link} ${title === "Contact" && styles.button}`} href={href} key={title}>
