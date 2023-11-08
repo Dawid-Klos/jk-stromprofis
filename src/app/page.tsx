@@ -2,12 +2,10 @@ import Hero from "@components/Homepage/Hero";
 import Trust from "@components/Homepage/Trust";
 import Testimonials from "@components/Homepage/Testimonials";
 import CtaSection from "@components/common/CtaSection";
-
-import styles from "./page.module.scss";
+import BackgroundImage from "@components/common/BackgroundImage";
 
 import questionImage from "@assets/images/question-image.png";
 import backgroundImage from "@assets/images/home-cta.png";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,17 +14,7 @@ export default function Home() {
       <Trust />
       <Testimonials />
 
-      <div className={styles.background}>
-        <Image
-          className={styles.image}
-          src={backgroundImage}
-          placeholder="blur"
-          quality={100}
-          fill
-          sizes="100vw"
-          alt="background"
-        />
-      </div>
+      <BackgroundImage src={backgroundImage} alt="" />
 
       <CtaSection
         subtitle="Komunikacja"
