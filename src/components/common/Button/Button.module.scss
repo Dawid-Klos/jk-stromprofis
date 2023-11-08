@@ -1,0 +1,51 @@
+@import "@styles/mixins";
+
+.button {
+  @include transition;
+  @apply bg-primary-500 text-button-sm text-accent-300;
+
+  display: flex;
+  height: auto;
+  padding: 1rem 2rem;
+
+  @screen tablet {
+    @apply text-button-md;
+  }
+
+  & > svg {
+    @apply text-accent-500;
+    @include transition;
+  }
+
+  &:hover > svg {
+    @apply text-secondary-500;
+
+    margin-left: 1rem;
+  }
+
+  &.primary {
+    box-shadow: 0px 7.08502px 18.21862px 0px rgba(233, 79, 55, 0.08);
+    background: linear-gradient(268deg, #e94f37 2.96%, #802b1e 99.97%);
+
+    &:hover {
+      @apply text-accent-300;
+
+      background: linear-gradient(268deg, #802b1e 2.96%, #e94f37 99.97%);
+      box-shadow: 0px 14px 48px 0px rgba(233, 79, 55, 0.15),
+        0px 0px 22px 0px rgba(233, 79, 55, 0.25);
+    }
+  }
+
+  &.secondary {
+    @apply border border-solid;
+
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, #191919, #515151);
+
+    &:hover {
+      @apply text-secondary-500;
+
+      border-image-source: linear-gradient(to left, #191919, #515151);
+    }
+  }
+}
