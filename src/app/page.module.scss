@@ -6,6 +6,25 @@
   min-height: 300px;
   margin: 8rem (-$body-margin-mobile);
 
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      rgba(25, 25, 25, 1) 0%,
+      rgba(25, 25, 25, 95) 10%,
+      rgba(25, 25, 25, 0.75) 15%,
+      rgba(25, 25, 25, 0.2) 25%,
+      rgba(25, 25, 25, 0.1) 50%,
+      rgba(25, 25, 25, 0.2) 85%,
+      rgba(25, 25, 25, 0.75) 95%,
+      rgba(25, 25, 25, 1) 100%
+    );
+  }
+
   @screen tablet {
     margin: 8rem (-$body-margin-tablet);
   }
