@@ -11,16 +11,13 @@
 
     .button {
       svg {
-        path {
-          @include transition;
-        }
+        @apply text-accent-500;
+        @include transition;
       }
 
       &:hover {
         svg {
-          path {
-            @apply fill-secondary-500;
-          }
+          @apply text-accent-500;
         }
       }
     }
