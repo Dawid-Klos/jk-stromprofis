@@ -48,11 +48,13 @@
     @include transition;
   }
 
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+
   &[data-hover="true"] {
     @apply bg-accent-500/10;
-
-    .icon {
-    }
 
     .link {
       @apply text-body-sm text-secondary-500;

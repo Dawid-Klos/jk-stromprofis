@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import {
   Dropdown as NextDropdown,
   DropdownTrigger,
@@ -10,7 +9,7 @@ import {
 } from "@nextui-org/react";
 
 import styles from "./Dropdown.module.scss";
-import chevron from "@assets/icons/chevron.svg";
+import Chevron from "@assets/icons/Chevron";
 import type { Service } from "@config/services";
 
 type Props = {
@@ -27,40 +26,18 @@ export const Dropdown = ({ title, list }: Props) => {
     >
       <NavbarItem>
         <DropdownTrigger>
-          <Button
-            disableRipple
-            className={styles.button}
-            endContent={
-              <Image
-                className={styles.chevron}
-                src={chevron}
-                alt="chevron"
-                width={16}
-                height={16}
-              />
-            }
-          >
+          <Button disableRipple className={styles.button} endContent={<Chevron />}>
             {title}
           </Button>
         </DropdownTrigger>
       </NavbarItem>
 
       <DropdownMenu aria-label="">
-        {list.map(({ title, href, icon }) => {
+        {list.map(({ id, title, href, icon }) => {
+          const Icon = icon;
+
           return (
-            <DropdownItem
-              key={title}
-              className={styles.item}
-              startContent={
-                <Image
-                  className={styles.icon}
-                  src={icon}
-                  alt="chevron"
-                  width={32}
-                  height={32}
-                />
-              }
-            >
+            <DropdownItem key={id} className={styles.item} startContent={<Icon />}>
               <Link className={styles.link} href={href}>
                 {title}
               </Link>
