@@ -1,14 +1,17 @@
 @import "@styles/mixins";
 
 .cardWrapper {
-  border-radius: 16px;
+  border-radius: 14px;
   background: rgb(203, 184, 179);
-  background: linear-gradient(
-    180deg,
-    hsla(13, 19%, 75%, 1) 0%,
-    hsla(13, 19%, 75%, 0.16) 80%,
-    hsla(0, 0%, 9%, 1) 100%
-  );
+  background: linear-gradient(to bottom, hsla(13, 19%, 75%, 0.7) 0%, hsla(13, 19%, 75%, 0.05) 100%);
+
+  @screen desktop_md {
+    max-width: 85%;
+  }
+
+  @screen desktop_lg {
+    max-width: 75%;
+  }
 
   .card {
     background: linear-gradient(320.79deg, #191919 25.93%, #333333 155.63%),
@@ -19,11 +22,27 @@
         rgba(23, 23, 23, 0.4) 69.45%
       );
 
-    margin: 1px 1px 0 1px;
+    margin: 1px;
     padding: 0.5rem 1.25rem;
+
+    @screen desktop_md {
+      padding: 1rem 3rem;
+    }
 
     .body {
       padding: 1rem 0 2rem 0;
+      position: relative;
+      .icon {
+        display: none;
+
+        @screen mobile_md {
+          display: block;
+          @apply text-accent-500;
+          position: absolute;
+          bottom: 2rem;
+          right: 0;
+        }
+      }
     }
   }
 }

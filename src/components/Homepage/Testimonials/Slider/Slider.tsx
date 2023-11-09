@@ -6,7 +6,9 @@ import { Card, CardBody } from "@nextui-org/react";
 import styles from "./Slider.module.scss";
 
 import Divider from "@components/common/Divider";
+import Quote from "@assets/icons/Quote";
 import type { Testimonial } from "@config/testimonials";
+
 import Nav from "./Nav";
 import Item from "./Item";
 
@@ -22,21 +24,14 @@ export const Slider = ({ testimonials }: Props) => {
       <Card className={styles.card}>
         <CardBody className={styles.body}>
           {testimonials.map((testimonial) => (
-            <Item
-              key={testimonial.id}
-              testimonial={testimonial}
-              currentSlide={currentSlide}
-            />
+            <Item key={testimonial.id} testimonial={testimonial} currentSlide={currentSlide} />
           ))}
+          <Quote className={styles.icon} />
         </CardBody>
 
         <Divider type="horizontal" />
 
-        <Nav
-          testimonials={testimonials}
-          currentSlide={currentSlide}
-          setCurrentSlide={setCurrentSlide}
-        />
+        <Nav testimonials={testimonials} currentSlide={currentSlide} setCurrentSlide={setCurrentSlide} />
       </Card>
     </div>
   );

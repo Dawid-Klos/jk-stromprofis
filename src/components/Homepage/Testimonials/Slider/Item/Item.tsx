@@ -1,20 +1,29 @@
 import { motion, Variants } from "framer-motion";
 import { Avatar } from "@nextui-org/react";
+import Image from "next/image";
+
+import { Testimonial } from "@config/testimonials";
+import maxAvatar from "@assets/images/avatars/max.png";
+import lukasAvatar from "@assets/images/avatars/lukas.png";
+import sophieAvatar from "@assets/images/avatars/sophie.png";
 
 import styles from "./Item.module.scss";
+import { ReactNode } from "react";
 
 type Props = {
-  testimonial: {
-    id: number;
-    name: string;
-    position: string;
-    text: string;
-  };
+  testimonial: Testimonial;
   currentSlide: number;
+};
+
+const avatarMap: { [key: number]: ReactNode } = {
+  0: <Image src={maxAvatar} alt="" width={256} height={256} />,
+  1: <Image src={lukasAvatar} alt="" width={256} height={256} />,
+  2: <Image src={sophieAvatar} alt="" width={256} height={256} />,
 };
 
 export const Item = ({ testimonial, currentSlide }: Props) => {
   const { id, name, position, text } = testimonial;
+  const avatarSrc = avatarMap[id];
 
   const variants: Variants = {
     show: {
@@ -46,7 +55,7 @@ export const Item = ({ testimonial, currentSlide }: Props) => {
     >
       <p className={styles.text}>{text}</p>
       <div className={styles.info}>
-        <Avatar src={`https://i.pravatar.cc/150?img=${id}`} size="lg" />
+        <Avatar icon={avatarSrc} size="lg" isBordered color="primary" />
         <div className={styles.box}>
           <p className={styles.name}>{name}</p>
           <p className={styles.position}>{position}</p>
