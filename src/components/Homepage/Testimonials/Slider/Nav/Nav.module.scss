@@ -1,15 +1,17 @@
 @import "@styles/mixins";
 
 .footer {
-  padding: 1rem 0;
+  padding: 2rem 0;
+  position: relative;
 
   .nav {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex: 1;
+    position: absolute;
+    left: 0;
+    margin-left: -1rem;
 
     .button {
+      padding: 1rem;
       svg {
         @apply text-accent-500;
         @include transition;
@@ -26,11 +28,17 @@
   .indicators {
     display: flex;
     align-items: center;
-    gap: 6px;
+    justify-content: flex-end;
+    gap: 8px;
     flex: 1;
+
+    @screen mobile_md {
+      justify-content: center;
+    }
 
     .indicator {
       @apply bg-accent-500;
+      padding: 0.1rem;
 
       width: 6px;
       height: 6px;
@@ -46,6 +54,7 @@
         width: 10px;
         height: 10px;
         opacity: 1;
+        padding: 0.25rem;
       }
     }
   }
