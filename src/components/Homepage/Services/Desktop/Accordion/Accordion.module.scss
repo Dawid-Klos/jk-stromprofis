@@ -12,17 +12,11 @@
     height: 1.25rem;
   }
 
-  & [data-open="true"] {
-    & .title {
-      font-size: 1.2rem;
-    }
+  & [data-open="true"] .trigger > div > svg {
+    @apply text-secondary-500;
 
-    & .trigger > div > svg {
-      @apply text-secondary-500;
-
-      width: 3rem;
-      height: 3rem;
-    }
+    width: 3rem;
+    height: 3rem;
   }
 }
 
