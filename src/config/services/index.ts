@@ -7,7 +7,6 @@ import Wires from "@assets/icons/services/Wires";
 import Wiring from "@assets/icons/services/Wiring";
 import Speaker from "@assets/icons/services/Speaker";
 
-import { convertTitleToHref } from "@utils/functions";
 import { content } from "./content";
 
 export interface Service {
@@ -22,7 +21,7 @@ const basicServices: Service[] = [
   {
     id: 0,
     title: "Instalacje elektryczne",
-    href: "",
+    href: "instalacje-elektryczne",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: Wires,
@@ -30,7 +29,7 @@ const basicServices: Service[] = [
   {
     id: 1,
     title: "Specjalistyczna budowa tras kablowych",
-    href: "",
+    href: "specjalistyczna-budowa-tras-kablowych",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: Wiring,
@@ -38,7 +37,7 @@ const basicServices: Service[] = [
   {
     id: 2,
     title: "Specjalistyczne wsparcie",
-    href: "",
+    href: "specjalistyczne-wsparcie",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: Glove,
@@ -46,7 +45,7 @@ const basicServices: Service[] = [
   {
     id: 3,
     title: "Systemy bezpieczeństwa",
-    href: "",
+    href: "systemy-bezpieczenstwa",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: Safety,
@@ -54,7 +53,7 @@ const basicServices: Service[] = [
   {
     id: 4,
     title: "Inteligentny dom",
-    href: "",
+    href: "inteligentny-dom",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: SmartHome,
@@ -62,7 +61,7 @@ const basicServices: Service[] = [
   {
     id: 5,
     title: "Systemy nagłaśniające",
-    href: "",
+    href: "systemy-naglasniajace",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: Speaker,
@@ -70,7 +69,7 @@ const basicServices: Service[] = [
   {
     id: 6,
     title: "Planowanie, montaż i wymiana oświetlenia",
-    href: "",
+    href: "planowanie-montaz-i-wymiana-oswietlenia",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: LightBulb,
@@ -78,15 +77,15 @@ const basicServices: Service[] = [
   {
     id: 7,
     title: "Punkty ładowania/Doprowadzenie prądu",
-    href: "",
+    href: "punkty-ladowania-doprowadzenie-pradu",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
     icon: Accumulator,
   },
 ];
 
-export const services = basicServices.map(({ id, title, shortDescription, icon }) => {
-  const updatedHref = `/services/${convertTitleToHref(title)}`;
+export const services = basicServices.map(({ id, title, href, shortDescription, icon }) => {
+  const updatedHref = `/services/${href}`;
 
   return {
     id,
