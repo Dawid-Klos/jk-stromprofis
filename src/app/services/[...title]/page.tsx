@@ -12,9 +12,11 @@ export default function Page({ params }: { params: { title: string } }) {
     (service) => convertTitleToHref(service.title) === title
   );
 
+  const { title: serviceTitle, subtitle } = service?.content || {};
+
   return (
     <>
-      <h1>{title}</h1>
+      <h1>{serviceTitle}</h1>
 
       <CtaSection
         subtitle="kiedy tego potrzebujesz"
