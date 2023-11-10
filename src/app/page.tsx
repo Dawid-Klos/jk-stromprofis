@@ -1,21 +1,23 @@
 import Hero from "@components/Homepage/Hero";
 import Trust from "@components/Homepage/Trust";
 import Testimonials from "@components/Homepage/Testimonials";
+import Services from "@components/Homepage/Services";
 import CtaSection from "@components/common/CtaSection";
 import BackgroundImage from "@components/common/BackgroundImage";
 
+import cityBackground from "@assets/images/home-city-bg.png";
+import bulbsBackground from "@assets/images/home-bulbs-bg.png";
 import questionImage from "@assets/images/question-image.png";
-import backgroundImage from "@assets/images/home-cta.png";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Trust />
+      <Services />
+      <BackgroundImage src={cityBackground} alt="a view of city during a night" />
       <Testimonials />
-
-      <BackgroundImage src={backgroundImage} alt="" />
-
+      <BackgroundImage src={bulbsBackground} alt="" />
       <CtaSection
         subtitle="Komunikacja"
         title="Wciąż masz pytania?"

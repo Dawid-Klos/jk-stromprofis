@@ -1,24 +1,26 @@
 .slide {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+
+  .info {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    min-height: 160px;
-    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 
+    & > span {
+      margin-left: 0.4rem;
+    }
+  }
 
-    .info {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+  .box {
+    .name {
+      @apply text-accent-200 text-label-lg;
     }
 
-    .box {
-        .name {
-            @apply text-label-lg;
-        }
-
-        .position {
-            @apply text-body-sm;
-        }
+    .position {
+      @apply text-body-sm;
     }
+  }
 }

@@ -1,10 +1,9 @@
 import Image from "next/image";
 
-import styles from "./Hero.module.scss";
-
 import Button from "@components/common/Button";
-
 import timeIcon from "@assets/icons/time.svg";
+
+import styles from "./Hero.module.scss";
 
 export const Hero: React.FC = () => {
   return (

@@ -113,7 +113,7 @@ module.exports = {
         },
       ],
       "label-lg": [
-        "20px",
+        "16px",
         {
           lineHeight: "32px",
           fontWeight: "600",
