@@ -1,6 +1,8 @@
 @import "@styles/mixins";
 
 .section {
+  @include heroHeight;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +10,6 @@
   position: relative;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  min-height: calc(100vh - 80px);
   gap: 24rem;
 
   @screen tablet {
@@ -17,7 +18,6 @@
   }
 
   @screen desktop_md {
-    min-height: calc(100vh - 96px);
     align-items: flex-start;
     padding-top: 4rem;
     gap: unset;
