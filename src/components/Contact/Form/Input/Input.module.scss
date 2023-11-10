@@ -1,0 +1,36 @@
+.container {
+  &[data-focus-within="true"],
+  &[data-hover="true"],
+  &[data-focus-visible="true"] {
+    .inputBase {
+      @apply border-secondary-500;
+
+      box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
+    }
+  }
+
+  .inputBase {
+    @apply border-accent-500/20 border-solid border-1;
+
+    border-radius: 0.5rem;
+    padding: 2rem 0;
+
+    .label {
+      @apply text-label-sm text-accent-800;
+
+      padding: 0 1rem;
+    }
+
+    .input {
+      @apply text-body-sm;
+
+      padding: 1rem;
+      margin-bottom: -1.25rem;
+      border-radius: 0.5rem;
+
+      @screen desktop_md {
+        @apply text-body-md;
+      }
+    }
+  }
+}

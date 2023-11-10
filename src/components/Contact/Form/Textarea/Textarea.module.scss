@@ -1,0 +1,29 @@
+.textarea {
+  @apply border-accent-500/20 border-solid border-1 text-body-sm text-accent-500;
+  border-radius: 0.5rem;
+
+  &[data-focus="true"],
+  &[data-hover="true"] {
+    @apply border-secondary-500;
+    box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
+  }
+
+  .label {
+    @apply text-label-sm text-accent-800;
+  }
+
+  .inputWrapper {
+    border: 0;
+  }
+
+  .input {
+    @apply text-body-sm text-accent-500 placeholder:text-accent-800;
+
+    @screen desktop_md {
+      @apply text-body-md;
+    }
+  }
+
+  .errorMessage {
+  }
+}

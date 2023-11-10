@@ -27,15 +27,9 @@ export const CtaSection = ({ title, subtitle, content, image }: Props) => {
 
       <p className={styles.content}>{content}</p>
 
-      <Image
-        className={styles.image}
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-      />
+      <Image className={styles.image} src={src} alt={alt} width={width} height={height} />
 
-      <Button href="/kontakt" variant="secondary">
+      <Button href="/kontakt" element="link" variant="secondary">
         Skontaktuj się teraz
         <ArrowRight />
       </Button>
