@@ -2,6 +2,12 @@
 
 .nav {
   @apply bg-primary-500/70;
+
+  display: none;
+
+  @screen desktop_md {
+    display: flex;
+  }
 }
 
 .logo {

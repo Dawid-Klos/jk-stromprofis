@@ -3,6 +3,10 @@
 
   padding: 0 1.25rem;
 
+  @screen desktop_md {
+    display: none;
+  }
+
   &[data-menu-open="true"] {
     @apply backdrop-blur-lg;
   }
