@@ -121,3 +121,13 @@ h3 {
     @apply text-d3;
   }
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  @apply text-body-sm;
+
+  padding: 1rem;
+  margin-bottom: -1.25rem;
+  border-radius: 0.5rem;
+  transition: background-color 0s 600000s, color 0s 600000s;
+}

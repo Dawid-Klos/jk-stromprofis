@@ -1,0 +1,59 @@
+.selectTrigger {
+  @apply border-accent-500/20 border-solid border-1;
+
+  background: transparent;
+  padding: 2rem 1rem;
+
+  &[data-hover="true"],
+  &[data-pressed="true"],
+  &[data-focus="true"],
+  &[data-focus-visible="true"] {
+    @apply border-secondary-500;
+
+    box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
+  }
+
+  .label {
+    @apply text-label-sm text-accent-800;
+  }
+
+  .selectWrapper {
+    @apply bg-primary-500;
+
+    .value {
+      @apply text-body-sm;
+
+      padding: 0.25rem 0;
+
+      @screen desktop_md {
+        @apply text-body-md;
+      }
+    }
+  }
+}
+
+.popOver {
+  @apply bg-primary-500 border-accent-500/20 border-solid border-1;
+
+  &[data-pressed="true"],
+  &[data-hover="true"] {
+    @apply border-secondary-500;
+
+    box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
+  }
+
+  .listBox {
+    &[data-hover="true"],
+    &[data-focus="true"] {
+      @apply bg-accent-500/10 text-secondary-500;
+    }
+
+    & span {
+      @apply text-body-sm;
+
+      @screen desktop_md {
+        @apply text-body-lg;
+      }
+    }
+  }
+}

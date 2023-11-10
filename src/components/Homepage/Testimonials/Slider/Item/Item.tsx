@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { motion, Variants } from "framer-motion";
 import { Avatar } from "@nextui-org/react";
 import Image from "next/image";
@@ -8,7 +9,6 @@ import lukasAvatar from "@assets/images/avatars/lukas.png";
 import sophieAvatar from "@assets/images/avatars/sophie.png";
 
 import styles from "./Item.module.scss";
-import { ReactNode } from "react";
 
 type Props = {
   testimonial: Testimonial;
@@ -17,8 +17,8 @@ type Props = {
 
 const avatarMap: { [key: number]: ReactNode } = {
   0: <Image src={maxAvatar} alt="" width={256} height={256} />,
-  1: <Image src={lukasAvatar} alt="" width={256} height={256} />,
-  2: <Image src={sophieAvatar} alt="" width={256} height={256} />,
+  1: <Image src={sophieAvatar} alt="" width={256} height={256} />,
+  2: <Image src={lukasAvatar} alt="" width={256} height={256} />,
 };
 
 export const Item = ({ testimonial, currentSlide }: Props) => {

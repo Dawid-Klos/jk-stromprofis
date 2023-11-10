@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de">
       <body className={`${montserrat.variable} ${poppins.variable}`}>
         <Header />
-        <main>
+        <main className="light">
           <Providers>{children}</Providers>
         </main>
         <Footer />

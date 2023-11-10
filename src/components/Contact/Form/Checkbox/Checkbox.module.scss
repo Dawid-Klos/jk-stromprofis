@@ -1,0 +1,24 @@
+.checkbox {
+  &[data-focus="true"],
+  &[data-hover="true"] {
+    .wrapper {
+      @apply border-secondary-500;
+      box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
+
+      &::before {
+        @apply border-secondary-500 bg-transparent;
+      }
+    }
+  }
+
+  .icon {
+    min-width: 1rem;
+  }
+
+  .wrapper {
+    @apply before:border-accent-500/20 before:border-solid before:border-1;
+
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+  }
+}
