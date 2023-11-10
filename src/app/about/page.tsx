@@ -1,5 +1,6 @@
 import type { Item } from "@components/common/Section/Section";
 
+import Hero from "@components/About/Hero";
 import CtaSection from "@components/common/CtaSection";
 import Section from "@components/common/Section";
 import BackgroundImage from "@components/common/BackgroundImage";
@@ -33,6 +34,8 @@ export default function Home() {
 
   return (
     <>
+      <Hero />
+
       <Section
         subtitle="Historia"
         title="Czym się kierujemy."
