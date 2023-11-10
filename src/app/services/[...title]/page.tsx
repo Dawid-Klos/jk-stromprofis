@@ -1,9 +1,12 @@
+import BackgroundImage from "@components/common/BackgroundImage";
 import CtaSection from "@components/common/CtaSection";
 
 import { services } from "@config/services";
 import { convertTitleToHref } from "@utils/functions";
 
 import ctaImage from "@assets/images/services-cta.png";
+import backgroundImage from "@assets/images/services-background.png";
+
 
 export default function Page({ params }: { params: { title: string } }) {
   const title = params.title.toString();
@@ -17,6 +20,8 @@ export default function Page({ params }: { params: { title: string } }) {
   return (
     <>
       <h1>{serviceTitle}</h1>
+
+      <BackgroundImage src={backgroundImage} alt="" />
 
       <CtaSection
         subtitle="kiedy tego potrzebujesz"
