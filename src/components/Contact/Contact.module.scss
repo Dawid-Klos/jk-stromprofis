@@ -1,0 +1,66 @@
+.section {
+  display: grid;
+  gap: 6rem;
+  padding: 6rem 0;
+
+  @screen desktop_md {
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  @screen desktop_lg {
+    gap: 8rem;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .title {
+      @screen desktop_md {
+        @apply text-h3;
+
+        margin-top: 3rem;
+      }
+    }
+
+    .chip {
+      @apply bg-secondary-500 text-accent-200;
+
+      text-align: center;
+      align-self: center;
+      min-width: 100%;
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+
+      @screen tablet {
+        align-self: flex-start;
+        min-width: max-content;
+        padding: 1.5rem;
+      }
+
+      @screen desktop_md {
+        padding: 1.5rem 3rem;
+      }
+
+      & span {
+        @apply text-label-sm uppercase;
+
+        @screen desktop_md {
+          @apply text-label-md;
+        }
+      }
+    }
+
+    .imgWrapper {
+      position: relative;
+      width: 100%;
+
+      .img {
+        position: relative !important;
+        border-radius: 1rem;
+      }
+    }
+  }
+}
