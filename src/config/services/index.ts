@@ -76,7 +76,7 @@ const basicServices: Service[] = [
   },
   {
     id: 7,
-    title: "Punkty ładowania / Doprowadzenie prądu",
+    title: "Punkty ładowania/Doprowadzenie prądu",
     href: "",
     shortDescription:
       "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
@@ -85,10 +85,12 @@ const basicServices: Service[] = [
 ];
 
 export const services = basicServices.map(({ id, title, shortDescription, icon }) => {
+  const updatedHref = `/services/${convertTitleToHref(title)}`;
+
   return {
     id,
     title,
-    href: convertTitleToHref(title),
+    href: updatedHref,
     shortDescription,
     icon,
   };
