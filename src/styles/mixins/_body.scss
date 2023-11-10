@@ -1,0 +1,25 @@
+$body-margin-mobile: 1.25rem;
+$body-margin-tablet: 2.5rem;
+$body-margin-desktop-md: 3rem;
+$body-margin-desktop-lg: 8rem;
+$body-margin-desktop-xl: 12rem;
+
+@mixin bodyMargin {
+  margin: 0 $body-margin-mobile;
+
+  @screen tablet {
+    margin: 0 $body-margin-tablet;
+  }
+
+  @screen desktop_md {
+    margin: 0 $body-margin-desktop-md;
+  }
+
+  @screen desktop_lg {
+    margin: 0 $body-margin-desktop-lg;
+  }
+
+  @screen desktop_xl {
+    margin: 0 $body-margin-desktop-xl;
+  }
+}
