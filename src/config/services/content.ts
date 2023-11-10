@@ -1,5 +1,5 @@
 import image from "@assets/images/about-us-img.png";
-import { StaticImageData } from 'next/image';
+import { StaticImageData } from "next/image";
 
 export type Article = {
   title: string;
@@ -26,8 +26,9 @@ export type Content = {
 export const content: Content[] = [
   {
     id: 0,
-    title: "Instalacje elektryczne",
-    subtitle: "subtitle",
+    title: `Systemy bezpieczeństwa, na <span>Twoją kieszeń</span>`,
+    subtitle:
+      "Szukasz sposobów na ochronę swojego domu przed intruzami i innymi zagrożeniami bezpieczeństwa? Cóż, nie szukaj dalej! Mamy w ofercie idealne rozwiązania – kompleksowe systemy bezpieczeństwa z kamerami i systemami alarmowymi, które zapewnią bezpieczeństwo Twoim bliskim i dobytkowi.",
     section: {
       title: "title",
       subtitle: "subtitle",
