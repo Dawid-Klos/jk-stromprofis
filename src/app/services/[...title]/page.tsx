@@ -6,7 +6,7 @@ import { convertTitleToHref } from "@utils/functions";
 
 import ctaImage from "@assets/images/services-cta.png";
 import backgroundImage from "@assets/images/services-background.png";
-
+import Section from "@components/common/Section";
 
 export default function Page({ params }: { params: { title: string } }) {
   const title = params.title.toString();
@@ -15,11 +15,24 @@ export default function Page({ params }: { params: { title: string } }) {
     (service) => convertTitleToHref(service.title) === title
   );
 
-  const { title: serviceTitle, subtitle } = service?.content || {};
+  if (!service) {
+    return null;
+  }
+
+  const { title: serviceTitle, subtitle, section } = service.content || {};
 
   return (
     <>
-      <h1>{serviceTitle}</h1>
+      <section>
+        <h1>{serviceTitle}</h1>
+        <p>{subtitle}</p>
+      </section>
+
+      <Section
+        subtitle={section?.subtitle}
+        title={section?.title}
+        items={section?.articles}
+      />
 
       <BackgroundImage src={backgroundImage} alt="" />
 
