@@ -8,9 +8,10 @@ import Wiring from "@assets/icons/services/Wiring";
 import Speaker from "@assets/icons/services/Speaker";
 
 import { convertTitleToHref } from "@utils/functions";
+import { content } from "./content";
 
 export interface Service {
-  id: React.Key;
+  id: number;
   title: string;
   href: string;
   shortDescription: string;
@@ -93,5 +94,6 @@ export const services = basicServices.map(({ id, title, shortDescription, icon }
     href: updatedHref,
     shortDescription,
     icon,
+    content: content[id]
   };
 });
