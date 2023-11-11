@@ -1,6 +1,6 @@
 "use client";
-
-import { Controller } from "react-hook-form";
+import { useState } from "react";
+import { Controller, set } from "react-hook-form";
 
 import Button from "@components/common/Button";
 import { useFormLogic } from "@hooks/useFormLogic";
@@ -15,11 +15,14 @@ import Checkbox from "./Checkbox";
 import styles from "./Form.module.scss";
 
 export const Form = () => {
+  const [isLoading, setIsLoading] = useState(false);
   const { control, watch, errors, handleSubmit } = useFormLogic();
 
   const isCompany = watch("client") === "business";
 
   const onSubmit = async (data: FormData) => {
+    setIsLoading(true);
+
     try {
       const res = await handleContactFormSubmit(data);
 
@@ -33,6 +36,8 @@ export const Form = () => {
     } catch (error) {
       console.log(error);
     }
+
+    setIsLoading(false);
   };
 
   return (
@@ -144,7 +149,7 @@ export const Form = () => {
         )}
       />
 
-      <Button className={styles.button} element="button" variant="secondary">
+      <Button className={styles.button} element="button" variant="secondary" isLoading={isLoading}>
         Wyślij wiadomość
       </Button>
     </form>
