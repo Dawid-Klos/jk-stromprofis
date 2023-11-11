@@ -1,4 +1,4 @@
-import image from "@assets/images/about-us-img.png";
+import image from "@assets/images/service-image.png";
 import { StaticImageData } from "next/image";
 
 export type Article = {
