@@ -1,4 +1,8 @@
 .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   &[data-focus="true"],
   &[data-hover="true"] {
     .wrapper {
@@ -15,10 +19,22 @@
     min-width: 1rem;
   }
 
+  .label {
+    @apply text-body-sm text-accent-500;
+
+    @screen desktop_md {
+      @apply text-body-md;
+    }
+  }
+
   .wrapper {
     @apply before:border-accent-500/20 before:border-solid before:border-1;
 
     min-width: 1.5rem;
     min-height: 1.5rem;
   }
+}
+
+.errorMessage {
+  @apply text-label-sm text-danger;
 }

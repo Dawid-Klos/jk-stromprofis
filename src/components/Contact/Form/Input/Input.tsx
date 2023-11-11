@@ -6,13 +6,18 @@ type Props = {
   type: string;
   label: string;
   autoComplete: string;
+  isInvalid: boolean;
+  errorMessage?: string;
+  value: string | undefined;
+  onChange: (value: string) => void;
 };
 
-export const Input = ({ type, label, autoComplete }: Props) => {
+export const Input = ({ type, label, autoComplete, isInvalid, errorMessage, value, onChange }: Props) => {
   const inputClassnames = {
     inputWrapper: styles.inputBase,
     input: styles.input,
     label: styles.label,
+    errorMessage: styles.errorMessage,
   };
 
   return (
@@ -24,6 +29,10 @@ export const Input = ({ type, label, autoComplete }: Props) => {
       type={type}
       label={label}
       autoComplete={autoComplete}
+      isInvalid={isInvalid}
+      errorMessage={errorMessage}
+      value={value}
+      onValueChange={onChange}
     />
   );
 };

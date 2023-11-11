@@ -3,13 +3,20 @@
   border-radius: 0.5rem;
 
   &[data-focus="true"],
-  &[data-hover="true"] {
+  &[data-hover="true"],
+  &[data-focus-visible="true"] {
     @apply border-secondary-500;
     box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
   }
 
+  &[data-invalid="true"] {
+    @apply border-danger;
+  }
+
   .label {
     @apply text-label-sm text-accent-800;
+
+    padding-top: 0.25rem;
   }
 
   .inputWrapper {
@@ -25,5 +32,7 @@
   }
 
   .errorMessage {
+    @apply text-label-sm text-danger;
+    padding: 1rem;
   }
 }
