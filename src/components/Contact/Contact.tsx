@@ -23,9 +23,9 @@ export const Contact = () => {
           <Image
             className={styles.img}
             src={contactImage}
-            quality={100}
             alt="Office with chair and a laptop on the desk"
             fill
+            priority
           />
         </div>
       </article>

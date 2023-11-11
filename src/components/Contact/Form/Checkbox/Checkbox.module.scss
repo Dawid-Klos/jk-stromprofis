@@ -1,4 +1,8 @@
 .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
   &[data-focus="true"],
   &[data-hover="true"] {
     .wrapper {
@@ -13,6 +17,14 @@
 
   .icon {
     min-width: 1rem;
+  }
+
+  .label {
+    @apply text-body-sm text-accent-500;
+
+    @screen desktop_md {
+      @apply text-body-md;
+    }
   }
 
   .wrapper {
