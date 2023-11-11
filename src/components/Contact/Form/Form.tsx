@@ -4,6 +4,8 @@ import { Controller } from "react-hook-form";
 
 import Button from "@components/common/Button";
 import { useFormLogic } from "@hooks/useFormLogic";
+import { handleContactFormSubmit } from "@utils/serverActions";
+import { FormData } from "@config/formValidation";
 
 import Input from "./Input";
 import Select from "./Select";
@@ -13,9 +15,25 @@ import Checkbox from "./Checkbox";
 import styles from "./Form.module.scss";
 
 export const Form = () => {
-  const { control, handleSubmit, onSubmit, watch, errors } = useFormLogic();
+  const { control, watch, errors, handleSubmit } = useFormLogic();
 
   const isCompany = watch("client") === "business";
+
+  const onSubmit = async (data: FormData) => {
+    try {
+      const res = await handleContactFormSubmit(data);
+
+      if (res.statusCode === 200 && res.headers.message === "success") {
+        console.log("Code: ", res.statusCode);
+        console.log("Message: ", res.headers.message);
+      } else {
+        console.log("Code: ", res.statusCode);
+        console.log("Message: ", res.headers.message);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>

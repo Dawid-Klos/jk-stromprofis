@@ -8,7 +8,7 @@ type Props = {
   autoComplete: string;
   isInvalid: boolean;
   errorMessage?: string;
-  value: string;
+  value: string | undefined;
   onChange: (value: string) => void;
 };
 
