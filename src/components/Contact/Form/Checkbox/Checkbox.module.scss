@@ -34,3 +34,7 @@
     min-height: 1.5rem;
   }
 }
+
+.errorMessage {
+  @apply text-label-sm text-danger;
+}

@@ -59,4 +59,8 @@
       }
     }
   }
+
+  .errorMessage {
+    @apply text-label-sm text-danger;
+  }
 }

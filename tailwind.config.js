@@ -153,6 +153,7 @@ module.exports = {
           colors: {
             focus: "#e94f37",
             success: "#e94f37",
+            danger: "#C33C54",
             primary: {
               100: "#b8b8b8",
               200: "#959595",
