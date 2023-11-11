@@ -3,11 +3,13 @@ import { Select as NextSelect, SelectItem } from "@nextui-org/react";
 import styles from "./Select.module.scss";
 
 type Props = {
+  isInvalid: boolean;
+  errorMessage?: string;
   value: string;
   onChange: React.ChangeEventHandler<HTMLSelectElement>;
 };
 
-export const Select = ({ value, onChange }: Props) => {
+export const Select = ({ value, onChange, isInvalid, errorMessage }: Props) => {
   const selectClassnames = {
     trigger: styles.selectTrigger,
     innerWrapper: styles.selectWrapper,
@@ -33,6 +35,8 @@ export const Select = ({ value, onChange }: Props) => {
       isRequired
       label="Rodzaj klienta"
       placeholder="Wybierz klienta"
+      isInvalid={isInvalid}
+      errorMessage={errorMessage}
       disabledKeys={[""]}
       selectedKeys={[value]}
       onChange={onChange}

@@ -3,11 +3,13 @@ import { Checkbox as NextCheckbox } from "@nextui-org/react";
 import styles from "./Checkbox.module.scss";
 
 type Props = {
+  isInvalid: boolean;
+  errorMessage?: string;
   value: boolean | undefined;
   onChange: (isSelected: boolean) => void;
 };
 
-export const Checkbox = ({ value, onChange }: Props) => {
+export const Checkbox = ({ value, onChange, isInvalid, errorMessage }: Props) => {
   const checkboxClassnames = {
     base: styles.checkbox,
     wrapper: styles.wrapper,
@@ -16,15 +18,20 @@ export const Checkbox = ({ value, onChange }: Props) => {
   };
 
   return (
-    <NextCheckbox
-      classNames={checkboxClassnames}
-      radius="sm"
-      size="lg"
-      color="success"
-      isSelected={value}
-      onValueChange={onChange}
-    >
-      Akceptuje politykę prywatności
-    </NextCheckbox>
+    <>
+      <NextCheckbox
+        classNames={checkboxClassnames}
+        radius="sm"
+        size="lg"
+        color="success"
+        aria-errormessage="errorMessage"
+        isInvalid={isInvalid}
+        isSelected={value}
+        onValueChange={onChange}
+      >
+        Akceptuje politykę prywatności
+      </NextCheckbox>
+      {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
+    </>
   );
 };

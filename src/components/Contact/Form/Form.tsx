@@ -16,13 +16,21 @@ export const Form = () => {
   const { control, handleSubmit, onSubmit, errors } = useFormLogic();
 
   return (
-    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+    <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>
       <Controller
         name="name"
         control={control}
         rules={{ required: true }}
         render={({ field: { onChange, value } }) => (
-          <Input type="name" label="Imie i nazwisko" autoComplete="name" value={value} onChange={onChange} />
+          <Input
+            type="name"
+            label="Imie i nazwisko"
+            autoComplete="name"
+            isInvalid={!!errors.name}
+            errorMessage={errors.name?.message}
+            value={value}
+            onChange={onChange}
+          />
         )}
       />
       <Controller
@@ -30,7 +38,15 @@ export const Form = () => {
         control={control}
         rules={{ required: true }}
         render={({ field: { onChange, value } }) => (
-          <Input type="email" label="Email" autoComplete="email" value={value} onChange={onChange} />
+          <Input
+            type="email"
+            label="Email"
+            autoComplete="email"
+            isInvalid={!!errors.email}
+            errorMessage={errors.email?.message}
+            value={value}
+            onChange={onChange}
+          />
         )}
       />
       <Controller
@@ -38,7 +54,15 @@ export const Form = () => {
         control={control}
         rules={{ required: true }}
         render={({ field: { onChange, value } }) => (
-          <Input type="tel" label="Numer telefonu" autoComplete="tel-local" value={value} onChange={onChange} />
+          <Input
+            type="tel"
+            label="Numer telefonu"
+            autoComplete="tel-local"
+            isInvalid={!!errors.phone}
+            errorMessage={errors.phone?.message}
+            value={value}
+            onChange={onChange}
+          />
         )}
       />
 
@@ -46,21 +70,37 @@ export const Form = () => {
         name="client"
         control={control}
         rules={{ required: true }}
-        render={({ field: { onChange, value } }) => <Select value={value} onChange={onChange} />}
+        render={({ field: { onChange, value } }) => (
+          <Select isInvalid={!!errors.client} errorMessage={errors.client?.message} value={value} onChange={onChange} />
+        )}
       />
 
       <Controller
         name="message"
         control={control}
         rules={{ required: true }}
-        render={({ field: { onChange, value } }) => <Textarea value={value} onChange={onChange} />}
+        render={({ field: { onChange, value } }) => (
+          <Textarea
+            isInvalid={!!errors.message}
+            errorMessage={errors.message?.message}
+            value={value}
+            onChange={onChange}
+          />
+        )}
       />
 
       <Controller
         name="policy"
         control={control}
         rules={{ required: true }}
-        render={({ field: { onChange, value } }) => <Checkbox value={value} onChange={onChange} />}
+        render={({ field: { onChange, value } }) => (
+          <Checkbox
+            isInvalid={!!errors.policy}
+            errorMessage={errors.policy?.message}
+            value={value}
+            onChange={onChange}
+          />
+        )}
       />
 
       <Button className={styles.button} element="button" variant="secondary">
