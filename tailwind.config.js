@@ -25,7 +25,7 @@ module.exports = {
         "45px",
         {
           lineHeight: "52px",
-          fontWeight: "700",
+          fontWeight: "800",
         },
       ],
       d3: [
@@ -148,6 +148,7 @@ module.exports = {
   },
   plugins: [
     nextui({
+      addCommonColors: true,
       themes: {
         light: {
           colors: {

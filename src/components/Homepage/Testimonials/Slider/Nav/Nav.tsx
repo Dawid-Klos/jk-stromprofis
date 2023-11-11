@@ -1,4 +1,5 @@
-import { CardFooter } from "@nextui-org/react";
+import { Button, CardFooter } from "@nextui-org/react";
+import { motion } from "framer-motion";
 
 import styles from "./Nav.module.scss";
 
@@ -24,25 +25,40 @@ export const Nav = ({ testimonials, currentSlide, setCurrentSlide }: Props) => {
     setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1);
   };
 
+  const indicatorAnimateVariants = {
+    active: {
+      scale: 1.8,
+      transition: {
+        ease: "linear",
+        duration: 0.2,
+        delay: 0.1,
+      },
+    },
+    inactive: {
+      scale: 1,
+      transition: { duration: 0.2, delay: 0.1 },
+    },
+  };
+
   return (
     <CardFooter className={styles.footer}>
       <div className={styles.nav}>
-        <button className={styles.button} onClick={prevSlide}>
+        <Button className={styles.button} onClick={prevSlide}>
           <ArrowLeft />
-        </button>
-        <button className={styles.button} onClick={nextSlide}>
+        </Button>
+        <Button className={styles.button} onClick={nextSlide}>
           <ArrowRight />
-        </button>
+        </Button>
       </div>
       <div className={styles.indicators}>
         {testimonials.map(({ id }) => (
-          <button
+          <motion.button
             key={id}
-            className={`${styles.indicator} ${
-              currentSlide === id && styles.active
-            }`}
+            variants={indicatorAnimateVariants}
+            animate={currentSlide === id ? "active" : "inactive"}
+            className={styles.indicator}
             onClick={() => setCurrentSlide(id)}
-          ></button>
+          ></motion.button>
         ))}
       </div>
     </CardFooter>

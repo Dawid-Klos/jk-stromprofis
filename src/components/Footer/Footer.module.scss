@@ -1,7 +1,7 @@
 @import "@styles/mixins";
 
 .footer {
-  @include bodyMargin;
+  @include body_margin;
 
   display: flex;
   flex-direction: column;

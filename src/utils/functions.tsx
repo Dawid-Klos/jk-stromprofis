@@ -1,3 +1,7 @@
 export const convertTitleToHref = (title: string): string => {
-    return title.toLowerCase().replace(" ", "-");
+  return title
+    .toLowerCase()
+    .replaceAll(" ", "-")
+    .replaceAll(",", "")
+    .replaceAll("/", "-");
 };

@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 8rem 0;
+
+  @screen desktop_md {
+    gap: 6rem;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}

@@ -1,17 +1,15 @@
 @import "@styles/mixins";
 
 .cardWrapper {
+  @include content_width;
+
   border-radius: 14px;
   background: rgb(203, 184, 179);
-  background: linear-gradient(to bottom, hsla(13, 19%, 75%, 0.7) 0%, hsla(13, 19%, 75%, 0.05) 100%);
-
-  @screen desktop_md {
-    max-width: 85%;
-  }
-
-  @screen desktop_lg {
-    max-width: 75%;
-  }
+  background: linear-gradient(
+    to bottom,
+    hsla(13, 19%, 75%, 0.7) 0%,
+    hsla(13, 19%, 75%, 0.05) 100%
+  );
 
   .card {
     background: linear-gradient(320.79deg, #191919 25.93%, #333333 155.63%),
