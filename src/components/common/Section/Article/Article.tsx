@@ -27,7 +27,17 @@ export const Article = ({ item, classNames }: Props) => {
     <div className={styles.container}>
       <article className={articleClassNames}>
         <div className={styles.imageWrapper}>
-          <Image className={imageClassNames} fill {...item.image} />
+          <Image
+            className={imageClassNames}
+            fill
+            sizes="
+              (max-width: 1024px) 100vw,
+              (max-width: 1440px) 50vw,
+              33vw
+            "
+            placeholder="blur"
+            {...item.image}
+          />
         </div>
 
         <div className={styles.wrapper}>

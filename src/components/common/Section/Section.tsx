@@ -43,9 +43,10 @@ export const Section = ({ title, subtitle, items, classNames }: Props) => {
       <Hgroup subtitle={subtitle} title={title} />
 
       <div className={wrapperClassNames}>
-        {items.map((item, index) => (
-          <Article key={index} item={item} classNames={articleClassNames} />
-        ))}
+        {items &&
+          items.map((item, index) => (
+            <Article key={index} item={item} classNames={articleClassNames} />
+          ))}
       </div>
     </section>
   );

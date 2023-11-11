@@ -10,11 +10,11 @@ export interface MenuItem {
   list?: Service[];
 }
 
-const basicMenuItems: MenuItem[] = [
+export const menuItems: MenuItem[] = [
   {
     id: 10,
     title: "Home",
-    href: "",
+    href: "/",
   },
   {
     id: 11,
@@ -25,29 +25,11 @@ const basicMenuItems: MenuItem[] = [
   {
     id: 12,
     title: "About",
-    href: "",
+    href: "/about",
   },
   {
     id: 13,
     title: "Contact",
-    href: "",
+    href: "/kontakt",
   },
 ];
-
-export const menuItems = basicMenuItems.map((item) => {
-  if (item.title === "Home")
-    return {
-      id: item.id,
-      title: item.title,
-      href: "/",
-    };
-
-  item.href = convertTitleToHref(item.title);
-  if (item.list) {
-    item.list.forEach((subItem) => {
-      subItem.href = convertTitleToHref(subItem.title);
-    });
-  }
-
-  return item;
-});
