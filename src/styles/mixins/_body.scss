@@ -4,7 +4,7 @@ $body-margin-desktop-md: 3rem;
 $body-margin-desktop-lg: 8rem;
 $body-margin-desktop-xl: 12rem;
 
-@mixin bodyMargin {
+@mixin body_margin {
   margin: 0 $body-margin-mobile;
 
   @screen tablet {
