@@ -6,9 +6,11 @@ type Props = {
   type: string;
   label: string;
   autoComplete: string;
+  value: string;
+  onChange: (value: string) => void;
 };
 
-export const Input = ({ type, label, autoComplete }: Props) => {
+export const Input = ({ type, label, autoComplete, value, onChange }: Props) => {
   const inputClassnames = {
     inputWrapper: styles.inputBase,
     input: styles.input,
@@ -24,6 +26,8 @@ export const Input = ({ type, label, autoComplete }: Props) => {
       type={type}
       label={label}
       autoComplete={autoComplete}
+      value={value}
+      onValueChange={onChange}
     />
   );
 };

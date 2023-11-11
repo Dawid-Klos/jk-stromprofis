@@ -2,7 +2,12 @@ import { Checkbox as NextCheckbox } from "@nextui-org/react";
 
 import styles from "./Checkbox.module.scss";
 
-export const Checkbox = () => {
+type Props = {
+  value: boolean | undefined;
+  onChange: (isSelected: boolean) => void;
+};
+
+export const Checkbox = ({ value, onChange }: Props) => {
   const checkboxClassnames = {
     base: styles.checkbox,
     wrapper: styles.wrapper,
@@ -10,5 +15,16 @@ export const Checkbox = () => {
     label: styles.label,
   };
 
-  return <NextCheckbox classNames={checkboxClassnames} radius="sm" size="lg" color="success" />;
+  return (
+    <NextCheckbox
+      classNames={checkboxClassnames}
+      radius="sm"
+      size="lg"
+      color="success"
+      isSelected={value}
+      onValueChange={onChange}
+    >
+      Akceptuje politykę prywatności
+    </NextCheckbox>
+  );
 };

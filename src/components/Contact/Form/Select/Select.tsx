@@ -2,7 +2,12 @@ import { Select as NextSelect, SelectItem } from "@nextui-org/react";
 
 import styles from "./Select.module.scss";
 
-export const Select = () => {
+type Props = {
+  value: string;
+  onChange: React.ChangeEventHandler<HTMLSelectElement>;
+};
+
+export const Select = ({ value, onChange }: Props) => {
   const selectClassnames = {
     trigger: styles.selectTrigger,
     innerWrapper: styles.selectWrapper,
@@ -27,12 +32,20 @@ export const Select = () => {
       variant="bordered"
       isRequired
       label="Rodzaj klienta"
+      placeholder="Wybierz klienta"
+      disabledKeys={[""]}
+      selectedKeys={[value]}
+      onChange={onChange}
     >
-      <SelectItem className={styles.item} key="1" value="Klient prywatny">
+      <SelectItem className={styles.item} key="" value="">
+        Wybierz klienta
+      </SelectItem>
+
+      <SelectItem className={styles.item} key="customer" value="customer">
         Klient prywatny
       </SelectItem>
 
-      <SelectItem className={styles.item} key="2" value="Klient biznesowy">
+      <SelectItem className={styles.item} key="business" value="business">
         Klient biznesowy
       </SelectItem>
     </NextSelect>

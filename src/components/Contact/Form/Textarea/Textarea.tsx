@@ -2,7 +2,12 @@ import { Textarea as NextTextarea } from "@nextui-org/react";
 
 import styles from "./Textarea.module.scss";
 
-export const Textarea = () => {
+type Props = {
+  value: string;
+  onChange: (value: string) => void;
+};
+
+export const Textarea = ({ value, onChange }: Props) => {
   const textAreaClassnames = {
     base: styles.textarea,
     label: styles.label,
@@ -18,6 +23,8 @@ export const Textarea = () => {
       label="Wiadomość"
       isRequired
       placeholder="Wyjaśnij co możemy dla Ciebie zrobić lub dlaczego się z nami kontaktujesz..."
+      value={value}
+      onValueChange={onChange}
     />
   );
 };
