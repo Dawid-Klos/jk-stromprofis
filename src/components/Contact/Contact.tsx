@@ -29,11 +29,7 @@ export const Contact = () => {
           />
         </div>
       </article>
-      <article className={styles.article}>
-        <h3 className={styles.title}>Wpisz dane kontaktowe</h3>
-
-        <Form />
-      </article>
+      <Form />
     </section>
   );
 };

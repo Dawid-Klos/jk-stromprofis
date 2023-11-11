@@ -17,14 +17,6 @@
     flex-direction: column;
     gap: 2rem;
 
-    .title {
-      @screen desktop_md {
-        @apply text-h3;
-
-        margin-top: 3rem;
-      }
-    }
-
     .chip {
       @apply bg-secondary-500 text-accent-200;
 
