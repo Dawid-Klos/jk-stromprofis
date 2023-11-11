@@ -1,3 +1,5 @@
+@import "@styles/mixins";
+
 .section {
   display: flex;
   flex-direction: column;
@@ -9,6 +11,8 @@
   }
 
   .topContainer {
+    @include content_width;
+
     display: grid;
     align-content: center;
     justify-items: center;
@@ -89,6 +93,8 @@
     }
 
     .cardsContainer {
+      @include content_width;
+
       display: grid;
       align-content: center;
       justify-items: center;

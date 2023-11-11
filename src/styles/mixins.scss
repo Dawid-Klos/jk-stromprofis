@@ -4,3 +4,15 @@
 @mixin transition {
   transition: all 0.3s;
 }
+
+@mixin content_width {
+  margin: 0 auto;
+  
+  @screen desktop_md {
+    max-width: 85%;
+  }
+
+  @screen desktop_lg {
+    max-width: 75%;
+  }
+}
