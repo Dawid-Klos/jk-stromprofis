@@ -3,34 +3,51 @@
 .base {
   @apply border border-accent-500/20;
 
+  padding: 0 !important;
+  border-radius: 1rem !important;
   background: linear-gradient(321deg, #191919 25.93%, #333 155.63%);
-  border-radius: 1rem;
+
+  &:hover {
+    @apply shadow-accent-500 #{!important};
+  }
 
   .chevron {
     rotate: -90deg;
     width: 1.25rem;
     height: 1.25rem;
   }
-
-  & [data-open="true"] .trigger > div > svg {
-    @apply text-secondary-500;
-
-    width: 3rem;
-    height: 3rem;
-  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .trigger {
+  border-radius: 0.75rem;
+  padding: 1rem;
+
   & > div > svg {
     @include transition;
     width: 2rem;
     height: 2rem;
+  }
+
+  &[data-open="true"] {
+    @apply border-b-0;
+
+    border-radius: 0.75rem 0.75rem 0 0;
+
+    & > div > svg {
+      @apply text-secondary-500;
+
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   }
 }
 
