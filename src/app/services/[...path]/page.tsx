@@ -1,3 +1,5 @@
+import styles from "./page.module.scss";
+
 import Hero from "@components/Services/Hero";
 import BackgroundImage from "@components/common/BackgroundImage";
 import CtaSection from "@components/common/CtaSection";
@@ -23,13 +25,19 @@ export default function Page({ params }: { params: { path: string } }) {
     <>
       {title && <Hero title={title} subtitle={subtitle} />}
 
-      <Section
-        subtitle="profesjonalizm"
-        title="Czego możesz od nas oczekiwać."
-        items={articles}
-      />
+      {articles && (
+        <Section
+          subtitle="profesjonalizm"
+          title="Czego możesz od nas oczekiwać."
+          items={articles}
+        />
+      )}
 
-      <BackgroundImage src={backgroundImage} alt="" />
+      <BackgroundImage
+        className={styles.backgroundImage}
+        src={backgroundImage}
+        alt=""
+      />
 
       <CtaSection
         subtitle="kiedy tego potrzebujesz"
