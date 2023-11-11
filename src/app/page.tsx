@@ -1,12 +1,12 @@
 import Hero from "@components/Homepage/Hero";
-import Trust from "@components/Homepage/Trust";
-import Testimonials from "@components/Homepage/Testimonials";
 import Services from "@components/Homepage/Services";
-import CtaSection from "@components/common/CtaSection";
+import Testimonials from "@components/Homepage/Testimonials";
+import Trust from "@components/Homepage/Trust";
 import BackgroundImage from "@components/common/BackgroundImage";
+import CtaSection from "@components/common/CtaSection";
 
-import cityBackground from "@assets/images/home-city-bg.png";
 import bulbsBackground from "@assets/images/home-bulbs-bg.png";
+import cityBackground from "@assets/images/home-city-bg.png";
 import questionImage from "@assets/images/question-image.png";
 
 export default function Home() {
@@ -15,9 +15,15 @@ export default function Home() {
       <Hero />
       <Trust />
       <Services />
-      <BackgroundImage src={cityBackground} alt="a view of city during a night" />
+
+      <BackgroundImage
+        src={cityBackground}
+        alt="a view of city during a night"
+      />
       <Testimonials />
+
       <BackgroundImage src={bulbsBackground} alt="" />
+
       <CtaSection
         subtitle="Komunikacja"
         title="Wciąż masz pytania?"
