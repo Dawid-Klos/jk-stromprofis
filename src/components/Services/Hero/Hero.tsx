@@ -1,3 +1,4 @@
+
 import styles from "./Hero.module.scss";
 
 type Props = {
@@ -12,6 +13,7 @@ export const Hero = ({ title, subtitle }: Props) => {
         <h1 dangerouslySetInnerHTML={{ __html: title }}></h1>
         <p>{subtitle}</p>
       </hgroup>
+   
     </section>
   );
 };
