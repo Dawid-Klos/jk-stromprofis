@@ -5,6 +5,7 @@ import { schema, FormData, defaultValues } from "@config/formValidation";
 export const useFormLogic = () => {
   const {
     control,
+    watch,
     handleSubmit,
     formState: { errors },
   } = useForm<FormData>({
@@ -20,5 +21,5 @@ export const useFormLogic = () => {
     }
   };
 
-  return { control, handleSubmit, errors, onSubmit };
+  return { control, handleSubmit, errors, onSubmit, watch };
 };

@@ -12,6 +12,7 @@ export const schema = object({
     .min(9, "Rufnummer zu kurz eingegeben")
     .max(11, "Die eingegebene Rufnummer ist zu kurz"),
   client: string().required("Der Kundentyp ist erforderlich"),
+  businessName: string().required("Der Firmenname ist erforderlich"),
   message: string().required("Kurze Nachricht erforderlich").min(30, "Die Nachricht ist zu kurz"),
   policy: bool().oneOf([true], "Sie müssen die Datenschutzbestimmungen akzeptieren."),
 });
@@ -21,6 +22,7 @@ export const defaultValues = {
   email: "",
   phone: "",
   client: "",
+  businessName: "",
   message: "",
   policy: false,
 };

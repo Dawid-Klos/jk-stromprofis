@@ -13,7 +13,9 @@ import Checkbox from "./Checkbox";
 import styles from "./Form.module.scss";
 
 export const Form = () => {
-  const { control, handleSubmit, onSubmit, errors } = useFormLogic();
+  const { control, handleSubmit, onSubmit, watch, errors } = useFormLogic();
+
+  const isCompany = watch("client") === "business";
 
   return (
     <form className={styles.form} onSubmit={handleSubmit(onSubmit)} noValidate>
@@ -23,7 +25,7 @@ export const Form = () => {
         rules={{ required: true }}
         render={({ field: { onChange, value } }) => (
           <Input
-            type="name"
+            type="text"
             label="Imie i nazwisko"
             autoComplete="name"
             isInvalid={!!errors.name}
@@ -33,6 +35,7 @@ export const Form = () => {
           />
         )}
       />
+
       <Controller
         name="email"
         control={control}
@@ -49,6 +52,7 @@ export const Form = () => {
           />
         )}
       />
+
       <Controller
         name="phone"
         control={control}
@@ -74,6 +78,25 @@ export const Form = () => {
           <Select isInvalid={!!errors.client} errorMessage={errors.client?.message} value={value} onChange={onChange} />
         )}
       />
+
+      {isCompany && (
+        <Controller
+          name="businessName"
+          control={control}
+          rules={{ required: true }}
+          render={({ field: { onChange, value } }) => (
+            <Input
+              type="text"
+              label="Nazwa firmy"
+              autoComplete="organization"
+              isInvalid={!!errors.businessName}
+              errorMessage={errors.businessName?.message}
+              value={value}
+              onChange={onChange}
+            />
+          )}
+        />
+      )}
 
       <Controller
         name="message"
