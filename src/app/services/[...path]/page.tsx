@@ -1,13 +1,12 @@
+import Hero from "@components/Services/Hero";
 import BackgroundImage from "@components/common/BackgroundImage";
 import CtaSection from "@components/common/CtaSection";
+import Section from "@components/common/Section";
 
 import { services } from "@config/services";
-import { convertTitleToHref } from "@utils/functions";
 
-import ctaImage from "@assets/images/services-cta.png";
 import backgroundImage from "@assets/images/services-background.png";
-import Section from "@components/common/Section";
-import Hero from "@components/Services/Hero";
+import ctaImage from "@assets/images/services-cta.png";
 
 export default function Page({ params }: { params: { path: string } }) {
   const path = params.path.toString();
@@ -18,16 +17,16 @@ export default function Page({ params }: { params: { path: string } }) {
     return null;
   }
 
-  const { title, subtitle, section } = service.content || {};
+  const { title, subtitle, articles } = service.content || {};
 
   return (
     <>
       {title && <Hero title={title} subtitle={subtitle} />}
 
       <Section
-        subtitle={section?.subtitle}
-        title={section?.title}
-        items={section?.articles}
+        subtitle="profesjonalizm"
+        title="Czego możesz od nas oczekiwać."
+        items={articles}
       />
 
       <BackgroundImage src={backgroundImage} alt="" />
