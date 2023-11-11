@@ -1,7 +1,7 @@
 $nav-height-mobile: 80px;
 $nav-height-desktop-md: 96px;
 
-@mixin heroHeight {
+@mixin hero_height {
   min-height: calc(100vh - $nav-height-mobile);
 
   @screen desktop_md {

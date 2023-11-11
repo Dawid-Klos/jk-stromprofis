@@ -1,7 +1,7 @@
 @import "@styles/mixins";
 
 .section {
-  @include heroHeight;
+  @include hero_height;
 
   position: relative;
   display: flex;
