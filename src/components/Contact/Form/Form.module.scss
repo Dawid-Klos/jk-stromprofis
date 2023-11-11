@@ -3,20 +3,6 @@
   flex-direction: column;
   gap: 1rem;
 
-  .checkboxWrapper {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-
-    .paragraph {
-      @apply text-body-sm text-accent-500;
-
-      @screen desktop_md {
-        @apply text-body-md;
-      }
-    }
-  }
-
   .button {
     align-self: center;
     max-width: max-content;
