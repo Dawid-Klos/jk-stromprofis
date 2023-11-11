@@ -1,0 +1,40 @@
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2.5rem;
+
+  .title {
+    @apply text-h1;
+
+    @screen desktop_md {
+      @apply text-h2;
+    }
+
+    @screen desktop_lg {
+      @apply text-d3;
+    }
+  }
+
+  .accent {
+    @apply text-secondary-500 text-label-md;
+
+    padding-top: 2rem;
+  }
+
+  .btnContainer {
+    display: flex;
+    flex-direction: column;
+
+    @screen tablet {
+      flex-direction: row;
+      gap: 4rem;
+    }
+
+    .button {
+      align-self: center;
+      max-width: max-content;
+      margin-top: 2rem;
+    }
+  }
+}
