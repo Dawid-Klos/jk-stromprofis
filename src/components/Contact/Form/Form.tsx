@@ -17,7 +17,7 @@ import styles from "./Form.module.scss";
 
 export const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
-  const [isFormSubmitted, setIsFormSubmitted] = useState(true);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
   const { control, watch, errors, handleSubmit } = useFormLogic();
