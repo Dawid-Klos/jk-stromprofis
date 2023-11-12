@@ -1,4 +1,10 @@
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { usePathname } from "next/navigation";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+} from "@nextui-org/react";
 import Image from "next/image";
 
 import Link from "@components/common/Link";
@@ -13,6 +19,8 @@ type Props = {
 };
 
 export const Desktop = ({ menuItems }: Props) => {
+  const path = usePathname();
+
   return (
     <Navbar
       classNames={{
@@ -28,11 +36,22 @@ export const Desktop = ({ menuItems }: Props) => {
 
         <NavbarBrand className={styles.brand}>
           {menuItems.map(({ id, title, href, list }) => {
+            console.log(path, href);
             return list ? (
               <Dropdown key={id} title={title} list={list} />
             ) : (
-              <NavbarItem key={id} className={styles.item}>
-                <Link className={`${styles.link} ${title === "Contact" && styles.button}`} href={href} key={title}>
+              <NavbarItem
+                key={id}
+                className={styles.item}
+                isActive={path === href}
+              >
+                <Link
+                  className={`${styles.link} ${
+                    title === "Contact" && styles.button
+                  }`}
+                  href={href}
+                  key={title}
+                >
                   {title}
                 </Link>
               </NavbarItem>

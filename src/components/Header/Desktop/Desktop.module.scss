@@ -34,12 +34,22 @@
 
 .item {
   display: flex;
+
+  &[data-active="true"] {
+    .link {
+      @apply text-secondary-500;
+    }
+  }
 }
 
 .link {
   @apply text-body-sm text-accent-300;
 
   padding: 1rem;
+
+  &:hover {
+    @apply text-accent-600 #{!important};
+  }
 
   @screen desktop_lg {
     @apply text-body-md;

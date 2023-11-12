@@ -1,3 +1,4 @@
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
   Dropdown as NextDropdown,
@@ -18,6 +19,9 @@ type Props = {
 };
 
 export const Dropdown = ({ title, list }: Props) => {
+  const path = usePathname();
+  console.log(path);
+
   return (
     <NextDropdown
       classNames={{
@@ -26,7 +30,11 @@ export const Dropdown = ({ title, list }: Props) => {
     >
       <NavbarItem>
         <DropdownTrigger>
-          <Button disableRipple className={styles.button} endContent={<Chevron />}>
+          <Button
+            disableRipple
+            className={styles.button}
+            endContent={<Chevron />}
+          >
             {title}
           </Button>
         </DropdownTrigger>
@@ -35,9 +43,14 @@ export const Dropdown = ({ title, list }: Props) => {
       <DropdownMenu aria-label="">
         {list.map(({ id, title, href, icon }) => {
           const Icon = icon;
+          const isActive = path === href;
 
           return (
-            <DropdownItem key={id} className={styles.item} startContent={<Icon />}>
+            <DropdownItem
+              key={id}
+              className={`${styles.item} ${isActive && styles.active}`}
+              startContent={<Icon />}
+            >
               <Link className={styles.link} href={href}>
                 {title}
               </Link>
