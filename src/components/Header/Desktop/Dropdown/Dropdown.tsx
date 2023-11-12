@@ -20,7 +20,6 @@ type Props = {
 
 export const Dropdown = ({ title, list }: Props) => {
   const path = usePathname();
-  console.log(path);
 
   return (
     <NextDropdown

@@ -29,6 +29,7 @@
 
 .link {
   @apply text-body-sm text-accent-300;
+
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -36,5 +37,17 @@
   svg {
     width: 24px;
     height: 24px;
+  }
+
+  &.active {
+    @apply text-secondary-500;
+  }
+
+  &:hover {
+    @apply text-accent-600;
+
+    & * {
+      @apply text-accent-600;
+    }
   }
 }
