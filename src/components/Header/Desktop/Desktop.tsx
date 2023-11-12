@@ -36,7 +36,6 @@ export const Desktop = ({ menuItems }: Props) => {
 
         <NavbarBrand className={styles.brand}>
           {menuItems.map(({ id, title, href, list }) => {
-            console.log(path, href);
             return list ? (
               <Dropdown key={id} title={title} list={list} />
             ) : (
