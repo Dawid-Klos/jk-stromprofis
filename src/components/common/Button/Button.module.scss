@@ -2,50 +2,49 @@
 
 .button {
   @include transition;
-  @apply bg-primary-500 text-button-sm text-accent-300;
+  @apply text-button-sm text-accent-300;
 
   display: flex;
+  align-items: center;
+  gap: 0.75rem;
   height: auto;
   padding: 1rem 2rem;
-
-  @screen tablet {
-    @apply text-button-md;
-  }
+  text-transform: uppercase;
 
   & > svg {
-    @apply text-accent-500;
     @include transition;
-  }
 
-  &:hover > svg {
-    @apply text-secondary-500;
-
-    margin-left: 1rem;
+    min-width: 1.25rem;
+    height: 1.25rem;
   }
 
   &.primary {
-    box-shadow: 0px 7.08502px 18.21862px 0px rgba(233, 79, 55, 0.08);
-    background: linear-gradient(268deg, #e94f37 2.96%, #802b1e 99.97%);
+    @apply bg-secondary-600 text-accent-200;
+
+    & > svg {
+      @apply text-accent-200;
+    }
 
     &:hover {
-      @apply text-accent-300;
+      @apply shadow-lg shadow-secondary-500/20;
 
-      background: linear-gradient(268deg, #802b1e 2.96%, #e94f37 99.97%);
-      box-shadow: 0px 14px 48px 0px rgba(233, 79, 55, 0.15),
-        0px 0px 22px 0px rgba(233, 79, 55, 0.25);
+      opacity: 0.9;
     }
   }
 
   &.secondary {
-    @apply border border-solid;
+    @apply border border-solid border-accent-500/20;
 
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, #191919, #515151);
+    background: linear-gradient(321deg, #191919 25.93%, #333 155.63%);
+
+    & > svg {
+      @apply text-accent-300;
+    }
 
     &:hover {
-      @apply text-secondary-500;
+      @apply shadow-md shadow-accent-100/10;
 
-      border-image-source: linear-gradient(to left, #191919, #515151);
+      opacity: 0.9;
     }
   }
 }
