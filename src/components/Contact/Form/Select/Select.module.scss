@@ -1,4 +1,7 @@
+@import "@styles/mixins";
+
 .selectTrigger {
+  @include transition;
   @apply border-accent-500/20 border-solid border-1;
 
   background: transparent;
