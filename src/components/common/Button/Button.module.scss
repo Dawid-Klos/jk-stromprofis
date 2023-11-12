@@ -2,7 +2,7 @@
 
 .button {
   @include transition;
-  @apply text-button-sm text-accent-300;
+  @apply text-button-sm;
 
   display: flex;
   align-items: center;
@@ -33,9 +33,9 @@
   }
 
   &.secondary {
-    @apply border border-solid border-accent-500/20;
+    @apply text-accent-300 border border-solid border-accent-500/20;
 
-    background: linear-gradient(321deg, #191919 25.93%, #333 155.63%);
+    background: transparent;
 
     & > svg {
       @apply text-accent-300;
