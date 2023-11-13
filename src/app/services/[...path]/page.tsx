@@ -7,8 +7,8 @@ import Section from "@components/common/Section";
 
 import { services } from "@config/services";
 
-import backgroundImage from "@assets/images/services-background.png";
-import ctaImage from "@assets/images/services-cta.png";
+import backgroundImage from "@assets/images/services-trust.webp";
+import ctaImage from "@assets/images/partners-img.svg";
 
 export default function Page({ params }: { params: { path: string } }) {
   const path = params.path.toString();
@@ -25,19 +25,9 @@ export default function Page({ params }: { params: { path: string } }) {
     <>
       {title && <Hero title={title} subtitle={subtitle} />}
 
-      {articles && (
-        <Section
-          subtitle="profesjonalizm"
-          title="Czego możesz od nas oczekiwać."
-          items={articles}
-        />
-      )}
+      {articles && <Section subtitle="profesjonalizm" title="Czego możesz od nas oczekiwać." items={articles} />}
 
-      <BackgroundImage
-        className={styles.backgroundImage}
-        src={backgroundImage}
-        alt=""
-      />
+      <BackgroundImage className={styles.backgroundImage} src={backgroundImage} alt="" />
 
       <CtaSection
         subtitle="kiedy tego potrzebujesz"

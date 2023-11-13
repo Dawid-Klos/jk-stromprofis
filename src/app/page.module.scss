@@ -1,55 +1,41 @@
 @import "@styles/mixins";
 
-.background {
-  position: relative;
-  display: flex;
-  min-height: 1000px;
+.bulbsImage {
+  min-height: 300px;
 
-  margin: 8rem (-$body-margin-mobile);
+  @screen mobile_md {
+    min-height: 400px;
+  }
 
   @screen tablet {
-    margin: 8rem (-$body-margin-tablet);
+    min-height: 500px;
   }
 
   @screen desktop_md {
-    margin: 8rem (-$body-margin-desktop-md);
-  }
-
-  @screen desktop_lg {
-    min-height: 500px;
-    margin: 8rem (-$body-margin-desktop-lg);
-    min-height: 1600px;
+    min-height: 530px;
   }
 
   @screen desktop_xl {
+    min-height: 1000px;
+  }
+}
+
+.cityImage {
+  min-height: 500px;
+
+  @screen mobile_md {
     min-height: 600px;
-    margin: 1rem (-$body-margin-desktop-xl);
-    min-height: 1100px;
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(
-      rgba(25, 25, 25, 1) 0%,
-      rgba(25, 25, 25, 0.9) 5%,
-      rgba(25, 25, 25, 0.85) 10%,
-      rgba(25, 25, 25, 0.8) 12%,
-      rgba(25, 25, 25, 0.75) 13%,
-      rgba(25, 25, 25, 0.65) 15%,
-      rgba(25, 25, 25, 0.2) 20%,
-      transparent 50%,
-      rgba(25, 25, 25, 0.2) 85%,
-      rgba(25, 25, 25, 0.75) 95%,
-      rgba(25, 25, 25, 1) 100%
-    );
+  @screen tablet {
+    min-height: 800px;
   }
 
-  .image {
-    object-fit: cover;
+  @screen desktop_md {
+    min-height: 900px;
+  }
+
+  @screen desktop_xl {
+    min-height: 1000px;
   }
 }

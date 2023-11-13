@@ -2,7 +2,7 @@ import { Chip } from "@nextui-org/react";
 import Image from "next/image";
 
 import Hgroup from "@components/common/Hgroup";
-import contactImage from "@assets/images/contact-img.jpeg";
+import contactImage from "@assets/images/contact-img.webp";
 
 import Form from "./Form";
 
