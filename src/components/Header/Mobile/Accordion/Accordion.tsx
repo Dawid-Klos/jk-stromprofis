@@ -1,4 +1,5 @@
-import { Accordion as NextAccordion, AccordionItem } from "@nextui-org/react";
+import { usePathname } from "next/navigation";
+import { AccordionItem, Accordion as NextAccordion } from "@nextui-org/react";
 
 import Divider from "@components/common/Divider";
 import Link from "@components/common/Link";
@@ -16,6 +17,8 @@ type Props = {
 };
 
 export const Accordion = ({ title, list, setIsOpen }: Props) => {
+  const path = usePathname();
+
   return (
     <NextAccordion
       key={title}
@@ -29,10 +32,16 @@ export const Accordion = ({ title, list, setIsOpen }: Props) => {
       <AccordionItem aria-label={title} title={title}>
         {list.map(({ title, href, icon }) => {
           const Icon = icon;
+          const isActive = path === href;
 
           return (
             <>
-              <Link className={styles.link} href={href} onClick={() => setIsOpen(false)} key={title}>
+              <Link
+                className={`${styles.link} ${isActive && styles.active}`}
+                href={href}
+                onClick={() => setIsOpen(false)}
+                key={title}
+              >
                 <Icon />
                 {title}
               </Link>

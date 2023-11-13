@@ -1,12 +1,18 @@
+@import "@styles/mixins";
+
 .checkbox {
+  @include transition;
+
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding-top: 1rem;
 
   &[data-focus="true"],
   &[data-hover="true"] {
     .wrapper {
       @apply border-secondary-500;
+
       box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
 
       &::before {

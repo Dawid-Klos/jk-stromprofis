@@ -1,3 +1,5 @@
+@import "@styles/mixins";
+
 .container {
   &[data-focus-within="true"],
   &[data-hover="true"],
@@ -10,6 +12,7 @@
   }
 
   .inputBase {
+    @include transition;
     @apply border-accent-500/20 border-solid border-1;
 
     border-radius: 0.5rem;

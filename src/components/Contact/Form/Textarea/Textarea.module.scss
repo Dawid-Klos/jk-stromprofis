@@ -1,11 +1,16 @@
+@import "@styles/mixins";
+
 .textarea {
+  @include transition;
   @apply border-accent-500/20 border-solid border-1 text-body-sm text-accent-500;
+
   border-radius: 0.5rem;
 
   &[data-focus="true"],
   &[data-hover="true"],
   &[data-focus-visible="true"] {
     @apply border-secondary-500;
+
     box-shadow: 0 5px 20px hsl(12%, 19%, 69%, 0.24);
   }
 
@@ -33,6 +38,7 @@
 
   .errorMessage {
     @apply text-label-sm text-danger;
+
     padding: 1rem;
   }
 }

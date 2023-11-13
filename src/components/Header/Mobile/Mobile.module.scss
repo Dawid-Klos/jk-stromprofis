@@ -52,6 +52,10 @@
 .link {
   @apply text-h3 text-accent-500 font-montserrat;
 
+  &.active {
+    @apply text-secondary-500;
+  }
+
   @screen mobile_md {
     @apply text-h2;
   }
