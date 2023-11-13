@@ -9,7 +9,7 @@
   background: none;
 
   &:hover {
-    @apply text-secondary-500;
+    @apply text-accent-600;
   }
 
   @screen desktop_lg {
@@ -48,16 +48,27 @@
     @include transition;
   }
 
-  svg {
+  & > svg {
     width: 24px;
     height: 24px;
+  }
+
+  &.active {
+    .link,
+    & > svg {
+      @apply text-secondary-500;
+    }
   }
 
   &[data-hover="true"] {
     @apply bg-accent-500/10;
 
+    & > svg {
+      @apply text-accent-300;
+    }
+
     .link {
-      @apply text-body-sm text-secondary-500;
+      @apply text-body-sm text-accent-300;
 
       @screen desktop_lg {
         @apply text-body-md;

@@ -1,9 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { Navbar, NavbarContent, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, NavbarBrand } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarContent,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarBrand,
+} from "@nextui-org/react";
 
 import styles from "./Mobile.module.scss";
 
@@ -18,6 +26,7 @@ type Props = {
 
 export const Mobile = ({ menuItems }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const path = usePathname();
 
   const toogle = () => {
     setIsOpen(!isOpen);
@@ -41,18 +50,27 @@ export const Mobile = ({ menuItems }: Props) => {
           </Link>
         </NavbarBrand>
 
-        <NavbarMenuToggle aria-label={isOpen ? "Close menu" : "Open menu"} className={styles.toggle} />
+        <NavbarMenuToggle
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+          className={styles.toggle}
+        />
       </NavbarContent>
 
       <NavbarMenu className={styles.menu}>
         {menuItems.map(({ title, href, list }) => {
+          const isActive = path === href;
+
           return list ? (
             <NavbarMenuItem key={title}>
               <Accordion title={title} list={list} setIsOpen={setIsOpen} />
             </NavbarMenuItem>
           ) : (
             <NavbarMenuItem key={title}>
-              <Link className={styles.link} href={href} onClick={toogle}>
+              <Link
+                className={`${styles.link} ${isActive && styles.active}`}
+                href={href}
+                onClick={toogle}
+              >
                 {title}
               </Link>
             </NavbarMenuItem>
