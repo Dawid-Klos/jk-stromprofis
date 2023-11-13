@@ -7,8 +7,8 @@ import BackgroundImage from "@components/common/BackgroundImage";
 
 import questionImage from "@assets/images/question-img.svg";
 import backgroundImage from "@assets/images/about-bulbs.webp";
-import missionImage from "@assets/images/img-mission.webp";
-import goalImage from "@assets/images/img-goal.webp";
+import missionImage from "@assets/images/about-misson.webp";
+import goalImage from "@assets/images/about-goal.webp";
 
 import styles from "./page.module.scss";
 
