@@ -9,11 +9,11 @@
 @mixin content_width {
   margin: 0 auto;
 
-  @screen desktop_md {
-    max-width: 85%;
+  @screen desktop_lg {
+    max-width: 90%;
   }
 
-  @screen desktop_lg {
-    max-width: 75%;
+  @screen desktop_xl {
+    max-width: 85%;
   }
 }

@@ -23,8 +23,8 @@ export const Hero: React.FC = () => {
       <div className={styles.aside}>
         <Image className={styles.icon} src={timeIcon} alt="" priority />
         <p className={styles.info}>
-          Wir bieten eine hervorragende Verfügbarkeit, damit Sie nicht auf wichtige elektrische Dienstleistungen warten
-          müssen.
+          Die hohe Verfügbarkeit unserer Dienstleistungen gewährleistet, dass Sie nicht auf wichtige elektrische
+          Leistungen warten müssen.
         </p>
       </div>
       <div className={styles.background}></div>
