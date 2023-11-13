@@ -10,7 +10,7 @@ import ArrowRight from "@assets/icons/ArrowRight";
 export const Mobile = () => {
   return (
     <section className={styles.section}>
-      <Hgroup title="Co mamy do zaoferowania." subtitle="Usługi" />
+      <Hgroup title="Was wir anbieten." subtitle="Dienstleistungen" />
 
       <div className={styles.container}>
         {services.map(({ id, title, href, shortDescription, icon }) => {
@@ -26,8 +26,8 @@ export const Mobile = () => {
               {shortDescription}
               <Divider type="horizontal" />
 
-              <Link href={`/services/${href}`} className={styles.link}>
-                Zobacz usługę
+              <Link href={`/dienstleistungen/${href}`} className={styles.link}>
+                Siehe Service
                 <ArrowRight />
               </Link>
             </article>

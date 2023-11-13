@@ -4,7 +4,7 @@
   min-height: 240px;
 
   @screen tablet {
-    min-height: 380px;
+    min-height: 300px;
   }
 
   @screen desktop_md {
@@ -12,6 +12,6 @@
   }
 
   @screen desktop_lg {
-    min-height: 600px;
+    min-height: 700px;
   }
 }

@@ -3,11 +3,18 @@
 .section {
   @include hero_height;
 
+  display: flex;
+  flex-direction: row;
   position: relative;
-  padding: 4rem 0;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @screen tablet {
+    padding: 6rem 0;
+  }
 
   @screen desktop_md {
-    padding: 10rem 0;
+    padding: 8rem 0;
   }
 
   .hgroup {
@@ -16,12 +23,29 @@
     flex-direction: column;
     gap: 1rem;
     z-index: 1;
+
+    @screen tablet {
+      max-width: 75%;
+    }
+
+    @screen desktop_md {
+      max-width: 70%;
+    }
+
+    @screen desktop_xl {
+      max-width: 75%;
+    }
+  }
+
+  .bulbImage {
+    align-self: flex-start;
   }
 
   .image {
     @include hero_height;
 
     width: 100vw !important;
+    height: 100vh !important;
     position: absolute;
     top: 0;
     z-index: 0;
@@ -32,15 +56,18 @@
     }
 
     @screen desktop_md {
-      margin: 0 (-$body-margin-desktop-md);
+      margin: -2rem (-$body-margin-desktop-md);
     }
 
     @screen desktop_lg {
       margin: 0 (-$body-margin-desktop-lg);
+      margin-top: -6rem;
     }
 
     @screen desktop_xl {
       margin: 0 (-$body-margin-desktop-xl);
+      min-height: 1400px;
+      top: -32rem;
     }
   }
 }

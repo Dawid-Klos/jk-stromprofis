@@ -15,7 +15,7 @@ export const Desktop = () => {
 
   return (
     <section className={styles.section}>
-      <Hgroup title="Co mamy do zaoferowania." subtitle="Usługi" />
+      <Hgroup title="Was wir anbieten." subtitle="Dienstleistungen" />
 
       <div className={styles.grid}>
         <Accordion

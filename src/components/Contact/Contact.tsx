@@ -12,9 +12,9 @@ export const Contact = () => {
   return (
     <section className={styles.section}>
       <article className={styles.article}>
-        <Hgroup title="Skontaktuj się z nami." subtitle="Współpraca" headingSize="h1" />
+        <Hgroup title="Kontaktieren Sie uns." subtitle="ZUSAMMENARBEIT" headingSize="h1" />
 
-        <p>Z niecierpliwością czekamy na Twoją wiadomość. Razem, możemy zbudować coś wielkiego.</p>
+        <p>Wir warten gespannt auf Ihre Nachricht. Gemeinsam können wir Großartiges schaffen.</p>
 
         <Chip className={styles.chip} size="lg">
           Antwort in 24 Stunden

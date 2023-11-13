@@ -15,12 +15,7 @@ type Props = {
   setSelectedKeys: (value: any) => void;
 };
 
-export const Accordion = ({
-  services,
-  className,
-  selectedKeys,
-  setSelectedKeys,
-}: Props) => {
+export const Accordion = ({ services, className, selectedKeys, setSelectedKeys }: Props) => {
   return (
     <NextAccordion
       variant="splitted"
@@ -51,7 +46,7 @@ export const Accordion = ({
               <Divider type="horizontal" />
               {shortDescription}
               <Link href={href} className={styles.link}>
-                Zobacz usługę
+                Siehe Service
                 <ArrowRight />
               </Link>
             </>

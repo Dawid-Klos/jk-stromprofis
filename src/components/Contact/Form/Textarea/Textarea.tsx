@@ -22,9 +22,9 @@ export const Textarea = ({ value, onChange, isInvalid, errorMessage }: Props) =>
     <NextTextarea
       classNames={textAreaClassnames}
       variant="bordered"
-      label="Wiadomość"
+      label="Nachricht"
       isRequired
-      placeholder="Wyjaśnij co możemy dla Ciebie zrobić lub dlaczego się z nami kontaktujesz..."
+      placeholder="Erläutern Sie, was wir für Sie tun können oder warum Sie sich an uns wenden..."
       isInvalid={isInvalid}
       errorMessage={errorMessage}
       value={value}

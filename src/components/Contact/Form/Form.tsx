@@ -51,7 +51,7 @@ export const Form = () => {
 
   return (
     <article className={styles.article}>
-      <h2 className={styles.title}>Wpisz dane kontaktowe</h2>
+      <h2 className={styles.title}>Geben Sie Ihre Kontaktdaten ein.</h2>
 
       <form className={`${styles.form} ${isLoading && styles.opacity}`} onSubmit={handleSubmit(onSubmit)} noValidate>
         <Controller
@@ -61,7 +61,7 @@ export const Form = () => {
           render={({ field: { onChange, value } }) => (
             <Input
               type="text"
-              label="Imie i nazwisko"
+              label="Vor- und Nachname"
               autoComplete="name"
               isInvalid={!!errors.name}
               errorMessage={errors.name?.message}
@@ -78,7 +78,7 @@ export const Form = () => {
           render={({ field: { onChange, value } }) => (
             <Input
               type="email"
-              label="Email"
+              label="E-mail"
               autoComplete="email"
               isInvalid={!!errors.email}
               errorMessage={errors.email?.message}
@@ -95,7 +95,7 @@ export const Form = () => {
           render={({ field: { onChange, value } }) => (
             <Input
               type="tel"
-              label="Numer telefonu"
+              label="Telefonnummer"
               autoComplete="tel-local"
               isInvalid={!!errors.phone}
               errorMessage={errors.phone?.message}
@@ -127,7 +127,7 @@ export const Form = () => {
             render={({ field: { onChange, value } }) => (
               <Input
                 type="text"
-                label="Nazwa firmy"
+                label="Firmenname"
                 autoComplete="organization"
                 isInvalid={!!errors.businessName}
                 errorMessage={errors.businessName?.message}
@@ -167,7 +167,7 @@ export const Form = () => {
         />
 
         <Button className={styles.button} element="button" variant="secondary" isLoading={isLoading}>
-          Wyślij wiadomość
+          Nachricht senden
         </Button>
       </form>
     </article>

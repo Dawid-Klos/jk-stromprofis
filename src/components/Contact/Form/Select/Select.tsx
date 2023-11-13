@@ -33,8 +33,8 @@ export const Select = ({ value, onChange, isInvalid, errorMessage }: Props) => {
       popoverProps={{ classNames: popOverClassnames }}
       variant="bordered"
       isRequired
-      label="Rodzaj klienta"
-      placeholder="Wybierz klienta"
+      label="Kundentyp"
+      placeholder="Wählen Sie den Kundentyp"
       isInvalid={isInvalid}
       errorMessage={errorMessage}
       disabledKeys={[""]}
@@ -42,15 +42,15 @@ export const Select = ({ value, onChange, isInvalid, errorMessage }: Props) => {
       onChange={onChange}
     >
       <SelectItem className={styles.item} key="" value="">
-        Wybierz klienta
+        Wählen Sie den Kundentyp
       </SelectItem>
 
       <SelectItem className={styles.item} key="customer" value="customer">
-        Klient prywatny
+        Privatkunde
       </SelectItem>
 
       <SelectItem className={styles.item} key="business" value="business">
-        Klient biznesowy
+        Geschäftskunde
       </SelectItem>
     </NextSelect>
   );

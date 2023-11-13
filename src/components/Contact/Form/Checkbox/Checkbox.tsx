@@ -29,7 +29,7 @@ export const Checkbox = ({ value, onChange, isInvalid, errorMessage }: Props) =>
         isSelected={value}
         onValueChange={onChange}
       >
-        Akceptuje politykę prywatności
+        Ich akzeptiere die Datenschutzrichtlinien
       </NextCheckbox>
       {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
     </>

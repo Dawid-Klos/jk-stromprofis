@@ -23,32 +23,20 @@ export const Footer = () => {
           <Image src={logo} alt="JK-Stromprofis" fill />
         </div>
         <article className={styles.article}>
-          <h2 className={styles.title}>Skontaktuj się</h2>
+          <h2 className={styles.title}>Kontakt aufnehmen</h2>
           <div className={styles.box}>
             <Link href="tel:004917643333333" className={styles.link}>
-              <Image
-                className={styles.icon}
-                src={phoneIcon}
-                alt="phone"
-                width={24}
-                height={24}
-              />
-              <p>+49 176 433 333 33</p>
+              <Image className={styles.icon} src={phoneIcon} alt="phone" width={24} height={24} />
+              <p>+49 177 629 49 92</p>
             </Link>
             <Link href="mailto:info@jk-stromprofis.de" className={styles.link}>
-              <Image
-                className={styles.icon}
-                src={emailIcon}
-                alt="email"
-                width={24}
-                height={24}
-              />
+              <Image className={styles.icon} src={emailIcon} alt="email" width={24} height={24} />
               <p>info@jk-stromprofis.de</p>
             </Link>
           </div>
         </article>
         <article className={styles.article}>
-          <h2 className={styles.title}>Lista usług</h2>
+          <h2 className={styles.title}>Liste der Dienstleistungen</h2>
           <ul className={styles.box}>
             {services.map(({ title, href }) => {
               return (
@@ -62,7 +50,7 @@ export const Footer = () => {
           </ul>
         </article>
         <article className={styles.article}>
-          <h2 className={styles.title}>Legal</h2>
+          <h2 className={styles.title}>Wichtige Links</h2>
           <ul className={styles.box}>
             {menuItems.map(({ title, href }) => {
               return (
@@ -78,16 +66,8 @@ export const Footer = () => {
       </div>
 
       <div className={styles.copy}>
-        <Image
-          className={styles.icon}
-          src={copyrightIcon}
-          width={16}
-          height={16}
-          alt=""
-        />
-        <p className={styles.text}>
-          2023 JK-Stromprofis. Wszystkie prawa zastrzeżone.
-        </p>
+        <Image className={styles.icon} src={copyrightIcon} width={16} height={16} alt="" />
+        <p className={styles.text}>2023 JK-Stromprofis. Alle Rechte vorbehalten.</p>
       </div>
     </footer>
   );

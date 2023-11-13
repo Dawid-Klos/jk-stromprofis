@@ -8,18 +8,15 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding-top: 2rem;
   padding-bottom: 2rem;
   gap: 24rem;
 
   @screen tablet {
-    padding-top: 4rem;
     gap: 28rem;
   }
 
   @screen desktop_md {
     align-items: flex-start;
-    padding-top: 4rem;
     gap: unset;
   }
 
