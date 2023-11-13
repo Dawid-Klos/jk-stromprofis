@@ -8,7 +8,7 @@ export const Hero = () => {
     <section className={styles.section}>
       <hgroup className={styles.hgroup}>
         <h1 className={styles.title}>
-          Wir erhellen die Stadt mit Erfahrung und <span>Innovation</span>
+          Wir erhellen die Stadt mit <span>Erfahrung und</span> <span>Innovation</span>
         </h1>
         <p className={styles.text}>
           JK-Stromprofis ist ein junges Unternehmen mit großen Ambitionen. Wir glauben, dass dank der Erfahrung und
