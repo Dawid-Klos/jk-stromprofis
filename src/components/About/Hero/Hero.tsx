@@ -8,11 +8,11 @@ export const Hero = () => {
     <section className={styles.section}>
       <hgroup className={styles.hgroup}>
         <h1 className={styles.title}>
-          Oświetlamy miasto doświadcze-niem i <span>innowacyj-nością</span>
+          Wir erhellen die Stadt mit Erfahrung und <span>Innovation</span>
         </h1>
         <p className={styles.text}>
-          JK-Stromprofis jest młodą firmą z wielkimi ambicjami. Wierzymy, że dzięki doświadczeniu i profejsonalizmowi
-          który nas napędza wszystkie drzwi stoją otworem.
+          JK-Stromprofis ist ein junges Unternehmen mit großen Ambitionen. Wir glauben, dass dank der Erfahrung und
+          Professionalität, die uns antreiben, alle Türen offen stehen.
         </p>
       </hgroup>
 

@@ -27,7 +27,7 @@ export default function Home() {
       <CtaSection
         subtitle="Wir können helfen"
         title="Haben Sie noch Fragen?"
-        content="Mit einem ausgezeichneten Ruf und vielen Empfehlungen sind die JK-Stromprofis zweifellos die erste Wahl für professionelle Elektrodienstleistungen. Nehmen Sie uns nicht beim Wort - erleben Sie die Kompetenz und Energie unseres Teams selbst."
+        content="Dank unseres guten Rufs und hervorragender Empfehlungen ist JK-Stromprofis zweifellos die erste Wahl für professionelle elektrische Dienstleistungen. Sie müssen uns nicht einfach glauben - überzeugen Sie sich selbst von der Kompetenz und Energie unseres Teams."
         image={{
           src: questionImage,
           alt: "Charakter, der zeigt, dass er nicht versteht, was vor sich geht",

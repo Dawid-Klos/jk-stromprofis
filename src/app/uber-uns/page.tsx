@@ -15,18 +15,18 @@ import styles from "./page.module.scss";
 export default function Home() {
   const articles: Item[] = [
     {
-      title: "Nasza misja",
+      title: "Unsere Mission",
       content:
-        "Misją JK-Stromprofis jest świadczenie profesjonalnych i niezawodnych usług elektrycznych w Hamburgu i jego okolicach. Mamy prawie 10-letnie doświadczenie w branży, co daje nam zaufaną przewagę, jeśli chodzi o wszystkie aspekty profesjonalnych potrzeb elektrycznych. Nasz zespół dokłada wszelkich starań, aby każdy klient, który z nami współpracuje, otrzymywał usługi najwyższej jakości, na jakie zasługuje.",
+        "Die Mission von JK-Stromprofis besteht darin, professionelle und zuverlässige elektrische Dienstleistungen in Hamburg und Umgebung zu erbringen. Mit fast 10 Jahren Erfahrung in der Branche haben wir einen vertrauenswürdigen Vorteil in allen Aspekten professioneller elektrischer Bedürfnisse. Unser Team setzt alles daran, sicherzustellen, dass jeder Kunde, der mit uns zusammenarbeitet, die qualitativ hochwertigen Dienstleistungen erhält, die er verdient.",
       image: {
         src: missionImage,
         alt: "Nasza misja",
       },
     },
     {
-      title: "Nasz cel",
+      title: "Unser Ziel",
       content:
-        "Dzięki naszemu doświadczeniu jesteśmy w stanie zaoferować konkurencyjne stawki, jednocześnie zachowując najwyższe standardy bezpieczeństwa i możliwości. Mając mocno zakorzenioną wizję stania się wiodącym dostawcą usług elektrycznych w Hamburgu, każdego dnia dokładamy wszelkich starań, aby nikt nie miał wątpliwości co do wyboru JK-Stromprofis jako eksperta od wszystkiego, co związane z elektrycznością!",
+        "Dank unserer Erfahrung können wir wettbewerbsfähige Preise anbieten, dabei jedoch die höchsten Sicherheits- und Leistungsstandards beibehalten. Mit einer fest verwurzelten Vision, der führende Anbieter von elektrischen Dienstleistungen in Hamburg zu werden, setzen wir uns täglich dafür ein, dass niemand Zweifel an der Wahl von JK-Stromprofis als Experten für alles rund um Elektrizität hat!",
       image: {
         src: goalImage,
         alt: "Nasz cel",
@@ -38,14 +38,14 @@ export default function Home() {
     <>
       <Hero />
 
-      <Section subtitle="Historia" title="Czym się kierujemy." items={articles} />
+      <Section subtitle="GESCHICHTE" title="Wofür wir stehen." items={articles} />
 
       <BackgroundImage className={styles.bulbsImage} src={backgroundImage} alt="" />
 
       <CtaSection
-        subtitle="Komunikacja"
-        title="Wciąż masz pytania?"
-        content="Dzięki silnej reputacji i świetnym rekomendacjom, JK-Stromprofis jest bez wątpienia wiodącym wyborem w zakresie profesjonalnych usług elektrycznych. Nie musisz wierzyć nam na słowo - przekonaj się o kompetencjach i energii naszego zespołu na własnej skórze."
+        subtitle="WIR KÖNNEN HELFEN"
+        title="Haben Sie noch Fragen?"
+        content="Dank unseres guten Rufs und hervorragender Empfehlungen ist JK-Stromprofis zweifellos die erste Wahl für professionelle elektrische Dienstleistungen. Sie müssen uns nicht einfach glauben - überzeugen Sie sich selbst von der Kompetenz und Energie unseres Teams."
         image={{
           src: questionImage,
           alt: "Wciąż masz pytania?",
