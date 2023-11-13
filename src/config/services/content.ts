@@ -1,5 +1,15 @@
-import image from "@assets/images/service-image.webp";
 import { StaticImageData } from "next/image";
+
+import {
+  installationsImages,
+  cableImages,
+  supportImages,
+  securityImages,
+  smartImages,
+  soundImages,
+  lightImages,
+  energyImages,
+} from "./images";
 
 export type Article = {
   title: string;
@@ -33,7 +43,7 @@ export const content: Content[] = [
         content:
           "Unser Team von qualifizierten Fachleuten setzt alles daran, erstklassige elektrische Installationen bereitzustellen, die das volle Potenzial Ihres Raums freisetzen. Wir glauben, dass ein gut durchdachtes elektrisches System die Effizienz, Sicherheit und Gesamtproduktivität sowohl zu Hause als auch am Arbeitsplatz steigern kann.",
         image: {
-          src: image,
+          src: installationsImages[0],
           alt: "",
         },
       },
@@ -42,7 +52,7 @@ export const content: Content[] = [
         content:
           "Wenn es um elektrische Installationen geht, steht Zuverlässigkeit an erster Stelle. Wir sind stolz auf unsere Liebe zum Detail und die strikte Einhaltung branchenüblicher Standards. Unsere erfahrenen Techniker verwenden modernste Ausrüstung und hochwertige Materialien, um sicherzustellen, dass die elektrischen Installationen so konstruiert sind, dass sie die Zeit überdauern. Sie können unserer Leistung vertrauen und die Gewissheit haben, dass Ihre elektrischen Systeme sicher und zuverlässig sind.",
         image: {
-          src: image,
+          src: installationsImages[1],
           alt: "",
         },
       },
@@ -51,7 +61,7 @@ export const content: Content[] = [
         content:
           "Wir verstehen, dass jeder Kunde einzigartige Anforderungen hat. Daher bieten wir maßgeschneiderte Lösungen im Bereich elektrischer Installationen an, die darauf abzielen, spezifische Bedürfnisse zu erfüllen. Unser Team nimmt sich die Zeit, um Ihre Ziele zu verstehen, und arbeitet eng mit Ihnen zusammen, um einen personalisierten Plan zu erstellen, der mit Ihrer Vision übereinstimmt.",
         image: {
-          src: image,
+          src: installationsImages[2],
           alt: "",
         },
       },
@@ -60,7 +70,7 @@ export const content: Content[] = [
         content:
           "Wir sind der Meinung, dass der gesamte Prozess reibungslos und stressfrei verlaufen sollte. Vom ersten Beratungsgespräch bis zur endgültigen Installation bietet unser Team exzellenten Kundenservice. Wir kümmern uns um alle Aspekte des Projekts und gewährleisten, dass Sie sich entspannen und die Vorteile unserer professionellen elektrischen Installationen ohne Probleme genießen können.",
         image: {
-          src: image,
+          src: installationsImages[3],
           alt: "",
         },
       },
@@ -80,7 +90,7 @@ export const content: Content[] = [
         content:
           "Durch unsere Erfahrung in der Verlegung von Kabeltrassen gewährleisten wir eine nahtlose Kommunikation in Gebäuden jeder Größe. Unsere qualifizierten Techniker planen sorgfältig und implementieren die effizientesten Kabeltrassen, um eine unterbrechungsfreie Kommunikation und Energieverteilung in allen Bereichen des Gebäudes zu gewährleisten. Verabschieden Sie sich von Kommunikationsproblemen und begrüßen Sie reibungslos funktionierende Betriebsabläufe.",
         image: {
-          src: image,
+          src: cableImages[0],
           alt: "",
         },
       },
@@ -89,7 +99,7 @@ export const content: Content[] = [
         content:
           "Sicherheit steht immer an erster Stelle. Wir entwerfen und bauen sorgfältig Kabeltrassen, die Sicherheit priorisieren und allen baurechtlichen Vorschriften entsprechen. Mit unseren Dienstleistungen können Sie beruhigt sein, da Ihr Gebäude vor elektrischen Gefahren geschützt ist.",
         image: {
-          src: image,
+          src: cableImages[1],
           alt: "",
         },
       },
@@ -98,7 +108,7 @@ export const content: Content[] = [
         content:
           "Wir verstehen, dass Anpassungsfähigkeit entscheidend ist in der heutigen sich ständig weiterentwickelnden technologischen Landschaft. Daher verwenden wir bei der Verlegung von Kabeltrassen einen zukunftsorientierten Ansatz. Unsere Projekte und Installationen ermöglichen Skalierbarkeit und eine einfache Integration neuer Technologien bei steigenden Anforderungen. Dies gewährleistet die Langlebigkeit und Rentabilität der Infrastruktur.",
         image: {
-          src: image,
+          src: cableImages[2],
           alt: "",
         },
       },
@@ -107,7 +117,7 @@ export const content: Content[] = [
         content:
           "Eine effiziente Kabelführung kann einen signifikanten Einfluss auf die Gesamtproduktivität eines Betriebs haben. Dank unserer Erfahrung planen und bauen wir Kabeltrassen strategisch, um Ausfallzeiten zu minimieren, Wartungsbedürfnisse zu reduzieren und die Energieverteilung zu optimieren. Durch die Optimierung der Effizienz können Sie die Produktivität maximieren und sich auf das Wesentliche konzentrieren - Ihr Kerngeschäft.",
         image: {
-          src: image,
+          src: cableImages[3],
           alt: "",
         },
       },
@@ -127,7 +137,7 @@ export const content: Content[] = [
         content:
           "Ein Mangel an notwendigen Ressourcen wie qualifiziertem Personal oder spezialisierten Berechtigungen kann den Fortschritt und Erfolg jedes Projekts erschweren. Wir sind hier, um diese Lücke zu füllen, indem wir unser Team von qualifizierten Fachleuten zur Verfügung stellen. Mit unserer Unterstützung erhalten Sie Zugang zu spezialisierter Kenntnis und Fähigkeiten, um selbst die komplexesten Projekte durchzuführen, ohne zusätzliches Personal einstellen und schulen zu müssen.",
         image: {
-          src: image,
+          src: supportImages[0],
           alt: "",
         },
       },
@@ -136,7 +146,7 @@ export const content: Content[] = [
         content:
           "Die Umsetzung von Projekten kann eine komplexe Aufgabe sein, mit zahlreichen potenziellen Gefahren und Herausforderungen auf dem Weg. Durch unsere umfassende Unterstützung helfen wir, das Risiko zu minimieren und die Effizienz in jeder Phase des Projekts zu steigern. Unsere sorgfältige Planung, Liebe zum Detail und proaktive Herangehensweise gewährleisten, dass Projekte termingerecht, innerhalb des Budgets und gemäß höchsten Qualitätsstandards geliefert werden.",
         image: {
-          src: image,
+          src: supportImages[1],
           alt: "",
         },
       },
@@ -145,7 +155,7 @@ export const content: Content[] = [
         content:
           "Die Auslagerung der Projektunterstützung an JK-Stromprofis ist nicht nur eine kluge Entscheidung in Bezug auf Fachkenntnisse, sondern auch in Bezug auf die Wirtschaftlichkeit. Wir bieten flexible Lösungen, die auf spezifische Bedürfnisse zugeschnitten sind und es Ihnen ermöglichen, unsere Dienstleistungen in Anspruch zu nehmen, ohne die allgemeinen Kosten für festes Personal oder zusätzliche Ausrüstung tragen zu müssen. Wir arbeiten eng mit Kunden zusammen, um transparente Preise und einen einzigartigen Investitionswert zu gewährleisten.",
         image: {
-          src: image,
+          src: supportImages[2],
           alt: "",
         },
       },
@@ -154,7 +164,7 @@ export const content: Content[] = [
         content:
           "Durch die Zusammenarbeit mit JK-Stromprofis im Bereich Projektunterstützung gewinnen Sie einen vertrauenswürdigen Partner, der sich für Ihren Erfolg engagiert. Wir setzen uns dafür ein, Ihre Ziele und Aufgaben zu erreichen, sei es die Umsetzung eines neuen Bauprojekts, das Management von elektrischen Installationen oder die Bereitstellung laufender Wartung und Unterstützung. Ihr Erfolg ist unser Erfolg, und wir tun alles, um sicherzustellen, dass Ihre Projekte mit höchster Zufriedenheit abgeschlossen werden.",
         image: {
-          src: image,
+          src: supportImages[3],
           alt: "",
         },
       },
@@ -174,7 +184,7 @@ export const content: Content[] = [
         content:
           "Wir bieten hochmoderne Alarmanlagen, die beste Lösung, um die Sicherheit Ihrer Familie, Ihres Eigentums und Ihres Unternehmens zu stärken. Mit unerschütterlichem Engagement für die Bereitstellung höchster Sicherheitsstandards haben wir eine bahnbrechende Palette von Alarmsystemen geschaffen, die das Konzept des optimalen Schutzes neu definieren.",
         image: {
-          src: image,
+          src: securityImages[0],
           alt: "",
         },
       },
@@ -183,7 +193,7 @@ export const content: Content[] = [
         content:
           "Zusätzlich zu unseren Alarmanlagen umfasst unser Sicherheitsangebot fortschrittliche Kameras. Diese Kameras bieten maximale Sicherheit und eine zusätzliche Schutzebene für Ihr Zuhause.",
         image: {
-          src: image,
+          src: securityImages[1],
           alt: "",
         },
       },
@@ -192,7 +202,7 @@ export const content: Content[] = [
         content:
           "Brandschutz hat höchste Priorität in jedem Zuhause. Daher bieten wir erstklassige Brandschutzsysteme an. Mit unseren Systemen können Sie optimale Brandsicherheit gewährleisten und Ihr Zuhause vor potenziellen Gefahren schützen.",
         image: {
-          src: image,
+          src: securityImages[2],
           alt: "",
         },
       },
@@ -201,7 +211,7 @@ export const content: Content[] = [
         content:
           "Um die Sicherheit Ihres Zuhauses noch weiter zu erhöhen, bieten wir Rauchabzugsanlagen an. Diese Systeme sollen die Ausbreitung von Rauch im Falle einer Brandgefahr blockieren oder schnell entfernen und so das Wohlbefinden Ihrer Familie sicherstellen.",
         image: {
-          src: image,
+          src: securityImages[3],
           alt: "",
         },
       },
@@ -221,7 +231,7 @@ export const content: Content[] = [
         content:
           "Betreten Sie Ihr intelligentes Zuhause und bemerken Sie sofort den Unterschied. Sobald Sie die Tür durchschreiten, passen sich die Lichter automatisch der gewünschten Atmosphäre an, und Ihre Lieblingsmusik erfüllt die Luft. Unsere fortschrittliche Bewegungssensor-Technologie beleuchtet Ihren Weg, damit Sie sich mühelos im Haus bewegen können.",
         image: {
-          src: image,
+          src: smartImages[0],
           alt: "",
         },
       },
@@ -230,7 +240,7 @@ export const content: Content[] = [
         content:
           "In Smart Homes gehen wir über die vier Wände hinaus. Unsere Echtzeitdaten zum Energieverbrauch ermöglichen fundierte Entscheidungen, die letztendlich Ihren ökologischen Fußabdruck reduzieren. Optimieren Sie den Energieverbrauch, sparen Sie bei den Rechnungen und schließen Sie sich uns an, um eine umweltfreundlichere und nachhaltigere Zukunft zu gestalten.",
         image: {
-          src: image,
+          src: smartImages[1],
           alt: "",
         },
       },
@@ -239,7 +249,7 @@ export const content: Content[] = [
         content:
           "Sind Sie bereit, die unbegrenzten Möglichkeiten Ihres Zuhauses freizuschalten? Treten Sie der wachsenden Gemeinschaft von Hausbesitzern bei, die den Komfort, die Effizienz und die Harmonie eines intelligenten Zuhauses bereits schätzen. Entdecken Sie eine Welt, in der Komfort auf Innovation trifft.",
         image: {
-          src: image,
+          src: smartImages[2],
           alt: "",
         },
       },
@@ -248,7 +258,7 @@ export const content: Content[] = [
         content:
           "Intelligente Haussysteme haben die Art und Weise, wie wir unsere Häuser verwalten, revolutioniert. Stellen Sie sich vor, Sie betreten ein Zuhause, das Sie mit perfekt angepasster Beleuchtung und Temperatur begrüßt, alles gesteuert über Ihr Smartphone. Intelligente Haussysteme automatisieren Aufgaben wie die Steuerung des Thermostats, das Einschalten von Geräten und sogar das Öffnen und Schließen von Türen. Dank all dieser intelligenten Funktionen kann das Zuhause sofort auf die Bedürfnisse des Kunden reagieren und Komfort und Bequemlichkeit bieten.",
         image: {
-          src: image,
+          src: smartImages[3],
           alt: "",
         },
       },
@@ -268,7 +278,7 @@ export const content: Content[] = [
         content:
           "Wir sind auf die Installation von Audiosystemen an verschiedenen Orten spezialisiert, von Wohnhäusern über Restaurants, Supermärkte, Geschäfte, Büros bis hin zu Einkaufszentren. Unser Installateurteam verfügt über langjährige Erfahrung darin, sicherzustellen, dass das Audiosystem an Ihrem Ort die Botschaft klar und präzise an alle Empfänger übermittelt.",
         image: {
-          src: image,
+          src: soundImages[0],
           alt: "",
         },
       },
@@ -277,7 +287,7 @@ export const content: Content[] = [
         content:
           "Wir werden persönlich mit Ihnen zusammenarbeiten, um die besten Klanglösungen für Ihren Raum zu finden - so dass der Klang passend ist. Zögern Sie also nicht und ermöglichen Sie es Ihren Kunden und Familienmitgliedern, das einzigartige Audiosystem zu genießen, das wir anbieten.",
         image: {
-          src: image,
+          src: soundImages[1],
           alt: "",
         },
       },
@@ -286,7 +296,7 @@ export const content: Content[] = [
         content:
           "Aber das ist nicht alles! Unsere Leidenschaft für den Klang geht über den Bereich kommerzieller Unternehmen hinaus. Für diejenigen, die die perfekte Harmonie in ihren privaten Räumen suchen, bietet unser Angebot zur Installation von Audiosystemen Ruhe und Heiligtum. Egal, ob Sie eine lebendige Versammlung veranstalten, sich einer gemütlichen Nacht hingeben oder einsame Momente verbringen, die richtige Beschallung gewährleistet, dass jeder Rhythmus mit Ihrer Seele resoniert.",
         image: {
-          src: image,
+          src: soundImages[2],
           alt: "",
         },
       },
@@ -295,7 +305,7 @@ export const content: Content[] = [
         content:
           "Wir möchten sicherstellen, dass jedes installierte Audiosystem unseren hohen Standards entspricht und die Kunden maximalen Nutzen daraus ziehen. Wir bieten unseren Kunden die neueste Audio-Technologie führender Marken, damit Sie sich auf die Qualität der von uns verwendeten Ausrüstung verlassen können.",
         image: {
-          src: image,
+          src: soundImages[3],
           alt: "",
         },
       },
@@ -315,7 +325,7 @@ export const content: Content[] = [
         content:
           "Egal, ob Sie Ihr Restaurant, Krankenhaus, Industrieanlage, Treppenhaus oder Garten beleuchten möchten, wir haben die perfekte Beleuchtungslösung für Sie. Unabhängig von der Größe Ihres Projekts und Ihrer Lage wird unser Team eng mit Ihnen zusammenarbeiten, um Ihre Anforderungen auf höchstem Niveau zu erfüllen.",
         image: {
-          src: image,
+          src: lightImages[0],
           alt: "",
         },
       },
@@ -324,7 +334,7 @@ export const content: Content[] = [
         content:
           "Wir werden eng mit Ihnen zusammenarbeiten, um Ihre Vision und Vorlieben zu verstehen. Wir werden den Layout Ihres Raums bewerten, natürliches Licht berücksichtigen und einen Beleuchtungsplan entwerfen, der speziell auf Ihre Bedürfnisse zugeschnitten ist. Unser Ziel ist es nicht nur, funktionale Beleuchtung bereitzustellen, sondern auch die allgemeine Atmosphäre Ihres Raums zu verbessern.",
         image: {
-          src: image,
+          src: lightImages[1],
           alt: "",
         },
       },
@@ -333,7 +343,7 @@ export const content: Content[] = [
         content:
           "Aber was ist, wenn Sie bereits Beleuchtung haben, die Ihre Erwartungen nicht erfüllt? Machen Sie sich keine Sorgen, überlassen Sie das uns. Unser Team ist auf den Austausch von Beleuchtungskörpern spezialisiert, egal ob es sich um eine einzelne Glühbirne oder einen Kronleuchter handelt. Wir entfernen alte, veraltete Beleuchtung und ersetzen sie durch wunderbare, energieeffiziente Optionen, die Ihrem Raum neues Leben einhauchen.",
         image: {
-          src: image,
+          src: lightImages[2],
           alt: "",
         },
       },
@@ -342,7 +352,7 @@ export const content: Content[] = [
         content:
           "Unser Team von Experten verfügt über langjährige Erfahrung und Fachkenntnisse im Bereich Beleuchtungsdesign und -installation. Sie haben ein gutes Auge für Details und das Talent, Ihren Raum in ein echtes Kunstwerk zu verwandeln. Tief in unserem Herzen glauben wir, dass Beleuchtung nicht nur Funktionalität ist; es ist eine Kunstform. Egal, ob Sie Ihr Zuhause, Büro, Restaurant oder einen anderen Ort renovieren möchten, wir haben etwas Passendes für Sie.",
         image: {
-          src: image,
+          src: lightImages[3],
           alt: "",
         },
       },
@@ -362,7 +372,7 @@ export const content: Content[] = [
         content:
           "Stellen Sie sich eine Welt vor, in der Ihr Elektrofahrzeug immer aufgeladen und bereit für die Fahrt mit einem mitreißenden Energieschub ist. Dank unserer Batterieladestationen wird dieser Traum zur Realität. Wir sind hier, um die Art und Weise, wie Sie über das Laden nachdenken, zu verändern und es zu einer nahtlosen und mühelosen Erfahrung zu machen, die Sie beeindrucken wird.",
         image: {
-          src: image,
+          src: energyImages[0],
           alt: "",
         },
       },
@@ -371,7 +381,7 @@ export const content: Content[] = [
         content:
           "Unsere Dienstleistungen zur Installation von Ladestationen wurden mit Blick auf maximale Leistung entwickelt. Wir kümmern uns um alle Details der Verkabelung, damit Sie sich um nichts kümmern müssen. Mit unseren erstklassigen Produkten können Sie sicher sein, dass Sie eine Ladestation erhalten, die sicher und zuverlässig ist.",
         image: {
-          src: image,
+          src: energyImages[1],
           alt: "",
         },
       },
@@ -380,7 +390,7 @@ export const content: Content[] = [
         content:
           "Tauchen Sie ein in die Welt modernster Technologie, verbunden mit elegantem und modernem Design, das sich nahtlos in jede Umgebung integriert. Von Unternehmenscampussen bis hin zu Wohngebieten – unsere Ladepunkte wurden so gestaltet, dass sie sich in die Umgebung einfügen und gleichzeitig eine mutige Erklärung Ihrer Verpflichtung zur nachhaltigen Zukunft abgeben.",
         image: {
-          src: image,
+          src: energyImages[2],
           alt: "",
         },
       },
@@ -389,7 +399,7 @@ export const content: Content[] = [
         content:
           "Wenn Sie Energie benötigen, um verschiedene Geräte auf Ihrem Gelände zu versorgen, suchen Sie nicht weiter! Mit unseren Lösungen können Sie genau dann und dort die richtige Menge Strom liefern, wo Sie ihn benötigen. Wir bieten die Leistung, Stabilität und den Schutz, den Sie für die Durchführung jeder Aufgabe auf Ihrem Gelände benötigen. Wir sind stolz darauf, Landwirten wie Ihnen zu helfen, ihre Anlagen sicher und zuverlässig zu betreiben.",
         image: {
-          src: image,
+          src: energyImages[3],
           alt: "",
         },
       },
