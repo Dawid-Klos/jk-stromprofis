@@ -68,8 +68,8 @@ const basicServices: Service[] = [
   },
   {
     id: 6,
-    title: "Planung, Installation und Austausch von Beleuchtung",
-    href: "planung-installation-und-austausch-von-beleuchtung",
+    title: "Beleuchtungssysteme",
+    href: "beleuchtungssysteme",
     shortDescription:
       "Suchen Sie nach einer professionellen Beleuchtungslösung, die beeindruckende Ergebnisse liefert und Ihren Raum erhellt? Suchen Sie nicht weiter als unsere umfassenden Beleuchtungsdienstleistungen für Privatpersonen und Geschäftsinhaber. Unser Team erfahrener Techniker bietet professionelle Planungs-, Installations- und Austauschdienstleistungen für alle Arten von Beleuchtung.",
     icon: LightBulb,

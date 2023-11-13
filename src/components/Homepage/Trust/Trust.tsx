@@ -13,7 +13,7 @@ import contractIcon from "@assets/icons/contract-card.svg";
 export const Trust: React.FC = () => {
   return (
     <section className={styles.section}>
-      <Hgroup subtitle="exzellenz" title="Warum sollten Sie uns vertrauen." />
+      <Hgroup subtitle="Außergewöhnlichkeit" title="Warum sollten Sie uns vertrauen." />
 
       <div className={styles.topContainer}>
         <Card

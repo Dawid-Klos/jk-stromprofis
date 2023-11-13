@@ -66,6 +66,15 @@ export const content: Content[] = [
         },
       },
       {
+        title: "Lösungen für gewerbliche Gebäude",
+        content:
+          "Wenn Sie Energie benötigen, um verschiedene Geräte auf Ihrem Gelände zu versorgen, suchen Sie nicht weiter! Mit unseren Lösungen können Sie genau dann und dort die richtige Menge Strom liefern, wo Sie ihn benötigen. Wir bieten die Leistung, Stabilität und den Schutz, den Sie für die Durchführung jeder Aufgabe auf Ihrem Gelände benötigen. Wir sind stolz darauf, Landwirten wie Ihnen zu helfen, ihre Anlagen sicher und zuverlässig zu betreiben.",
+        image: {
+          src: installationsImages[4],
+          alt: "",
+        },
+      },
+      {
         title: "Reibungslose und stressfreie Betreuung",
         content:
           "Wir sind der Meinung, dass der gesamte Prozess reibungslos und stressfrei verlaufen sollte. Vom ersten Beratungsgespräch bis zur endgültigen Installation bietet unser Team exzellenten Kundenservice. Wir kümmern uns um alle Aspekte des Projekts und gewährleisten, dass Sie sich entspannen und die Vorteile unserer professionellen elektrischen Installationen ohne Probleme genießen können.",
@@ -78,7 +87,7 @@ export const content: Content[] = [
   },
   {
     id: 1,
-    title: `Spezialisierte Verlegung von Kabeltrassen <span>in großen Gebäuden</span>`,
+    title: `Spezialisierte Verlegung von <span>Kabeltrassen</span>`,
     subtitle:
       "Bei JK-Stromprofis haben wir uns auf die Bereitstellung hochwertiger Dienstleistungen für die Verlegung von Kabeltrassen in großen Gebäuden spezialisiert. Wir verstehen, dass eine effiziente Kabelführung das Fundament für jedes moderne Gebäude bildet, und wir sind hier, um die Leistung zu optimieren und den Betrieb zu verbessern.",
     summary:
@@ -172,9 +181,9 @@ export const content: Content[] = [
   },
   {
     id: 3,
-    title: `Sicherheitssysteme: <span>Alarme, Kameras, Brandschutz- und Rauchabzugsanlagen</span>`,
+    title: `Schützen Sie mit <span>JK-Stromprofis</span>, was am wichtigsten ist`,
     subtitle:
-      "Suchen Sie nach Möglichkeiten, Ihr Zuhause vor Eindringlingen und anderen Sicherheitsbedrohungen zu schützen? Nun, suchen Sie nicht weiter! Wir bieten die perfekten Lösungen - umfassende Sicherheitssysteme mit Kameras und Alarmanlagen, die die Sicherheit Ihrer Familie und Ihres Eigentums gewährleisten.",
+      "Suchst du nach Möglichkeiten, deinen Wohnsitz, dein Unternehmen oder deine Einrichtung zu schützen? Dann suchen Sie nicht weiter! Wir bieten eine breite Palette von Dienstleistungen in diesem Bereich an - von Alarmen und Kameras bis hin zu Brand- und Rauchabzugsanlagen.",
     summary:
       "Vertrauen Sie unserem erfahrenen Team, das Ihnen und Ihrer Familie einen unvergleichlichen Schutz bietet. Wir haben uns darauf spezialisiert, umfassende Sicherheitslösungen an Ihre einzigartigen Bedürfnisse anzupassen. Warten Sie nicht länger - kontaktieren Sie uns noch heute, um die Sicherheit Ihres Zuhauses auf höchstem Niveau zu gewährleisten.",
 
@@ -313,9 +322,9 @@ export const content: Content[] = [
   },
   {
     id: 6,
-    title: `Planung, Installation und Austausch von <span>Beleuchtungssystemen</span>`,
+    title: `Hellen Sie Ihren Raum mit der Expertise von <span>JK-Stromprofis</span> auf`,
     subtitle:
-      "Suchen Sie nach einer professionellen Beleuchtungslösung, die beeindruckende Ergebnisse liefert und Ihren Raum erhellt? Suchen Sie nicht weiter als unsere umfassenden Beleuchtungsdienstleistungen für Privatpersonen und Geschäftsinhaber. ",
+      "Sie sind auf der Suche nach einer professionellen Beleuchtungslösung, die beeindruckende Ergebnisse liefert und Ihren Raum erhellt? Dann sind Sie bei unserer umfassenden Beleuchtungsplanung, -installation und -modernisierung an der richtigen Adresse.",
     summary:
       "Schließen Sie sich der unzähligen zufriedenen Kunden an, die bereits mit uns auf die Reise gegangen sind, um ihre Häuser und Unternehmen zu beleuchten. Lassen Sie uns gemeinsam die Magie des Lichts schaffen und Ihren Raum zum Strahlen bringen wie nie zuvor. Kontaktieren Sie uns noch heute, und wir werden gemeinsam versuchen, Ihre Vision zu verwirklichen!",
 
@@ -391,15 +400,6 @@ export const content: Content[] = [
           "Tauchen Sie ein in die Welt modernster Technologie, verbunden mit elegantem und modernem Design, das sich nahtlos in jede Umgebung integriert. Von Unternehmenscampussen bis hin zu Wohngebieten – unsere Ladepunkte wurden so gestaltet, dass sie sich in die Umgebung einfügen und gleichzeitig eine mutige Erklärung Ihrer Verpflichtung zur nachhaltigen Zukunft abgeben.",
         image: {
           src: energyImages[2],
-          alt: "",
-        },
-      },
-      {
-        title: "Lösungen für gewerbliche Gebäude",
-        content:
-          "Wenn Sie Energie benötigen, um verschiedene Geräte auf Ihrem Gelände zu versorgen, suchen Sie nicht weiter! Mit unseren Lösungen können Sie genau dann und dort die richtige Menge Strom liefern, wo Sie ihn benötigen. Wir bieten die Leistung, Stabilität und den Schutz, den Sie für die Durchführung jeder Aufgabe auf Ihrem Gelände benötigen. Wir sind stolz darauf, Landwirten wie Ihnen zu helfen, ihre Anlagen sicher und zuverlässig zu betreiben.",
-        image: {
-          src: energyImages[3],
           alt: "",
         },
       },

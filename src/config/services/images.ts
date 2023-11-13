@@ -2,6 +2,7 @@ import installationsOne from "@assets/images/services/installations/1.webp";
 import installationsTwo from "@assets/images/services/installations/2.webp";
 import installationsThree from "@assets/images/services/installations/3.webp";
 import installationsFour from "@assets/images/services/installations/4.webp";
+import installationsFive from "@assets/images/services/installations/5.webp";
 
 import cableOne from "@assets/images/services/wiring/1.webp";
 import cableTwo from "@assets/images/services/wiring/2.webp";
@@ -36,13 +37,18 @@ import lightFour from "@assets/images/services/light-systems/4.webp";
 import energyOne from "@assets/images/services/energy/1.webp";
 import energyTwo from "@assets/images/services/energy/2.webp";
 import energyThree from "@assets/images/services/energy/3.webp";
-import energyFour from "@assets/images/services/energy/4.webp";
 
-export const installationsImages = [installationsOne, installationsTwo, installationsThree, installationsFour];
+export const installationsImages = [
+  installationsOne,
+  installationsTwo,
+  installationsThree,
+  installationsFour,
+  installationsFive,
+];
 export const cableImages = [cableOne, cableTwo, cableThree, cableFour];
 export const supportImages = [supportOne, supportTwo, supportThree, supportFour];
 export const securityImages = [securityOne, securityTwo, securityThree, securityFour];
 export const smartImages = [smartOne, smartTwo, smartThree, smartFour];
 export const soundImages = [soundOne, soundTwo, soundThree, soundFour];
 export const lightImages = [lightOne, lightTwo, lightThree, lightFour];
-export const energyImages = [energyOne, energyTwo, energyThree, energyFour];
+export const energyImages = [energyOne, energyTwo, energyThree];

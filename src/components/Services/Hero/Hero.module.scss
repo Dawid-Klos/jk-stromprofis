@@ -29,7 +29,11 @@
     }
 
     @screen desktop_md {
-      max-width: 60%;
+      max-width: 70%;
+    }
+
+    @screen desktop_xl {
+      max-width: 75%;
     }
   }
 
