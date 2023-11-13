@@ -26,7 +26,7 @@
     }
 
     @screen desktop_lg {
-      gap: 1rem;
+      gap: 6rem;
     }
 
     .imageWrapper {
@@ -35,7 +35,7 @@
       height: max-content;
 
       @screen desktop_md {
-        width: 65%;
+        width: 50%;
       }
 
       @screen desktop_lg {
@@ -43,7 +43,7 @@
       }
 
       @screen desktop_xl {
-        width: 40%;
+        width: 45%;
       }
 
       & > img {
