@@ -6,9 +6,9 @@ import Section from "@components/common/Section";
 import BackgroundImage from "@components/common/BackgroundImage";
 
 import questionImage from "@assets/images/question-img.svg";
-import backgroundImage from "@assets/images/about-bulbs.png";
-import missionImage from "@assets/images/img-mission.png";
-import goalImage from "@assets/images/img-goal.png";
+import backgroundImage from "@assets/images/about-bulbs.webp";
+import missionImage from "@assets/images/img-mission.webp";
+import goalImage from "@assets/images/img-goal.webp";
 
 import styles from "./page.module.scss";
 

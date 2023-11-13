@@ -5,8 +5,8 @@ import Trust from "@components/Homepage/Trust";
 import BackgroundImage from "@components/common/BackgroundImage";
 import CtaSection from "@components/common/CtaSection";
 
-import bulbsBackground from "@assets/images/about-bulbs.png";
-import cityBackground from "@assets/images/home-city.png";
+import bulbsBackground from "@assets/images/about-bulbs.webp";
+import cityBackground from "@assets/images/home-city.webp";
 import questionImage from "@assets/images/question-img.svg";
 
 import styles from "./page.module.scss";

@@ -7,7 +7,7 @@ import Section from "@components/common/Section";
 
 import { services } from "@config/services";
 
-import backgroundImage from "@assets/images/services-trust.png";
+import backgroundImage from "@assets/images/services-trust.webp";
 import ctaImage from "@assets/images/partners-img.svg";
 
 export default function Page({ params }: { params: { path: string } }) {

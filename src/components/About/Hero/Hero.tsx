@@ -1,7 +1,7 @@
 import styles from "./Hero.module.scss";
 
 import BackgroundImage from "@components/common/BackgroundImage";
-import backgroundImage from "@assets/images/about-hero.png";
+import backgroundImage from "@assets/images/about-hero.webp";
 
 export const Hero = () => {
   return (
