@@ -5,10 +5,12 @@ import CtaSection from "@components/common/CtaSection";
 import Section from "@components/common/Section";
 import BackgroundImage from "@components/common/BackgroundImage";
 
-import questionImage from "@assets/images/question-image.png";
-import backgroundImage from "@assets/images/about-us-img.png";
+import questionImage from "@assets/images/question-img.svg";
+import backgroundImage from "@assets/images/about-bulbs.png";
 import missionImage from "@assets/images/img-mission.png";
 import goalImage from "@assets/images/img-goal.png";
+
+import styles from "./page.module.scss";
 
 export default function Home() {
   const articles: Item[] = [
@@ -36,13 +38,9 @@ export default function Home() {
     <>
       <Hero />
 
-      <Section
-        subtitle="Historia"
-        title="Czym się kierujemy."
-        items={articles}
-      />
+      <Section subtitle="Historia" title="Czym się kierujemy." items={articles} />
 
-      <BackgroundImage src={backgroundImage} alt="" />
+      <BackgroundImage className={styles.bulbsImage} src={backgroundImage} alt="" />
 
       <CtaSection
         subtitle="Komunikacja"

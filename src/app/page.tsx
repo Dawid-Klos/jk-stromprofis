@@ -5,9 +5,11 @@ import Trust from "@components/Homepage/Trust";
 import BackgroundImage from "@components/common/BackgroundImage";
 import CtaSection from "@components/common/CtaSection";
 
-import bulbsBackground from "@assets/images/home-bulbs-bg.png";
-import cityBackground from "@assets/images/home-city-bg.png";
-import questionImage from "@assets/images/question-image.png";
+import bulbsBackground from "@assets/images/about-bulbs.png";
+import cityBackground from "@assets/images/home-city.png";
+import questionImage from "@assets/images/question-img.svg";
+
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
@@ -16,13 +18,11 @@ export default function Home() {
       <Trust />
       <Services />
 
-      <BackgroundImage
-        src={cityBackground}
-        alt="a view of city during a night"
-      />
+      <BackgroundImage className={styles.cityImage} src={cityBackground} alt="a view of city during a night" />
+
       <Testimonials />
 
-      <BackgroundImage src={bulbsBackground} alt="" />
+      <BackgroundImage className={styles.bulbsImage} src={bulbsBackground} alt="a few bulbs in the dark" />
 
       <CtaSection
         subtitle="Komunikacja"
