@@ -20,72 +20,72 @@ export interface Service {
 const basicServices: Service[] = [
   {
     id: 0,
-    title: "Instalacje elektryczne",
-    href: "instalacje-elektryczne",
+    title: "Elektrische Installationen",
+    href: "elektrische-installationen",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Bei JK-Stromprofis verstehen wir die entscheidende Rolle, die zuverlässige elektrische Installationen spielen. Deshalb bieten wir eine Reihe von herausragenden Dienstleistungen im Bereich elektrischer Installationen an, die auf die Bedürfnisse des Kunden zugeschnitten sind.",
     icon: Wires,
   },
   {
     id: 1,
-    title: "Specjalistyczna budowa tras kablowych",
-    href: "specjalistyczna-budowa-tras-kablowych",
+    title: "Fachgerechter Kabelbau",
+    href: "fachgerechter-kabelbau",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Bei JK-Stromprofis haben wir uns auf die Bereitstellung hochwertiger Dienstleistungen für die Verlegung von Kabeltrassen in großen Gebäuden spezialisiert. Wir verstehen, dass eine effiziente Kabelführung das Fundament für jedes moderne Gebäude bildet, und wir sind hier, um die Leistung zu optimieren und den Betrieb zu verbessern.",
     icon: Wiring,
   },
   {
     id: 2,
-    title: "Specjalistyczne wsparcie",
-    href: "specjalistyczne-wsparcie",
+    title: "Spezialisierte Unterstützung",
+    href: "spezialisierte-unterstützung",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Bei JK-Stromprofis gehen wir über herkömmliche Dienstleister hinaus, indem wir umfassende Projektunterstützung für Unternehmen jeder Größe anbieten. Wir verstehen die Herausforderungen, denen Unternehmen gegenüberstehen, sei es aufgrund begrenzter Ressourcen oder spezialisierter Kenntnisse. Daher haben wir uns darauf spezialisiert, unschätzbar wertvolle Unterstützung anzubieten, die bei der reibungslosen und effektiven Umsetzung von Projekten hilft.",
     icon: Glove,
   },
   {
     id: 3,
-    title: "Systemy bezpieczeństwa",
-    href: "systemy-bezpieczenstwa",
+    title: "Sicherheitssysteme",
+    href: "sicherheitssysteme",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Suchen Sie nach Möglichkeiten, Ihr Zuhause vor Eindringlingen und anderen Sicherheitsbedrohungen zu schützen? Nun, suchen Sie nicht weiter! Wir bieten die perfekten Lösungen - umfassende Sicherheitssysteme mit Kameras und Alarmanlagen, die die Sicherheit Ihrer Familie und Ihres Eigentums gewährleisten.",
     icon: Safety,
   },
   {
     id: 4,
-    title: "Inteligentny dom",
-    href: "inteligentny-dom",
+    title: "Smart Home",
+    href: "smart-home",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Entdecken Sie eine völlig neue Welt des Komforts und der Effizienz, die direkt vor Ihnen liegt. Stellen Sie sich ein Zuhause vor, das alle Ihre Bedürfnisse kennt, Ihre Wünsche voraussieht und jeden Ihrer Launen erfüllt. Intelligente Häuser revolutionieren Ihren Lebensstil und verbessern jeden Aspekt Ihrer täglichen Routine.",
     icon: SmartHome,
   },
   {
     id: 5,
-    title: "Systemy nagłaśniające",
-    href: "systemy-naglasniajace",
+    title: "Beschallungssysteme",
+    href: "beschallungssysteme",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Suchen Sie nach dem perfekten Beschallungssystem, das die Erfahrungen Ihrer Kunden verbessert und Ihre Leidenschaft mit der Welt teilt? Dann sind Sie hier genau richtig mit unserer Installation von Audiosystemen!",
     icon: Speaker,
   },
   {
     id: 6,
-    title: "Planowanie, montaż i wymiana oświetlenia",
-    href: "planowanie-montaz-i-wymiana-oswietlenia",
+    title: "Planung, Installation und Austausch von Beleuchtung",
+    href: "planung-installation-und-austausch-von-beleuchtung",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Suchen Sie nach einer professionellen Beleuchtungslösung, die beeindruckende Ergebnisse liefert und Ihren Raum erhellt? Suchen Sie nicht weiter als unsere umfassenden Beleuchtungsdienstleistungen für Privatpersonen und Geschäftsinhaber. Unser Team erfahrener Techniker bietet professionelle Planungs-, Installations- und Austauschdienstleistungen für alle Arten von Beleuchtung.",
     icon: LightBulb,
   },
   {
     id: 7,
-    title: "Punkty ładowania/Doprowadzenie prądu",
-    href: "punkty-ladowania-doprowadzenie-pradu",
+    title: "Ladestationen für Fahrzeuge",
+    href: "ladestationen-für-fahrzeuge",
     shortDescription:
-      "W JK-Stromprofis rozumiemy kluczową rolę, jaką odgrywają niezawodne instalacje elektryczne. Dlatego oferujemy szereg wyjątkowych usług w zakresie instalacji elektrycznych, które są dostosowane do potrzeb klienta.",
+      "Wir präsentieren die Zukunft des Komforts und nachhaltiger Entwicklung – Ladestationen für moderne Elektrofahrzeuge! Entwickelt mit Kreativität und Präzision sind Ladepunkte Ihr Ticket für eine reibungslose und umweltfreundliche Fahrt. Investieren Sie in Ihre energetische Zukunft und suchen Sie nicht weiter.",
     icon: Accumulator,
   },
 ];
 
 export const services = basicServices.map(({ id, title, href, shortDescription, icon }) => {
-  const updatedHref = `/services/${href}`;
+  const updatedHref = `/dienstleistungen/${href}`;
 
   return {
     id,
@@ -93,6 +93,6 @@ export const services = basicServices.map(({ id, title, href, shortDescription, 
     href: updatedHref,
     shortDescription,
     icon,
-    content: content[id]
+    content: content[id],
   };
 });

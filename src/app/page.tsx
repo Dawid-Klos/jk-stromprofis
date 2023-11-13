@@ -25,12 +25,12 @@ export default function Home() {
       <BackgroundImage className={styles.bulbsImage} src={bulbsBackground} alt="a few bulbs in the dark" />
 
       <CtaSection
-        subtitle="Komunikacja"
-        title="Wciąż masz pytania?"
-        content="Dzięki silnej reputacji i świetnym rekomendacjom, JK-Stromprofis jest bez wątpienia wiodącym wyborem w zakresie profesjonalnych usług elektrycznych. Nie musisz wierzyć nam na słowo - przekonaj się o kompetencjach i energii naszego zespołu na własnej skórze."
+        subtitle="Wir können helfen"
+        title="Haben Sie noch Fragen?"
+        content="Mit einem ausgezeichneten Ruf und vielen Empfehlungen sind die JK-Stromprofis zweifellos die erste Wahl für professionelle Elektrodienstleistungen. Nehmen Sie uns nicht beim Wort - erleben Sie die Kompetenz und Energie unseres Teams selbst."
         image={{
           src: questionImage,
-          alt: "Wciąż masz pytania?",
+          alt: "Charakter, der zeigt, dass er nicht versteht, was vor sich geht",
           width: 260,
           height: 260,
         }}

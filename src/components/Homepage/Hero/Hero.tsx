@@ -10,22 +10,21 @@ export const Hero: React.FC = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <h1 className={styles.title}>
-          Poznaj niezawodne rozwiązania <span>elektryczne</span>
+          Sichern Sie sich zuverlässige <span>elektrische</span> <span>Lösungen</span>
         </h1>
         <p className={styles.subtitle}>
-          Jesteśmy zaufanym partnerem w zakresie wszystkich potrzeb elektrycznych - za każdym razem dostarczając
-          doskonałość.
+          Wir sind Ihr vertrauenswürdiger Partner für alle elektrischen Bedürfnisse, und liefern stets höchste Qualität.
         </p>
 
         <Button className={styles.link} element="link" href="/kontakt" variant="primary">
-          Skontaktuj się
+          Kontaktieren Sie uns
         </Button>
       </div>
       <div className={styles.aside}>
         <Image className={styles.icon} src={timeIcon} alt="" priority />
         <p className={styles.info}>
-          Jesteśmy niezwykle dumni z naszej wyjątkowej dostępności, gwarantując, że nie będziesz musiał czekać na
-          kluczowe usługi elektryczne.
+          Wir bieten eine hervorragende Verfügbarkeit, damit Sie nicht auf wichtige elektrische Dienstleistungen warten
+          müssen.
         </p>
       </div>
       <div className={styles.background}></div>

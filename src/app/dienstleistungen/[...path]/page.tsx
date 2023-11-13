@@ -19,20 +19,20 @@ export default function Page({ params }: { params: { path: string } }) {
     return null;
   }
 
-  const { title, subtitle, articles } = service.content || {};
+  const { title, subtitle, summary, articles } = service.content || {};
 
   return (
     <>
       {title && <Hero title={title} subtitle={subtitle} />}
 
-      {articles && <Section subtitle="profesjonalizm" title="Czego możesz od nas oczekiwać." items={articles} />}
+      {articles && <Section subtitle="Professionalität" title="Was Sie von uns erwarten können." items={articles} />}
 
       <BackgroundImage className={styles.backgroundImage} src={backgroundImage} alt="" />
 
       <CtaSection
-        subtitle="kiedy tego potrzebujesz"
-        title="Twój zaufany partner"
-        content="Przenieś swój dom lub firmę na wyższy poziom dzięki naszym najwyższej jakości instalacjom elektrycznym. Niezależnie od tego, czy chcesz zmodernizować swój obecny system, czy rozpocząć zupełnie nowy projekt, pozwól JK-Stromprofis być Twoim zaufanym partnerem."
+        subtitle="wenn Sie es brauchen"
+        title="Ihr zuverlässiger Partner"
+        content={summary}
         image={{
           src: ctaImage,
           alt: "",

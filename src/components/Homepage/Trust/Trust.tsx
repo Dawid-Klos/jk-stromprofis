@@ -13,18 +13,18 @@ import contractIcon from "@assets/icons/contract-card.svg";
 export const Trust: React.FC = () => {
   return (
     <section className={styles.section}>
-      <Hgroup subtitle="Wyjątkowość" title="Dlaczego warto nam zaufać." />
+      <Hgroup subtitle="exzellenz" title="Warum sollten Sie uns vertrauen." />
 
       <div className={styles.topContainer}>
         <Card
-          title="Sprawna realizacja zamówień"
-          content="Jesteśmy dumni z naszej zdolności do szybkiej i skutecznej realizacji zamówień klientów. Dzięki naszemu krótkiemu czasowi realizacji możesz mieć pewność, że Twoje żądania zostaną szybko obsłużone, minimalizując wszelkie niepotrzebne opóźnienia."
+          title="Effiziente Auftragsabwicklung."
+          content="Wir sind stolz auf unsere Fähigkeit, die Bestellungen unserer Kunden schnell und effizient abzuwickeln. Dank unserer kurzen Bearbeitungszeit können Sie sicher sein, dass Ihre Anfragen schnell bearbeitet werden und unnötige Verzögerungen minimiert werden."
           icon={timeIcon}
           darkCard={false}
         />
         <Card
-          title="Wyjątkowa obsługa klienta"
-          content="Zapewnienie profesjonalnej obsługi klienta jest podstawą naszych wartości. Wierzymy, że możemy zrobić wszystko, aby zaspokoić potrzeby naszych klientów i zapewnić ich satysfakcję. Nasz oddany zespół zapewnia spersonalizowane wsparcie i wskazówki w trakcie całego procesu."
+          title="Hervorragender Kundenservice"
+          content="Die Bereitstellung professionellen Kundenservice ist der Kern unserer Werte. Wir sind davon überzeugt, dass wir alles tun können, um die Bedürfnisse unserer Kunden zu erfüllen und ihre Zufriedenheit zu gewährleisten. Unser engagiertes Team bietet personalisierte Unterstützung und Anleitungen während des gesamten Prozesses."
           icon={serviceIcon}
           darkCard={false}
         />
@@ -33,22 +33,21 @@ export const Trust: React.FC = () => {
       <section className={styles.bottomContainer}>
         <div className={styles.titleContainer}>
           <NextDivider classNames={styles.dividerLeft} type="horizontal" />
-          <h3 className={styles.title}>Bądź jeszcze bardziej spokojny.</h3>
+          <h3 className={styles.title}>Seien Sie noch ruhiger.</h3>
           <NextDivider classNames={styles.dividerRight} type="horizontal" />
         </div>
 
         <div className={styles.cardsContainer}>
           <Card
-            title="5 lat gwarancji"
-            subtitle="Przy wyborze polecanych produktów"
-            content="W JK-Stromprofis rozumiemy, że przy wyborze usługodawcy możesz mieć wątpliwości. Ale właśnie dlatego z dumą oferujemy 5-letnią gwarancję* na nasze oferowane usługi! Chcemy dać Ci całkowitą pewność, że nasze usługi są najwyższej jakości i że możesz na nas polegać w zakresie rozwiązań elektrycznych w dłuższej perspektywie."
+            title="5 Jahre Garantie"
+            content="Bei JK-Stromprofis verstehen wir, dass Sie möglicherweise Bedenken haben, wenn Sie einen Dienstleister auswählen. Deshalb bieten wir mit Stolz eine 5-jährige Garantie für unsere angebotenen Dienstleistungen an! Wir möchten Ihnen die volle Gewissheit geben, dass unsere Dienstleistungen von höchster Qualität sind und Sie sich langfristig auf uns in Bezug auf elektrische Lösungen verlassen können."
             icon={contractIcon}
             darkCard={true}
           />
           <Card
-            title="Elastyczne opcje płatności"
-            subtitle="Wyłącznie dla prywatnych klientów"
-            content="Elastyczność finansowa ma kluczowe znaczenie w dzisiejszym szybko zmieniającym się świecie. Dlatego też oferujemy możliwość dokonywania płatności w ratach. Zapewniamy to rozwiązanie płatnicze, z myślą o zwiekszeniu dostępności i wygodzie naszych klientów."
+            title="Flexible Zahlungsoptionen"
+            subtitle="Exklusiv für Privatkunden"
+            content="Finanzielle Flexibilität spielt in der heutigen schnelllebigen Welt eine entscheidende Rolle. Aus diesem Grund bieten wir die Möglichkeit, Ratenzahlungen zu leisten. Wir stellen diese Zahlungsoption zur Verfügung, um die Zugänglichkeit und Bequemlichkeit für unsere Kunden zu erhöhen."
             icon={euroIcon}
             darkCard={true}
           />
@@ -58,14 +57,13 @@ export const Trust: React.FC = () => {
       <section className={styles.bottomContainer}>
         <div className={styles.titleContainer}>
           <NextDivider classNames={styles.dividerLeft} type="horizontal" />
-          <h3 className={styles.title}>Twoje wsparcie w projektach.</h3>
+          <h3 className={styles.title}>Unterstützung in ihren projekten.</h3>
           <NextDivider classNames={styles.dividerRight} type="horizontal" />
         </div>
         <div className={styles.cardsContainer}>
           <Card
-            title="Leasing pracowników"
-            subtitle="Wyłącznie dla przedsiębiorców"
-            content="Jako dodatkową korzyść oferujemy unikalną usługę, która umożliwia leasing pracowników na potrzeby biznesowe. To innowacyjne podejście zapewnia elastyczność w skalowaniu ilości personelu w zależności od zapotrzebowania, pomagając zoptymalizować operacje i zmniejszyć ogólne koszty."
+            title="Mitarbeiterleasing"
+            content="Als zusätzlichen Vorteil bieten wir einen einzigartigen Service an, der es ermöglicht, Mitarbeiter für geschäftliche Zwecke zu leasen. Dieser innovative Ansatz bietet Flexibilität bei der Anpassung der Personalstärke je nach Bedarf und trägt dazu bei, den Betrieb zu optimieren und die Gesamtkosten zu reduzieren."
             icon={peopleIcon}
             darkCard={true}
           />

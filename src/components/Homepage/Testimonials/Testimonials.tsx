@@ -8,7 +8,7 @@ import Hgroup from "@components/common/Hgroup";
 export const Testimonials = () => {
   return (
     <section className={styles.section}>
-      <Hgroup subtitle="Zaufanie" title="Nasi klienci o nas." />
+      <Hgroup subtitle="VERTRAUEN" title="Was unsere Kunden über uns sagen." />
 
       <Slider testimonials={testimonials} />
     </section>
