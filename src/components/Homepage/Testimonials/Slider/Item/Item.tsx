@@ -4,9 +4,9 @@ import { Avatar } from "@nextui-org/react";
 import Image from "next/image";
 
 import { Testimonial } from "@config/testimonials";
-import maxAvatar from "@assets/images/avatars/max.png";
-import lukasAvatar from "@assets/images/avatars/lukas.png";
-import sophieAvatar from "@assets/images/avatars/sophie.png";
+import maxAvatar from "@assets/images/avatars/max.webp";
+import lukasAvatar from "@assets/images/avatars/lukas.webp";
+import sophieAvatar from "@assets/images/avatars/sophie.webp";
 
 import styles from "./Item.module.scss";
 

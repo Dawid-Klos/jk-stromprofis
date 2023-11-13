@@ -1,13 +1,17 @@
 .backgroundImage {
   margin-top: 6rem;
   margin-bottom: 6rem;
-  min-height: 360px !important;
+  min-height: 240px;
+
+  @screen tablet {
+    min-height: 380px;
+  }
 
   @screen desktop_md {
-    min-height: 480px !important;
+    min-height: 480px;
   }
 
   @screen desktop_lg {
-    min-height: 735px !important;
+    min-height: 600px;
   }
 }

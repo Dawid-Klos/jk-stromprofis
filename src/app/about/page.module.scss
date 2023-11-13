@@ -1,0 +1,19 @@
+.bulbsImage {
+  min-height: 300px;
+
+  @screen mobile_md {
+    min-height: 400px;
+  }
+
+  @screen tablet {
+    min-height: 500px;
+  }
+
+  @screen desktop_md {
+    min-height: 530px;
+  }
+
+  @screen desktop_xl {
+    min-height: 1000px;
+  }
+}

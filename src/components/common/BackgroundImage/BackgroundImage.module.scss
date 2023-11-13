@@ -3,7 +3,6 @@
 .background {
   position: relative;
   display: flex;
-  min-height: 300px;
   margin: 8rem (-$body-margin-mobile);
 
   &:after {
@@ -13,16 +12,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(
-      rgba(25, 25, 25, 1) 0%,
-      rgba(25, 25, 25, 95) 10%,
-      rgba(25, 25, 25, 0.75) 15%,
-      rgba(25, 25, 25, 0.2) 25%,
-      rgba(25, 25, 25, 0.1) 50%,
-      rgba(25, 25, 25, 0.2) 85%,
-      rgba(25, 25, 25, 0.75) 95%,
-      rgba(25, 25, 25, 1) 100%
-    );
+    background: $image-easing-gradient;
   }
 
   @screen tablet {
@@ -30,17 +20,14 @@
   }
 
   @screen desktop_md {
-    min-height: 400px;
     margin: 8rem (-$body-margin-desktop-md);
   }
 
   @screen desktop_lg {
-    min-height: 500px;
     margin: 8rem (-$body-margin-desktop-lg);
   }
 
   @screen desktop_xl {
-    min-height: 600px;
     margin: 8rem (-$body-margin-desktop-xl);
   }
 

@@ -16,7 +16,7 @@
 
     @screen desktop_md {
       gap: 1rem;
-      width: 80%;
+      width: 95%;
     }
 
     @screen desktop_lg {
@@ -29,8 +29,8 @@
         @apply text-d3;
       }
 
-      @screen desktop_md {
-        @apply text-d1;
+      @screen tablet {
+        @apply text-d2;
       }
     }
 
@@ -44,28 +44,30 @@
 
   .backgroundImage {
     margin-top: auto;
-    margin-bottom: 2rem;
+    margin-bottom: -4rem;
     z-index: 0;
+    aspect-ratio: 16 / 6;
+    min-height: 330px;
 
     @screen tablet {
-      min-height: 500px;
+      min-height: 430px;
     }
 
     @screen desktop_md {
       position: absolute;
       width: 100vw;
-      bottom: 2rem;
-      margin: 0 (-$body-margin-desktop-md);
-      min-height: 600px;
+      bottom: 5rem;
+      right: 0;
     }
 
     @screen desktop_lg {
       margin: 0 (-$body-margin-desktop-lg);
+      bottom: 0;
     }
 
     @screen desktop_xl {
       margin: 0 (-$body-margin-desktop-xl);
-      min-height: 700px;
+      max-height: 600px;
     }
   }
 
@@ -73,7 +75,7 @@
     @apply text-d2 text-accent-500/60 font-montserrat;
 
     position: absolute;
-    bottom: 0;
+    bottom: -3.5rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -88,11 +90,18 @@
       font-size: 84px;
       line-height: normal;
       left: initial;
-      bottom: -1.5rem;
     }
 
     @screen desktop_md {
-      font-size: 128px;
+      font-size: 96px;
+      line-height: 64px;
+      letter-spacing: -0.25px;
+      bottom: 0;
+    }
+
+    @screen desktop_xl {
+      font-size: 136px;
+      bottom: 1.5rem;
     }
   }
 }
