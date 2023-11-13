@@ -37,7 +37,7 @@ const basicServices: Service[] = [
   {
     id: 2,
     title: "Spezialisierte Unterstützung",
-    href: "spezialisierte-unterstützung",
+    href: "spezialisierte-unterstutzung",
     shortDescription:
       "Bei JK-Stromprofis gehen wir über herkömmliche Dienstleister hinaus, indem wir umfassende Projektunterstützung für Unternehmen jeder Größe anbieten. Wir verstehen die Herausforderungen, denen Unternehmen gegenüberstehen, sei es aufgrund begrenzter Ressourcen oder spezialisierter Kenntnisse. Daher haben wir uns darauf spezialisiert, unschätzbar wertvolle Unterstützung anzubieten, die bei der reibungslosen und effektiven Umsetzung von Projekten hilft.",
     icon: Glove,
@@ -77,7 +77,7 @@ const basicServices: Service[] = [
   {
     id: 7,
     title: "Ladestationen für Fahrzeuge",
-    href: "ladestationen-für-fahrzeuge",
+    href: "ladestationen-fur-fahrzeuge",
     shortDescription:
       "Wir präsentieren die Zukunft des Komforts und nachhaltiger Entwicklung – Ladestationen für moderne Elektrofahrzeuge! Entwickelt mit Kreativität und Präzision sind Ladepunkte Ihr Ticket für eine reibungslose und umweltfreundliche Fahrt. Investieren Sie in Ihre energetische Zukunft und suchen Sie nicht weiter.",
     icon: Accumulator,
