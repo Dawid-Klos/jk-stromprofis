@@ -1,5 +1,6 @@
 @import "mixins/body";
 @import "mixins/hero";
+@import "mixins/gradients";
 
 @mixin transition {
   transition: all 0.3s;
@@ -7,7 +8,7 @@
 
 @mixin content_width {
   margin: 0 auto;
-  
+
   @screen desktop_md {
     max-width: 85%;
   }
