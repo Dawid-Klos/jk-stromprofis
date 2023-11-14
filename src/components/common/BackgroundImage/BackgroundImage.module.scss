@@ -16,19 +16,19 @@
   }
 
   @screen tablet {
-    margin: 0 (-$body-margin-tablet);
+    margin: 2rem (-$body-margin-tablet);
   }
 
   @screen desktop_md {
-    margin: 0 (-$body-margin-desktop-md);
+    margin: 2rem (-$body-margin-desktop-md);
   }
 
   @screen desktop_lg {
-    margin: 0 (-$body-margin-desktop-lg);
+    margin: 2rem (-$body-margin-desktop-lg);
   }
 
   @screen desktop_xl {
-    margin: 0 (-$body-margin-desktop-xl);
+    margin: 4rem (-$body-margin-desktop-xl);
   }
 
   .image {
