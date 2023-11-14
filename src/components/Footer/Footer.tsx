@@ -25,7 +25,7 @@ export const Footer = () => {
         <article className={styles.article}>
           <h2 className={styles.title}>Kontakt aufnehmen</h2>
           <div className={styles.box}>
-            <Link href="tel:004917643333333" className={styles.link}>
+            <Link href="tel:00491776294992" className={styles.link}>
               <Image className={styles.icon} src={phoneIcon} alt="phone" width={24} height={24} />
               <p>+49 177 629 49 92</p>
             </Link>
@@ -52,6 +52,12 @@ export const Footer = () => {
         <article className={styles.article}>
           <h2 className={styles.title}>Wichtige Links</h2>
           <ul className={styles.box}>
+            <Link className={styles.link} href={"/politik"}>
+              Datenschutzerklärung
+            </Link>
+            <Link className={styles.link} href={"/politik"}>
+              Impressum
+            </Link>
             {menuItems.map(({ title, href }) => {
               return (
                 <li key={title}>
