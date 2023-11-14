@@ -4,12 +4,12 @@ import nodemailer from "nodemailer";
 import { FormData, schema } from "@config/formValidation";
 
 export const handleContactFormSubmit = async (data: FormData) => {
-  "use server";
-
   try {
     const validatedData = await schema.validate(data, { abortEarly: false });
 
     const email = await sendEmail(validatedData);
+
+    if (email.rejected.length > 0) throw new Error("Email has not been sent");
 
     return {
       statusCode: 200,
@@ -29,7 +29,7 @@ export const handleContactFormSubmit = async (data: FormData) => {
 
 const sendEmail = async (data: FormData) => {
   const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
+    host: "ssl0.ovh.net",
     port: 465,
     secure: true,
     auth: { user: process.env.EMAIL, pass: process.env.PASSWORD },
@@ -39,7 +39,7 @@ const sendEmail = async (data: FormData) => {
 
   let mailOptions = {
     from: data.email,
-    to: process.env.EMAIL,
+    to: "info@jk-stromprofis.de",
     subject: `Wiadomość od ${data.name}`,
     html: body,
   };
