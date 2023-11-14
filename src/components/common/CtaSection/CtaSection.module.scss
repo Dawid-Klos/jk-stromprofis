@@ -1,17 +1,13 @@
 @import "@styles/mixins";
 
 .section {
+  @include article_flex;
+
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4rem;
-  padding-bottom: 10.75rem;
+  padding-bottom: 8rem;
 
   @screen desktop_md {
     align-items: flex-start;
-    padding: 0;
-    margin: 8.375rem 0;
   }
 
   .content {

@@ -1,42 +1,25 @@
 @import "@styles/mixins";
 
 .section {
-  display: flex;
-  flex-direction: column;
-  padding: 6rem 0;
-  gap: 4rem;
-
-  @screen desktop_lg {
-    gap: 6rem;
-  }
+  @include section_flex;
 
   .topContainer {
+    @include article_flex;
     @include content_width;
 
-    display: grid;
-    align-content: center;
-    justify-items: center;
-    gap: 4rem;
-    padding-bottom: 4rem;
-
     @screen tablet {
+      align-items: unset;
+      display: grid;
       grid-template-columns: 1fr 1fr;
+      justify-items: center;
       align-content: stretch;
       gap: 2rem;
-      padding-bottom: 6rem;
-    }
-
-    @screen desktop_md {
-      padding-bottom: 8rem;
     }
   }
 
   .bottomContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-    padding-bottom: 4rem;
+    @include article_flex;
+
     flex: 1;
 
     @screen tablet {
@@ -44,14 +27,6 @@
       flex-wrap: wrap;
       align-items: stretch;
       justify-content: center;
-    }
-
-    @screen desktop_md {
-      padding-bottom: 6rem;
-    }
-
-    @screen desktop_lg {
-      gap: 6rem;
     }
 
     .titleContainer {
@@ -99,7 +74,6 @@
       align-content: center;
       justify-items: center;
       gap: 4rem;
-      padding-bottom: 4rem;
 
       @screen tablet {
         gap: 2rem;

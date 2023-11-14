@@ -31,7 +31,7 @@ export const Article = ({ item, classNames }: Props) => {
         </div>
 
         <div className={styles.wrapper}>
-          <h2 className={titleClassNames}>{item.title}</h2>
+          <h3 className={titleClassNames}>{item.title}</h3>
           <p className={contentClassNames}>{item.content}</p>
         </div>
       </article>
