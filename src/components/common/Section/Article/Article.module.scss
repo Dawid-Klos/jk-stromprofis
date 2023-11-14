@@ -64,14 +64,6 @@
       }
     }
 
-    .title {
-      @apply text-button-lg;
-
-      @screen desktop_md {
-        @apply text-d3;
-      }
-    }
-
     .content {
       @screen desktop_md {
         @apply text-body-lg;

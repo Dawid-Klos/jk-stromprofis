@@ -1,16 +1,15 @@
+@import "@styles/mixins";
+
 .section {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  padding: 8rem 0;
+  @include section_flex;
+
+  padding-top: 8rem;
 
   @screen desktop_md {
     gap: 6rem;
   }
 
   .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+    @include article_flex;
   }
 }

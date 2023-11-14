@@ -27,7 +27,12 @@ export default function Page({ params }: { params: { path: string } }) {
 
       {articles && <Section subtitle="Professionalität" title="Was Sie von uns erwarten können." items={articles} />}
 
-      <BackgroundImage className={styles.backgroundImage} src={backgroundImage} alt="" />
+      <BackgroundImage
+        className={styles.backgroundImage}
+        src={backgroundImage}
+        priority={true}
+        alt="Blau, Neon, hängende Glühbirne "
+      />
 
       <CtaSection
         subtitle="wenn Sie es brauchen"

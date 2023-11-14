@@ -8,20 +8,20 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 0,
-    name: "Maximilian",
-    position: "Homeowner",
-    text: "JK-Stromprofis took care of all the electrical installations for my new house. Despite being a young company, they worked like seasoned professionals. Quite commendable!",
+    name: "Kurt",
+    position: "Hausbesitzer",
+    text: "Die Anmietung von Mitarbeitern ist eine großartige Lösung! Das Unternehmen hat uns hochqualifizierte Mitarbeiter für unser Elektroprojekt bereitgestellt, was die Umsetzung erheblich beschleunigt hat. Vielen Dank!",
   },
   {
     id: 1,
-    name: "Sophie",
-    position: "Cafe owner",
-    text: "Introducing smart solutions to my cafe was a smooth process, all thanks to JK-Stromprofis. Their young, vibrant team infuses energy into their work, and it shows!",
+    name: "Katrin",
+    position: "Restaurantbesitzer",
+    text: "Die installierten Beschallungssysteme in meinem Objekt funktionieren einwandfrei. Der Klang ist perfekt verteilt, und die Bedienung ist intuitiv. Ich kann es nur empfehlen.",
   },
   {
     id: 2,
-    name: "Lukas",
+    name: "Thomas",
     position: "Property Manager",
-    text: "Whitin just one year, JK-Stromprofis has demonstrated exceptional competence in their field. Their electrical services are top-notch and highly reliable.",
+    text: "Ich empfehle dieses Unternehmen auf jeden Fall! Der professionelle Ansatz bei der Elektroinstallation in meinem Haus gibt mir ein sicheres und zuversichtliches Gefühl. Sehr zufrieden mit den Ergebnissen!",
   },
 ];

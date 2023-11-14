@@ -1,0 +1,21 @@
+@import "@styles/mixins";
+
+.policy {
+  @include article_flex;
+
+  align-items: flex-start;
+  padding-top: 8rem;
+
+  & h1 {
+    @apply text-d3 text-accent-200;
+  }
+
+  & h2 {
+    @apply text-h3 text-accent-300;
+  }
+
+  .title {
+    inline-size: 100%;
+    overflow-wrap: break-word;
+  }
+}

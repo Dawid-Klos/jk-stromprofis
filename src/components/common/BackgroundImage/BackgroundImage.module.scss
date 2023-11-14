@@ -3,7 +3,7 @@
 .background {
   position: relative;
   display: flex;
-  margin: 8rem (-$body-margin-mobile);
+  margin: 2rem (-$body-margin-mobile);
 
   &:after {
     content: "";
@@ -28,7 +28,7 @@
   }
 
   @screen desktop_xl {
-    margin: 2rem (-$body-margin-desktop-xl);
+    margin: 4rem (-$body-margin-desktop-xl);
   }
 
   .image {

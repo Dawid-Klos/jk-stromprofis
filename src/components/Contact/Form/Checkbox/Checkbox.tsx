@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Checkbox as NextCheckbox } from "@nextui-org/react";
 
 import styles from "./Checkbox.module.scss";
@@ -29,7 +30,12 @@ export const Checkbox = ({ value, onChange, isInvalid, errorMessage }: Props) =>
         isSelected={value}
         onValueChange={onChange}
       >
-        Ich akzeptiere die Datenschutzrichtlinien
+        <>
+          Ich akzeptiere die{" "}
+          <Link className={styles.link} href={"/politik"}>
+            Datenschutzerklärung
+          </Link>
+        </>
       </NextCheckbox>
       {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
     </>
