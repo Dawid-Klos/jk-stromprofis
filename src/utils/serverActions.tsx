@@ -2,6 +2,7 @@
 
 import nodemailer from "nodemailer";
 import { FormData, schema } from "@config/formValidation";
+import { createHtmlEmailBody } from "./functions";
 
 export const handleContactFormSubmit = async (data: FormData) => {
   try {
@@ -9,19 +10,18 @@ export const handleContactFormSubmit = async (data: FormData) => {
 
     const email = await sendEmail(validatedData);
 
-    if (email.rejected.length > 0) throw new Error("Email has not been sent");
-
     return {
       statusCode: 200,
       headers: {
-        message: "success",
+        message: "Email sent successfully",
+        info: email,
       },
     };
-  } catch (errors) {
+  } catch (validationErrors) {
     return {
       statusCode: 400,
       headers: {
-        message: "One or more issue has been found: " + errors,
+        message: "One or more issue has been found: " + validationErrors,
       },
     };
   }
@@ -35,7 +35,7 @@ const sendEmail = async (data: FormData) => {
     auth: { user: process.env.EMAIL, pass: process.env.PASSWORD },
   });
 
-  const body = createHTMLBody(data);
+  const body = createHtmlEmailBody(data);
 
   let mailOptions = {
     from: data.email,
@@ -47,22 +47,4 @@ const sendEmail = async (data: FormData) => {
   let info = await transporter.sendMail(mailOptions);
 
   return info;
-};
-
-const createHTMLBody = (data: FormData) => {
-  const { name, businessName, email, client, phone, message } = data;
-
-  return `
-    <h1>Wiadomość od ${name}</h1>
-
-    <p><b>Typ klienta:</b>  ${client === "customer" ? "Prywatny" : "Firma"}</p>
-    ${businessName ? `<p><b>Nazwa firmy:</b>  ${businessName}</p>` : ""}
-    <p><b>Adres e-mail:</b>  <a href="mailto:${email}">${email}</a></p>
-    <p><b>Numer telefonu:</b>  <a href="tel:${phone}">${phone}</a></p>
-    <br />
-    <hr />
-    <br />
-    <h2>Wiadomość:</h2>
-    <p>${message}</p>
-  `;
 };
