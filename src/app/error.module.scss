@@ -1,0 +1,19 @@
+@import "@styles/mixins";
+
+.error {
+  @include article_flex;
+
+  width: 80%;
+  margin: 4rem 0 8rem 0;
+  align-self: center;
+
+  @screen desktop_md {
+    margin: 4rem 0 20rem 0;
+  }
+
+  .container {
+    @include article_flex;
+
+    gap: 2rem;
+  }
+}

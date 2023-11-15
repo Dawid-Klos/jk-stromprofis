@@ -12,7 +12,7 @@ export const schema = object({
     is: "business",
     then: (yup) => yup.required("Der Firmenname ist erforderlich"),
   }),
-  message: string().required("Kurze Nachricht erforderlich").min(30, "Die Nachricht ist zu kurz"),
+  message: string().required("Kurze Nachricht erforderlich").min(10, "Die Nachricht ist zu kurz"),
   policy: bool().oneOf([true], "Sie müssen die Datenschutzbestimmungen akzeptieren."),
 });
 
