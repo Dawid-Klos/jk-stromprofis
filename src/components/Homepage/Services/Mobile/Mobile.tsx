@@ -26,7 +26,7 @@ export const Mobile = () => {
               {shortDescription}
               <Divider type="horizontal" />
 
-              <Link href={`/dienstleistungen/${href}`} className={styles.link}>
+              <Link href={`${href}`} className={styles.link}>
                 Siehe Service
                 <ArrowRight />
               </Link>
