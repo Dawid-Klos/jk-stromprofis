@@ -15,9 +15,5 @@
     @include article_flex;
 
     gap: 2rem;
-
-    @screen desktop_md {
-      gap: 1rem;
-    }
   }
 }

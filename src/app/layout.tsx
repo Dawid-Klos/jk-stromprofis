@@ -6,7 +6,6 @@ import { Providers } from "./providers";
 
 import Header from "@components/Header";
 import Footer from "@components/Footer";
-import ErrorBoundary from "@components/ErrorBoundary";
 
 const montserrat = Montserrat({
   weight: ["500", "600", "700", "800", "900"],
@@ -30,11 +29,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="de">
       <body className={`${montserrat.variable} ${poppins.variable}`}>
         <Header />
-        <ErrorBoundary>
-          <main className="light">
-            <Providers>{children}</Providers>
-          </main>
-        </ErrorBoundary>
+        <main className="light">
+          <Providers>{children}</Providers>
+        </main>
         <Footer />
       </body>
     </html>
