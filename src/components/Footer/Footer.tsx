@@ -55,7 +55,7 @@ export const Footer = () => {
             <Link className={styles.link} href={"/politik"}>
               Datenschutzerklärung
             </Link>
-            <Link className={styles.link} href={"/politik"}>
+            <Link className={styles.link} href={"/impressum"}>
               Impressum
             </Link>
             {menuItems.map(({ title, href }) => {
