@@ -30,10 +30,12 @@ export const Form = () => {
     try {
       const res = await handleContactFormSubmit(data);
 
-      if (res.statusCode === 200 && res.headers.message === "success") {
+      if (res.statusCode === 200) {
         setIsFormSubmitted(true);
         setIsSuccess(true);
-      } else {
+      }
+
+      if (res.statusCode === 400) {
         setIsFormSubmitted(true);
         setIsSuccess(false);
       }
