@@ -89,7 +89,7 @@ export const content: Content[] = [
     id: 1,
     title: `Spezialisierte Verlegung von <span>Kabeltrassen</span>`,
     subtitle:
-      "Bei JK-Stromprofis haben wir uns auf die Bereitstellung hochwertiger Dienstleistungen für die Verlegung von Kabeltrassen in großen Gebäuden spezialisiert. Wir verstehen, dass eine effiziente Kabelführung das Fundament für jedes moderne Gebäude bildet, und wir sind hier, um die Leistung zu optimieren und den Betrieb zu verbessern.",
+      "Bei JK-Stromprofis haben wir uns auf die Bereitstellung hochwertiger Dienstleistungen für die Verlegung von Kabeltrassen in großen Gebäuden spezialisiert, um die Leistung zu optimieren und den Betrieb zu verbessern.",
     summary:
       "Bei JK-Stromprofis bieten wir maßgeschneiderte Lösungen entsprechend spezifischer Anforderungen. Unser Team arbeitet eng mit dem Kunden zusammen, um seine Ziele und Herausforderungen zu verstehen. Anschließend entwerfen und bauen wir Kabeltrassen, die auf die einzigartige Struktur Ihres Gebäudes zugeschnitten sind und eine reibungslose Integration in die bestehende Infrastruktur gewährleisten.",
 
@@ -134,9 +134,9 @@ export const content: Content[] = [
   },
   {
     id: 2,
-    title: `Stärken Sie Ihr Unternehmen mit <span>spezialisiertem Support nach</span>`,
+    title: `Nutzen Sie unsere fachliche <span>Unterstützung</span>`,
     subtitle:
-      "Bei JK-Stromprofis gehen wir über herkömmliche Dienstleister hinaus, indem wir umfassende Projektunterstützung für Unternehmen jeder Größe anbieten. Wir verstehen die Herausforderungen, denen Unternehmen gegenüberstehen, sei es aufgrund begrenzter Ressourcen oder spezialisierter Kenntnisse. ",
+      "Bei JK-Stromprofis gehen wir über herkömmliche Dienstleister hinaus, indem wir umfassende Projektunterstützung für Unternehmen jeder Größe anbieten. ",
     summary:
       "Lassen Sie begrenzte Ressourcen oder spezialisierte Kenntnisse Sie nicht daran hindern, Ihre Projekte effizient und geplant abzuschließen. Kontaktieren Sie uns noch heute, um Ihre spezifischen Bedürfnisse zu besprechen, und lassen Sie uns Ihnen helfen, außergewöhnliche Projektergebnisse zu erzielen, die das Wachstum Ihres Unternehmens vorantreiben.",
 
@@ -181,7 +181,7 @@ export const content: Content[] = [
   },
   {
     id: 3,
-    title: `Schützen Sie mit <span>JK-Stromprofis</span>, was am wichtigsten ist`,
+    title: `Schützen Sie das Wichtigste mit <span>JK-Stromprofis</span>`,
     subtitle:
       "Suchst du nach Möglichkeiten, deinen Wohnsitz, dein Unternehmen oder deine Einrichtung zu schützen? Dann suchen Sie nicht weiter! Wir bieten eine breite Palette von Dienstleistungen in diesem Bereich an - von Alarmen und Kameras bis hin zu Brand- und Rauchabzugsanlagen.",
     summary:
@@ -230,7 +230,7 @@ export const content: Content[] = [
     id: 4,
     title: `Entdecken Sie moderne Lösungen mit <span>Smart Home</span>`,
     subtitle:
-      "Entdecken Sie eine völlig neue Welt des Komforts und der Effizienz, die direkt vor Ihnen liegt. Stellen Sie sich ein Zuhause vor, das alle Ihre Bedürfnisse kennt, Ihre Wünsche voraussieht und jeden Ihrer Launen erfüllt. Intelligente Häuser revolutionieren Ihren Lebensstil und verbessern jeden Aspekt Ihrer täglichen Routine.",
+      "Entdecken Sie eine völlig neue Welt des Komforts und der Effizienz, die direkt vor Ihnen liegt. Intelligente Häuser revolutionieren Ihren Lebensstil und verbessern jeden Aspekt Ihrer täglichen Routine.",
     summary:
       "Sind Sie bereit, Ihr Zuhause in eine Welt unbegrenzter Möglichkeiten zu verwandeln? Unsere intelligenten Hausservices sind hier, um die Art und Weise, wie Sie leben, zu revolutionieren und Komfort, Effizienz und Harmonie zu bieten. Schließen Sie sich der wachsenden Gemeinschaft von Hausbesitzern an, die bereits das wahre Potenzial ihrer Häuser freigesetzt haben.",
 
@@ -322,7 +322,7 @@ export const content: Content[] = [
   },
   {
     id: 6,
-    title: `Hellen Sie Ihren Raum mit der Expertise von <span>JK-Stromprofis</span> auf`,
+    title: `Hellen Sie Ihren Raum mit <span>der Expertise</span>`,
     subtitle:
       "Sie sind auf der Suche nach einer professionellen Beleuchtungslösung, die beeindruckende Ergebnisse liefert und Ihren Raum erhellt? Dann sind Sie bei unserer umfassenden Beleuchtungsplanung, -installation und -modernisierung an der richtigen Adresse.",
     summary:
@@ -371,7 +371,7 @@ export const content: Content[] = [
     id: 7,
     title: `Ladestationen für <span>Fahrzeuge</span>`,
     subtitle:
-      "Wir präsentieren die Zukunft des Komforts und nachhaltiger Entwicklung – Ladestationen für moderne Elektrofahrzeuge! Entwickelt mit Kreativität und Präzision sind Ladepunkte Ihr Ticket für eine reibungslose und umweltfreundliche Fahrt. Investieren Sie in Ihre energetische Zukunft und suchen Sie nicht weiter.",
+      "Investieren Sie in Ihre energetische Zukunft und suchen Sie nicht weiter. Entwickelt mit Kreativität und Präzision sind Ladepunkte Ihr Ticket für eine reibungslose und umweltfreundliche Fahrt.",
     summary:
       "Schließen Sie sich uns an und revolutionieren Sie Ihr Fahrerlebnis, indem Sie den Weg für eine umweltfreundlichere und nachhaltigere Zukunft ebnen. Unsere Ladepunkte für Batterien sind da, um Ihnen die Freiheit zu geben, sich auf endlose Abenteuer zu begeben, ohne sich um den Treibstoffverbrauch sorgen zu müssen.",
 

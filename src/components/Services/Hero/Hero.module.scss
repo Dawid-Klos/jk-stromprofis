@@ -1,28 +1,33 @@
 @import "@styles/mixins";
 
 .section {
+  @include section_flex;
   @include hero_height;
 
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  @screen tablet {
-    padding: 6rem 0;
-  }
+  z-index: 1;
+  margin: 4rem 0 0 0;
 
   @screen desktop_md {
-    padding: 8rem 0;
+    margin: 4rem 0 6rem 0;
+    align-items: center;
+  }
+
+  @screen desktop_xl {
+    margin: 4rem 0 16rem 0;
   }
 
   .hgroup {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    @include article_flex;
+
+    max-width: 100%;
     z-index: 1;
+    gap: 1rem;
+    text-align: center;
+
+    & h1 {
+      word-wrap: break-word;
+      inline-size: 100%;
+    }
 
     @screen tablet {
       max-width: 75%;
@@ -30,6 +35,7 @@
 
     @screen desktop_md {
       max-width: 70%;
+      align-items: center;
     }
 
     @screen desktop_xl {
@@ -37,37 +43,40 @@
     }
   }
 
-  .bulbImage {
-    align-self: flex-start;
-  }
-
-  .image {
-    @include hero_height;
-
-    width: 100vw !important;
-    height: 100vh !important;
+  .backgroundImage {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100%;
     position: absolute;
-    top: 0;
+    top: 4rem;
     z-index: 0;
-    margin: 0 (-$body-margin-mobile);
+
+    background-image: $image-easing-light-gradient, url("../../../assets/images/services-hero-sm.webp");
+    background-position: 50% top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @screen mobile_md {
+      // top: 6rem;
+      background-position: 50% 90%;
+    }
 
     @screen tablet {
-      margin: 0 (-$body-margin-tablet);
+      background-position: 50% 90%;
     }
 
     @screen desktop_md {
-      margin: -2rem (-$body-margin-desktop-md);
-    }
-
-    @screen desktop_lg {
-      margin: 0 (-$body-margin-desktop-lg);
-      margin-top: -6rem;
+      background-image: $image-easing-light-gradient, url("../../../assets/images/services-hero-md.webp");
+      background-position: 50% 70%;
+      top: 12rem;
     }
 
     @screen desktop_xl {
-      margin: 0 (-$body-margin-desktop-xl);
-      min-height: 1400px;
-      top: -32rem;
+      background-image: $image-easing-light-gradient, url("../../../assets/images/services-hero-lg.webp");
+      height: 120%;
+      top: 6rem;
     }
   }
 }
