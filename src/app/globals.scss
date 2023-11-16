@@ -80,9 +80,13 @@ textarea {
 }
 
 h1 {
-  @apply text-d3 text-accent-300 font-montserrat;
+  @apply text-h1 font-black text-accent-500 font-montserrat;
 
   @screen mobile_md {
+    @apply text-d3;
+  }
+
+  @screen desktop_md {
     @apply text-d2;
   }
 
@@ -99,19 +103,7 @@ h1 {
 }
 
 h2 {
-  @apply text-h1 text-accent-500 font-montserrat;
-
-  @screen mobile_md {
-    @apply text-d3;
-  }
-
-  @screen desktop_xl {
-    @apply text-d2;
-  }
-}
-
-h3 {
-  @apply text-h2 font-montserrat;
+  @apply text-h2 font-extrabold text-accent-500 font-montserrat;
 
   @screen mobile_md {
     @apply text-h1;
@@ -119,6 +111,18 @@ h3 {
 
   @screen desktop_xl {
     @apply text-d3;
+  }
+}
+
+h3 {
+  @apply text-h3 font-bold text-accent-200 font-montserrat;
+
+  @screen mobile_md {
+    @apply text-h2;
+  }
+
+  @screen desktop_xl {
+    @apply text-h1;
   }
 }
 
