@@ -1,8 +1,4 @@
-import heroImage from "@assets/images/services-hero.jpg";
-
 import styles from "./Hero.module.scss";
-import Image from "next/image";
-import BackgroundImage from "@components/common/BackgroundImage";
 
 type Props = {
   title: string;
@@ -16,7 +12,7 @@ export const Hero = ({ title, subtitle }: Props) => {
         <h1 dangerouslySetInnerHTML={{ __html: title }}></h1>
         <p>{subtitle}</p>
       </hgroup>
-      <BackgroundImage className={styles.image} src={heroImage} alt="" />
+      <div className={styles.backgroundImage}></div>
     </section>
   );
 };
