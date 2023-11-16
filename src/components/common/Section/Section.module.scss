@@ -3,9 +3,8 @@
 .section {
   @include section_flex;
 
-  padding-top: 8rem;
-
   @screen desktop_md {
+    margin: 6rem 0 8rem 0;
     gap: 6rem;
   }
 

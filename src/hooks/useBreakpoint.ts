@@ -1,18 +1,19 @@
 "use client";
 
 import { Breakpoint, BreakpointWidth } from "config/enums";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 
 const useBreakpoint = () => {
   const [breakpoint, setBreakpoint] = useState<string | null>(null);
 
-  const breakpoints: {
-    [enumMember: string]: BreakpointWidth;
-  } = {
-    [Breakpoint.Mobile]: BreakpointWidth.Mobile,
-    [Breakpoint.Tablet]: BreakpointWidth.Tablet,
-    [Breakpoint.Desktop]: BreakpointWidth.Desktop,
-  };
+  const breakpoints = useMemo(
+    () => ({
+      [Breakpoint.Mobile]: BreakpointWidth.Mobile,
+      [Breakpoint.Tablet]: BreakpointWidth.Tablet,
+      [Breakpoint.Desktop]: BreakpointWidth.Desktop,
+    }),
+    []
+  );
 
   useEffect(() => {
     const handleResize = () => {
@@ -37,7 +38,7 @@ const useBreakpoint = () => {
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [breakpoints]);
 
   return breakpoint;
 };
