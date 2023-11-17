@@ -27,6 +27,7 @@ export const Accordion = ({ title, list, setIsOpen }: Props) => {
         title: styles.title,
         trigger: styles.trigger,
         content: styles.content,
+        indicator: styles.indicator,
       }}
     >
       <AccordionItem aria-label={title} title={title}>
