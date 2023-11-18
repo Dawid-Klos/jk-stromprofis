@@ -10,7 +10,7 @@ export const Hero: React.FC = () => {
     <section className={styles.section}>
       <div className={styles.container}>
         <h1 className={styles.title}>
-          Sichern Sie sich zuverlässige <span>elektrische</span> <span>Lösungen</span>
+          Sichern Sie sich zuverlässige <span>elektrische Lösungen</span>
         </h1>
         <p className={styles.subtitle}>
           Wir sind Ihr vertrauenswürdiger Partner für alle elektrischen Bedürfnisse, und liefern stets höchste Qualität.

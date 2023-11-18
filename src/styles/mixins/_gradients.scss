@@ -1,9 +1,9 @@
 $image-easing-gradient: linear-gradient(
   to bottom,
   hsl(0% 0% 10%),
-  hsla(0%, 0%, 10%, 0.2),
-  hsla(0%, 0%, 10%, 0),
-  hsla(0%, 0%, 10%, 0.2),
+  hsla(0%, 0%, 10%, 0.3),
+  transparent,
+  hsla(0%, 0%, 10%, 0.3),
   hsl(0% 0% 10%)
 );
 
