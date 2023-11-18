@@ -1,6 +1,7 @@
 .nav {
   @apply bg-primary-500/80;
 
+  top: -1px;
   padding: 0 1rem;
 
   @screen desktop_md {
