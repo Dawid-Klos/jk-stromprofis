@@ -21,6 +21,8 @@
   &.primary {
     @apply bg-secondary-600 text-accent-200;
 
+    background: linear-gradient(268deg, #802b1e 2.96%, #e94f37 99.97%);
+
     & > svg {
       @apply text-accent-200;
     }
