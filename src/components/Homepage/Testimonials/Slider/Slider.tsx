@@ -3,14 +3,13 @@
 import { useState } from "react";
 import { Card, CardBody } from "@nextui-org/react";
 
-import styles from "./Slider.module.scss";
-
 import Divider from "@components/common/Divider";
 import Quote from "@assets/icons/Quote";
 import type { Testimonial } from "@config/testimonials";
 
 import Nav from "./Nav";
 import Item from "./Item";
+import styles from "./Slider.module.scss";
 
 type Props = {
   testimonials: Testimonial[];
