@@ -2,17 +2,9 @@
 
 .section {
   @include article_flex;
-
+  max-width: 100%;
   align-items: flex-start;
   padding-top: 8rem;
-
-  & h1 {
-    @apply text-d3 text-accent-200;
-  }
-
-  & h2 {
-    @apply text-h3 text-accent-300;
-  }
 
   .container {
     display: flex;
@@ -20,12 +12,13 @@
     gap: 1rem;
 
     .link {
-      @apply text-label-sm text-accent-300;
+      @apply text-label-sm text-accent-100;
     }
   }
 
   .title {
-    inline-size: 100%;
     overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 }

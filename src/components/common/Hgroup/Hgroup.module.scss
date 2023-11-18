@@ -4,10 +4,19 @@
   gap: 0.5rem;
   width: 100%;
 
+  .title {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
   .subtitle {
     @apply text-secondary-500 uppercase font-montserrat;
 
     font-size: 0.8rem;
     font-weight: 600;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 }
