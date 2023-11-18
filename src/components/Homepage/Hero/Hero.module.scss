@@ -8,57 +8,41 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 4rem 0 2rem 0;
-  gap: 20rem;
-
-  @screen tablet {
-    gap: 28rem;
-  }
+  max-height: 100dvh;
+  padding-bottom: 1rem;
 
   @screen desktop_md {
     align-items: flex-start;
-    gap: unset;
-  }
-
-  @screen desktop_lg {
-    padding-top: 6rem;
   }
 
   .background {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100vw;
+    width: 100dvw;
     height: 100%;
     position: absolute;
-    top: 3rem;
+    top: 0;
     z-index: 0;
 
-    background-image: $image-easing-gradient, url("../../../assets/images/home-hero-mobile.webp");
-    background-position: 50% top;
+    background-image: $image-easing-gradient, url("../../../assets/images/home-hero.webp");
+    background-position: 50% 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    aspect-ratio: 16 / 10;
 
     @screen tablet {
-      background-image: $image-easing-gradient, url("../../../assets/images/home-hero-tablet.webp");
-      background-position: 20% 60%;
+      background-position: 50% 100%;
     }
 
     @screen desktop_md {
-      background-image: $image-easing-gradient, url("../../../assets/images/home-hero-desktop-md.webp");
       margin-left: -$body-margin-desktop-md;
+      background-position: 50% 80%;
     }
 
     @screen desktop_lg {
-      background-image: $image-easing-gradient, url("../../../assets/images/home-hero-desktop-lg.webp");
-      background-position: 50% 40%;
+      background-position: 50% 60%;
       margin-left: -$body-margin-desktop-lg;
     }
 
     @screen desktop_xl {
-      background-image: $image-easing-gradient, url("../../../assets/images/home-hero-desktop-xl.webp");
-      background-position: 100% 0%;
+      background-position: 100% 50%;
       margin-left: -$body-margin-desktop-xl;
     }
   }
@@ -66,20 +50,38 @@
   .container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     z-index: 1;
+    margin-top: 2rem;
+
+    @screen tablet {
+      margin-top: 8rem;
+    }
 
     @screen desktop_md {
+      align-items: flex-start;
       width: 65%;
+      gap: 1.5rem;
+      margin-top: 4rem;
     }
 
     @screen desktop_lg {
-      width: 50%;
+      margin-top: 6rem;
+      width: 65%;
+    }
+
+    .title,
+    .subtitle {
+      text-align: center;
+
+      @screen desktop_md {
+        text-align: left;
+      }
     }
 
     .link {
-      margin-top: 1rem;
+      max-width: 80%;
     }
   }
 
@@ -91,7 +93,7 @@
     z-index: 1;
 
     @screen desktop_md {
-      width: 75%;
+      width: 65%;
       flex-flow: row nowrap;
       align-items: center;
     }

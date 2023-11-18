@@ -46,14 +46,14 @@ module.exports = {
         "28px",
         {
           lineHeight: "36px",
-          fontWeight: "500",
+          fontWeight: "600",
         },
       ],
       h3: [
         "24px",
         {
           lineHeight: "32px",
-          fontWeight: "500",
+          fontWeight: "600",
         },
       ],
       "body-lg": [

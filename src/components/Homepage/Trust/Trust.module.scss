@@ -41,7 +41,9 @@
       }
 
       .title {
-        @apply text-accent-500 text-label-lg;
+        @apply text-accent-500 text-h3;
+
+        text-align: center;
 
         @screen tablet {
           min-width: fit-content;

@@ -11,14 +11,7 @@
 }
 
 .logo {
-  position: relative;
-  width: 5rem;
-  height: 5rem;
-
-  @screen desktop_lg {
-    width: 6rem;
-    height: 6rem;
-  }
+  padding: 1rem 0;
 }
 
 .wrapper {

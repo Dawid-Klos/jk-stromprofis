@@ -1,7 +1,8 @@
 .nav {
   @apply bg-primary-500/80;
 
-  padding: 0 1.25rem;
+  top: -1px;
+  padding: 0 1rem;
 
   @screen desktop_md {
     display: none;
@@ -47,10 +48,16 @@
 
 .wrapper {
   padding: 0;
+
+  @screen tablet {
+    padding: 0 1.25rem;
+  }
 }
 
 .link {
   @apply text-h3 text-accent-500 font-montserrat;
+
+  padding: 1rem 0.5rem;
 
   &.active {
     @apply text-secondary-500;

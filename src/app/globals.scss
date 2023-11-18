@@ -46,7 +46,7 @@ main {
 }
 
 a {
-  @apply text-label-sm text-accent-500 h-auto;
+  @apply text-label-sm text-accent-400 h-auto;
 
   @screen mobile_md {
     @apply text-label-md;
@@ -83,19 +83,19 @@ h1 {
   @apply text-h1 font-black text-accent-500 font-montserrat;
 
   @screen mobile_md {
-    @apply text-d3;
+    @apply text-d3 font-black;
   }
 
-  @screen desktop_md {
-    @apply text-d2;
+  @screen desktop_lg {
+    @apply text-d2 font-black;
   }
 
   @screen desktop_xl {
-    @apply text-d1;
+    @apply text-d1 font-black;
   }
 
   span {
-    background: var(--hero-text-gradient, linear-gradient(269deg, #f8c8c1 18.51%, #e94f37 78.85%, #e94f37 78.85%));
+    background: linear-gradient(269deg, #f8c8c1 18.51%, #e94f37 78.85%, #e94f37 78.85%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -106,11 +106,11 @@ h2 {
   @apply text-h2 font-extrabold text-accent-500 font-montserrat;
 
   @screen mobile_md {
-    @apply text-h1;
+    @apply text-h1 font-extrabold;
   }
 
-  @screen desktop_xl {
-    @apply text-d3;
+  @screen desktop_lg {
+    @apply text-d3 font-extrabold;
   }
 }
 
@@ -118,11 +118,11 @@ h3 {
   @apply text-h3 font-bold text-accent-200 font-montserrat;
 
   @screen mobile_md {
-    @apply text-h2;
+    @apply text-h2 font-bold;
   }
 
-  @screen desktop_xl {
-    @apply text-h1;
+  @screen desktop_lg {
+    @apply text-h1 font-bold;
   }
 }
 
